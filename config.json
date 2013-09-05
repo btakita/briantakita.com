@@ -1,0 +1,26 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "Brian Takita",
+    "owner": "Brian Takita",
+    "description": "Brian Takita - Consulting Full Stack Web Engineer"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 3
+  }
+}
