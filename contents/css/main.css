@@ -145,10 +145,13 @@ footer .nav a {
   text-decoration: none;
 }
 
-footer .about {
+footer .about, footer .links {
   border-top: 1px dashed #d2d2d2;
   padding: 2.2em 3em;
   font-size: 0.7em;
+}
+
+footer .links {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
@@ -157,6 +160,10 @@ footer .about {
   -moz-column-gap: 2em;
   -ms-column-gap: 2em;
   column-gap: 2em;
+}
+
+footer .links ul {
+  list-style-type: none;
 }
 
 footer .copy {
@@ -418,16 +425,12 @@ code.lang-markdown .bullet {
   footer .nav {
     margin: 1em 0;
   }
-  footer .about {
+  footer .about, footer .links {
     padding: 0;
     font-size: 0.9em;
     padding-top: 1.6em;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    -ms-column-count: 1;
-    column-count: 1;
   }
-  footer .about p {
+  footer .about p, footer .links p {
     margin-bottom: 1em;
   }
 }

@@ -4,5 +4,8 @@
     "underscore": "1.4.x",
     "typogr": "0.5.x"
   },
-  "repository": "none"
+  "repository": "none",
+  "devDependencies": {
+    "grunt-wintersmith": "0.0.2"
+  }
 }
