@@ -5,7 +5,9 @@ date: 9/4/13 11:53 PM
 template: article.jade
 ---
 
-I was setting up [briantakita.com](http://briantakita.com) to point to github pages following the [official instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) and [github pages with namecheap](http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/).
+I set up [briantakita.com](http://briantakita.com) using [Github Pages](http://pages.github.com/) & [wintersmith](http://wintersmith.io/). Overall, it took some effort to setup & learn, but it turned out to be fairly painless. In this aritcle, I talk about setting up the DNS to point [briantakita.com](http://briantakita.com) to btakita.github.io.
+
+To set up the DNS, I followed the [official instructions](https://help.github.com/articles/setting-up-a-custom-domain-with-pages) and [github pages with namecheap](http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/).
 
 I created the CNAME file with:
 
