@@ -14,7 +14,7 @@ Fortunately, you can take control over your name on the web, without having to s
 [Brandyourself.com](http://brandyourself.com) makes it easy to inexpensively control your SEO destiny. Here is my [profile](http://briantakita.brandyourself.com/).
 
 
-Their free plan has a limitation of setting up three links for the free plan, so I bought their "Premium Membership" giving me unlimited links for $9 every 3 months.
+Their free plan has a limitation of setting up three links for the free plan, so I bought their "Premium Membership" giving me unlimited links for $9 every 3 months. This should give me an initial bump. Since I just acquired [briantakita.com](http://briantakita.com), I can transfer the links to my blog after the 3 months.
 
 
 Now I sit back and wait for Google to index the results :-)
