@@ -81,6 +81,11 @@ hr {
   margin: 1.6em 0;
 }
 
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
 /* page header */
 
 .header {
