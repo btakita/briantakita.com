@@ -5,6 +5,8 @@ date: 9/7/13 9:39 PM
 template: article.jade
 ---
 
+![Brian Takita - Peeping Tom - Created by tuchodi under the Creative Commons License - http://www.flickr.com/photos/tuchodi/4959060](http://briantakita.files.wordpress.com/2013/09/4959060_750beab5a4.jpg)
+
 With all of the revelations over how the NSA is snooping over your personal communications, companies storing and controlling your data, encryption backdoors and the fact that it's always crackable, one thing is becoming clear.
 
 **There is no privacy on the internet**.
