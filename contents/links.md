@@ -11,3 +11,4 @@ view: none
 * [Brian Takita: Tumblr Blog](http://briantakita.tumblr.com/)
 * [Brian Takita: Google+](https://plus.google.com/1050179096794581818251)
 * [Brian Takita: Quora](https://www.quora.com/Brian-Takita)
+* [Brian Takita: Pivotal Labs](http://pivotallabs.com/author/brian/)
