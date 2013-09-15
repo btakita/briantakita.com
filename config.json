@@ -3,7 +3,7 @@
     "url": "http://briantakita.com",
     "name": "Brian Takita",
     "owner": "Brian Takita",
-    "description": "Brian Takita - Full Stack Web Engineer"
+    "description": "Brian Takita - Abstractionist & Full Stack Web Engineer"
   },
   "plugins": [
     "./plugins/paginator.coffee",
