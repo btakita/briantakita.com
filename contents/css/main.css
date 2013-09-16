@@ -156,7 +156,10 @@ footer > section {
   font-size: 0.7em;
 }
 
-footer .links {
+footer .links h2 {
+  text-align: center;
+}
+footer .links ul {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
@@ -165,9 +168,6 @@ footer .links {
   -moz-column-gap: 2em;
   -ms-column-gap: 2em;
   column-gap: 2em;
-}
-
-footer .links ul {
   list-style-type: none;
 }
 
