@@ -13,140 +13,144 @@ Spec frameworks such as rspec and jasmine give you the constructs to perform edg
 
 This juxtaposition led me to create jasmine-flow. The premise of jasmine-flow is to organize tests into a series of steps which you can make assertions up reaching a certain state.
 
-    flow("visit /login|invalid login|valid login", function(fl) {
-      fl.step("visit /login", function() {
-          // I'm assuming the usage a JSDOM here
-          window.location.href = "http://yoursite.com/login";
-          // setupPage is defined elsewhere to set up your page framework.
-          setupPage();
-        })
-        .aver("shows a login form", function() {
-          var $login = $("#login");
-          expect($login.length).toEqual(1);
-        })
+```javascript
+flow("visit /login|invalid login|valid login", function(fl) {
+  fl.step("visit /login", function() {
+      // I'm assuming the usage a JSDOM here
+      window.location.href = "http://yoursite.com/login";
+      // setupPage is defined elsewhere to set up your page framework.
+      setupPage();
+    })
+    .aver("shows a login form", function() {
+      var $login = $("#login");
+      expect($login.length).toEqual(1);
+    })
 
-        .step("fill out login form with invalid login credentials and submit", function() {
-          $("#login .name").val("user@example.com");
-          $("#login .password").val("wrong-password");
-          $("#login button").click();
-          $("#login").submit();
+    .step("fill out login form with invalid login credentials and submit", function() {
+      $("#login .name").val("user@example.com");
+      $("#login .password").val("wrong-password");
+      $("#login button").click();
+      $("#login").submit();
+    })
+    .aver("sends a POST /login with the name and password", function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(1);
+      expect(mostRecentAjaxRequest.method).toEqual("POST");
+      expect(mostRecentAjaxRequest.url).toEqual("/login");
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "wrong-password"});
+    })
+    .step("POST /login 403", function() {
+      mostRecentAjaxRequest.response({
+        status: 403,
+        responseText: JSON.stringify({
+          message: "Invalid email/password combination"
         })
-        .aver("sends a POST /login with the name and password", function() {
-          // Using http://github.com/pivotal/jasmine-ajax
-          expect(ajaxRequests.length).toEqual(1);
-          expect(mostRecentAjaxRequest.method).toEqual("POST");
-          expect(mostRecentAjaxRequest.url).toEqual("/login");
-          expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "wrong-password"});
-        })
-        .step("POST /login 403", function() {
-          mostRecentAjaxRequest.response({
-            status: 403,
-            responseText: JSON.stringify({
-              message: "Invalid email/password combination"
-            })
-          })
-        })
-        .aver("does not redirect to the home page", function() {
-          expect(window.location.href).toEqual("http://yoursite.com/login");
-        })
-        .aver("shows an error", function() {
-          expect($("#login .error").text()).toContain("Invalid email/password combination");
-        })
+      })
+    })
+    .aver("does not redirect to the home page", function() {
+      expect(window.location.href).toEqual("http://yoursite.com/login");
+    })
+    .aver("shows an error", function() {
+      expect($("#login .error").text()).toContain("Invalid email/password combination");
+    })
 
-        .step("fill out login form with valid login credentials and submit", function() {
-          $("#login .name").val("user@example.com");
-          $("#login .password").val("12345");
-          $("#login button").click();
-          $("#login").submit();
+    .step("fill out login form with valid login credentials and submit", function() {
+      $("#login .name").val("user@example.com");
+      $("#login .password").val("12345");
+      $("#login button").click();
+      $("#login").submit();
+    })
+    .aver("sends a POST /login with the name and password", function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(2);
+      expect(mostRecentAjaxRequest.method).toEqual("POST");
+      expect(mostRecentAjaxRequest.url).toEqual("/login");
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "12345"});
+    })
+    .step("POST /login 200", function() {
+      mostRecentAjaxRequest.response({
+        status: 200,
+        responseText: JSON.stringify({
+          name: "User",
+          email: "user@example.com"
         })
-        .aver("sends a POST /login with the name and password", function() {
-          // Using http://github.com/pivotal/jasmine-ajax
-          expect(ajaxRequests.length).toEqual(2);
-          expect(mostRecentAjaxRequest.method).toEqual("POST");
-          expect(mostRecentAjaxRequest.url).toEqual("/login");
-          expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "12345"});
-        })
-        .step("POST /login 200", function() {
-          mostRecentAjaxRequest.response({
-            status: 200,
-            responseText: JSON.stringify({
-              name: "User",
-              email: "user@example.com"
-            })
-          })
-        .aver("redirects to the home page", function() {
-          expect(window.location.href).toEqual("/");
-        })
-      ;
-    });
+      })
+    .aver("redirects to the home page", function() {
+      expect(window.location.href).toEqual("/");
+    })
+  ;
+});
+```
 
 Compare this with the traditional nested describe solution in Jasmine...
 
-    describe("Someone visits /login", function() {
+```javascript
+describe("Someone visits /login", function() {
+  beforeEach(function() {
+    // I'm assuming the usage a JSDOM here
+    window.location.href = "http://yoursite.com/login";
+    // setupPage is defined elsewhere to set up your page framework.
+    setupPage();
+  });
+
+  it("shows a login form", function() {
+    var $login = $("#login");
+    expect($login.length).toEqual(1);
+  });
+
+  describe("fill out and submitting the login form", function() {
+    beforeEach(function() {
+      $("#login .name").val("user@example.com");
+      $("#login .password").val("12345");
+      $("#login button").click();
+      $("#login").submit();
+    });
+
+    it("sends a POST /login with the name and password", function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(1);
+      expect(mostRecentAjaxRequest.method).toEqual("POST");
+      expect(mostRecentAjaxRequest.url).toEqual("/login");
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "12345"});
+    });
+
+    describe("POST /login 200", function() {
       beforeEach(function() {
-        // I'm assuming the usage a JSDOM here
-        window.location.href = "http://yoursite.com/login";
-        // setupPage is defined elsewhere to set up your page framework.
-        setupPage();
+        mostRecentAjaxRequest.response({
+          status: 200,
+          responseText: JSON.stringify({
+            name: "User",
+            email: "user@example.com"
+          })
+        });
       });
 
-      it("shows a login form", function() {
-        var $login = $("#login");
-        expect($login.length).toEqual(1);
-      });
-
-      describe("fill out and submitting the login form", function() {
-        beforeEach(function() {
-          $("#login .name").val("user@example.com");
-          $("#login .password").val("12345");
-          $("#login button").click();
-          $("#login").submit();
-        });
-
-        it("sends a POST /login with the name and password", function() {
-          // Using http://github.com/pivotal/jasmine-ajax
-          expect(ajaxRequests.length).toEqual(1);
-          expect(mostRecentAjaxRequest.method).toEqual("POST");
-          expect(mostRecentAjaxRequest.url).toEqual("/login");
-          expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: "user@example.com", password: "12345"});
-        });
-
-        describe("POST /login 200", function() {
-          beforeEach(function() {
-            mostRecentAjaxRequest.response({
-              status: 200,
-              responseText: JSON.stringify({
-                name: "User",
-                email: "user@example.com"
-              })
-            });
-          });
-
-          it("redirects to the home page", function() {
-            expect(window.location.href).toEqual("/");
-          });
-        });
-
-        describe("POST /login 403", function() {
-          beforeEach(function() {
-            mostRecentAjaxRequest.response({
-              status: 403,
-              responseText: JSON.stringify({
-                message: "Invalid email/password combination"
-              })
-            });
-          });
-
-          it("does not redirect to the home page", function() {
-            expect(window.location.href).toEqual("http://yoursite.com/login");
-          });
-
-          it("shows an error", function() {
-            expect($("#login .error").text()).toContain("Invalid email/password combination");
-          });
-        });
+      it("redirects to the home page", function() {
+        expect(window.location.href).toEqual("/");
       });
     });
+
+    describe("POST /login 403", function() {
+      beforeEach(function() {
+        mostRecentAjaxRequest.response({
+          status: 403,
+          responseText: JSON.stringify({
+            message: "Invalid email/password combination"
+          })
+        });
+      });
+
+      it("does not redirect to the home page", function() {
+        expect(window.location.href).toEqual("http://yoursite.com/login");
+      });
+
+      it("shows an error", function() {
+        expect($("#login .error").text()).toContain("Invalid email/password combination");
+      });
+    });
+  });
+});
+```
 
 In the nested describe solution, each it requires identical setup code execution which is repeated for each test. This effectively creates a (n log n) test suite for each setup * it. In the jasmine-flow example, the setup code is executed one time, with assertions interspersed (n).
 

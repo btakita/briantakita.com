@@ -9,28 +9,30 @@ template: article.jade
 
 I have recently released [backbone-signal](https://github.com/btakita/backbone-signal), which is a [reactive programming](https://en.wikipedia.org/wiki/Reactive_programming) library with a practical & javascripty model api.
 
-    // backbone-signal extends Backbone.Model
-    var app = new Backbone.Model();
+```javascript
+// backbone-signal extends Backbone.Model
+var app = new Backbone.Model();
 
-    var userSignal = app.signal("user");
-    userSignal.getTruthy(app, function(app, user) {
-      console.info("Hello " + user.name);
-    });
+var userSignal = app.signal("user");
+userSignal.getTruthy(app, function(app, user) {
+  console.info("Hello " + user.name);
+});
 
-    console.info("Let's see some friends");
-    userSignal.set({
-      name: "Jane"
-    });
+console.info("Let's see some friends");
+userSignal.set({
+  name: "Jane"
+});
 
-    userSignal.getTruthy(app, function(app, user) {
-      console.info("Nice to see you");
-    });
+userSignal.getTruthy(app, function(app, user) {
+  console.info("Nice to see you");
+});
 
-    userSignal.set({
-      name: "Joe"
-    });
+userSignal.set({
+  name: "Joe"
+});
 
-    userSignal.unset();
+userSignal.unset();
+```
 
 The console ouput is:
 
