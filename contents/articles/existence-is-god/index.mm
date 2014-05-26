@@ -4,7 +4,9 @@ Existence is God {
     Discussion is encouraged. The language is self-referential.
   }
   All definitions apply to the definitions in this document. {
-    Each section within this document is an Entity.  
+    Each section within this document is an Entity.
+    This document has Rules, so it is an Illusion.
+    Do the definitions have Rules as well?
   
   }
   Document Resolution {
@@ -18,7 +20,10 @@ Existence is God {
   }
   Existence/God {
     Everything that "is", or more simply, everything (Physical, Conceptual, Social, Spirit). The overarching system.
+    Entity {
+      God is an Entity.    
     
+    }
   }
   Information/Entity/System/Being/Soul/Culture/Philosophy/Religion {
     That which can distinguish one thing from another.
@@ -47,6 +52,13 @@ Existence is God {
       }
     }
     Being { "http://en.wikipedia.org/wiki/Being" }
+  }
+  Higher Being {
+    A Being that is more Evolved than another Being.
+    Evolved {
+      Progressed and closer to God in a Systemic sense. { The System has a variable Resolution. }
+    
+    }
   }
   Intelligence {
     The cause/effect system of the Soul.
@@ -154,6 +166,24 @@ Existence is God {
         Galaxy formation
       }
     }
+  }
+  Rules {
+    
+    
+  }
+  Idolatry { "http://en.wikipedia.org/wiki/Idolatry"
+    The definition of God as an Entity less than (a part of) Existence.
+    
+  }
+  Oneness {
+    The initial State of Existence.
+    We used to all be one Being and Fully Conscious of it.
+    The Physical expression of Oneness is The Singularity?
+  }
+  Fully Conscious {
+    Fully experiencing the full State of a Being.
+    Right at this moment, I am a Fully Conscious version of Brian Takita''s present Consciousness.
+    Often used to relate to Enlightenment. Fully Conscious with a Higher Form.
   }
 }
 Notes {
