@@ -11,12 +11,11 @@ Existence is God {
   }
   Document Resolution {
     Root Meaning of the three terms (This definition is inspired by the similarity of their root lower resolutions.) {
-      The nature of information means it is a system and it has a soul.
+      The nature of Information means it is a System and is a Soul.
       
     }
     Intention of Resolution { The intention of being at a lower resolution is to highlight the sameness of these terms. }
-    At higher conceptual resolutions { Information, System, & Soul have nuanced & different meanings. }
-  
+    At higher Conceptual Resolutions { Information, System, & Soul have nuanced & different meanings. }
   }
   Existence/God {
     Everything that "is", or more simply, everything (Physical, Conceptual, Social, Spirit). The overarching system.
@@ -53,6 +52,10 @@ Existence is God {
     }
     Being { "http://en.wikipedia.org/wiki/Being" }
   }
+  Evolution {
+    The Iteration of design of an Entity over time and based on feedback from Reality.
+
+  }
   Higher Being {
     A Being that is more Evolved than another Being.
     Evolved {
@@ -78,8 +81,11 @@ Existence is God {
     Abstract patterns in science, spirit, mathematics, or language require conceptual & extrasensory senses.
   }
   Direct Observation {
-    Direct observation in practice means observing socially accepted senses.
-    This includes socially accepted senses within a different reality.  
+    Observation by a person of a System or Event from one or more of their senses.
+    Socially Accepted Senses {
+      A Collective''s definition of Direct Observation, is Observation using one or more Socially Accepted Senses.
+      Socially Accepted Senses differ according to the Perspective of the Reality it is in.
+    }
     These observations are widespread in nature and in art.
   }
   Energy {
@@ -93,7 +99,7 @@ Existence is God {
   }
   Reality {
     Plural { Realities }
-    The interpretation of existence from a soul''s perspective.
+    The interpretation of existence from a soul''s perspective. The Information may be Consciously or Unconsciously experienced.
     Reality can be seen as being singular (absolute), or being plural (relative).
     e.g. A rock does not have a nervous system or much of a dynamic intelligence. It''s reality is more singular  
     Reality can be socially defined 
