@@ -72,7 +72,7 @@ Existence is God {
     }
   }
   State {
-    The current status of the information.  
+    The status of information.
       
   }
   Pattern {
@@ -112,6 +112,10 @@ Existence is God {
     Plural Reality {
       A reality that accepts the existence of and can incorporate other realities.
       
+    }
+    Objective Reality {
+      Reality free from interpreted causalities.
+
     }
     Being Aware of other Realities has the quality to allows a Soul to live within that particular Reality.
   }
