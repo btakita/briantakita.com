@@ -5,9 +5,7 @@ Existence is God {
   }
   All definitions apply to the definitions in this document. {
     Each section within this document is an Entity.
-    This document has Rules, so it is an Illusion.
-    Do the definitions have Rules as well?
-  
+
   }
   Document Resolution {
     Root Meaning of the three terms (This definition is inspired by the similarity of their root lower resolutions.) {
@@ -18,7 +16,7 @@ Existence is God {
     At higher Conceptual Resolutions { Information, System, & Soul have nuanced & different meanings. }
   }
   Existence/God {
-    Everything that "is", or more simply, everything (Physical, Conceptual, Social, Spirit). The overarching system.
+    Everything that "is", or more simply, everything (Physical, Conceptual, Social, Spirit). The overarching System.
     Entity {
       God is an Entity.    
     
@@ -53,8 +51,9 @@ Existence is God {
     Being { "http://en.wikipedia.org/wiki/Being" }
   }
   Evolution {
-    The Iteration of design of an Entity over time and based on feedback from Reality.
-
+    The Iteration of design of an Entity based on feedback from Reality.
+    This Iteration can happen over Time or in a progression of steps.
+    If you think of Time as a progression of steps, like film, then the progression is the same.
   }
   Higher Being {
     A Being that is more Evolved than another Being.
@@ -65,15 +64,19 @@ Existence is God {
   }
   Intelligence {
     The cause/effect system of the Soul.
-    It also include control logic, information transfer, evolution.
+    It also include control logic, Information transfer, Evolution.
     Human-like Intelligence {
       logic, abstract thought, understanding, self-awareness, communication, learning, emotional knowledge, memory, planning, and problem solving.
       
     }
   }
   State {
-    The status of information.
+    The status of Information.
       
+  }
+  Time { "http://en.wikipedia.org/wiki/Time"
+    The sequence of States in Reality.
+    See "https://www.youtube.com/watch?v=p4Gotl9vRGs"
   }
   Pattern {
     The elements of a pattern repeat in a predictable or regular manner.
@@ -110,11 +113,11 @@ Existence is God {
       
     }
     Plural Reality {
-      A reality that accepts the existence of and can incorporate other realities.
+      A Reality that accepts the existence of and can incorporate other Realities.
       
     }
     Objective Reality {
-      Reality free from interpreted causalities.
+      Reality from the Perspective of a Higher Being.
 
     }
     Being Aware of other Realities has the quality to allows a Soul to live within that particular Reality.
@@ -124,12 +127,13 @@ Existence is God {
     Abstraction {
       The view of reality from a Model''s point of view
       Characteristic Traits {
-        Abstraction is to take a distance from the physical world.
-        Abstraction is (or is a close to) generalization.
-        Abstraction is information hiding.
-        Abstraction is to keep only relevant aspects.
-        Abstraction is a kind of reformulation or approximation.
-        Abstraction is a to change levels of detail.
+        Abstraction is:
+        * to take a distance from the physical world
+        * (or is a close to) generalization
+        * information hiding
+        * to keep only relevant aspects
+        * a kind of reformulation or approximation
+        * a to change levels of detail
       }
       Model { The Characteristic Traits of abstraction can then be used to build up a Model. }
       Link { "http://www.aaai.org/ocs/index.php/SARA/SARA13/paper/download/7249/6267" }
@@ -151,8 +155,7 @@ Existence is God {
     }
     Second Order Resolution {
       A Resolution that consists of multiple Resolutions.
-      Often not distinguished by a Resolution, thus seen as a property of a common Resolution.
-      
+      Often not distinguished by a Resolution, thus seen as a property of a common Resolution. Like a path through Resolutions.
     }
   }
   Story/Ourstory/History/Herstory {
@@ -163,7 +166,7 @@ Existence is God {
     }
   }
   Tool {
-    Conceptual or Physical System that is used to create a desired effect by another System.
+    Conceptual or Physical System that is used to create a desired effect on another System or itself.
     
   }
   Fractal {
@@ -199,5 +202,5 @@ Existence is God {
 Notes {
   All human conceptual experience into one cohesive whole.
   Technology, Culture, & Spiritual
-  These days, our fundamental notions of existence, God is always evolving.
+  These days, our fundamental notions of existence, God is Evolves over Time.
 }
