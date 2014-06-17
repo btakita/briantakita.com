@@ -157,6 +157,10 @@ Existence is God {
       A Resolution that consists of multiple Resolutions.
       Often not distinguished by a Resolution, thus seen as a property of a common Resolution. Like a path through Resolutions.
     }
+    Scale Confusion {
+      A skewed projection of an Object/Concept in a different Resolution based on the current Resolution.
+
+    }
   }
   Story/Ourstory/History/Herstory {
     Recounting of a sequence of events/Narrative {
@@ -168,6 +172,10 @@ Existence is God {
   Tool {
     Conceptual or Physical System that is used to create a desired effect on another System or itself.
     
+  }
+  Technology {
+    Quote { "The Extensions of Man", "Marshall McLuhan" }
+
   }
   Fractal {
     A curve or geometric figure, each part of which has the same statistical character as the whole.
