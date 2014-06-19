@@ -206,6 +206,10 @@ Existence is God {
     Right at this moment, I am a Fully Conscious version of Brian Takita''s present Consciousness.
     Often used to relate to Enlightenment. Fully Conscious with a Higher Form.
   }
+  Concrescence {
+    A local state of unusually high complexity.
+
+  }
 }
 Notes {
   All human conceptual experience into one cohesive whole.
