@@ -1,0 +1,111 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width"><title>backbone-signal - Practical Reactive Programming in Javascript - Brian Takita</title><link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Mission: Expand Consciousness"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"><link rel="stylesheet" href="/css/main.css"></head><body class="article-detail"><header class="header"><div class="content-wrap"><div class="logo"><h1><a href="/">Brian Takita</a></h1><p class="description">Mission: Expand Consciousness</p><h2>backbone-signal - Practical Reactive Programming in Javascript</h2></div></div></header><div id="content"><div class="content-wrap"><article class="article"><section class="content"><p><img src="/images/neurons.jpg" alt="From Parthiv Haldipur http://www.flickr.com/photos/hmmmmm/3903176411/ - Licensed under Creative Commons"></p>
+<p>I have recently released <a href="https://github.com/btakita/backbone-signal">backbone-signal</a>, which is a <a href="https://en.wikipedia.org/wiki/Reactive_programming">reactive programming</a> library with a practical <span class="amp">&amp;</span> javascripty model&nbsp;api.</p>
+<p><span class="more"></span></p>
+<pre><code class="lang-javascript">// backbone-signal extends Backbone.Model
+var app = new Backbone.Model();
+
+var userSignal = app.signal(&quot;user&quot;);
+userSignal.getTruthy(app, function(app, user) {
+  console.info(&quot;Hello &quot; + user.name);
+});
+
+console.info(&quot;Let&#39;s see some friends&quot;);
+userSignal.set({
+  name: &quot;Jane&quot;
+});
+
+userSignal.getTruthy(app, function(app, user) {
+  console.info(&quot;Nice to see you&quot;);
+});
+
+userSignal.set({
+  name: &quot;Joe&quot;
+});
+
+userSignal.unset();
+</code></pre>
+<p>The console ouput&nbsp;is:</p>
+<pre><code>Let&#39;s see some friends
+Hello Jane
+Nice to see you
+Hello Joe
+Nice to see you
+</code></pre><p>We are calling getTruthy on the userSignal two times, one for &quot;Hello &quot; + user.name and one for &quot;Nice to see you&quot;. The callback is invoked when the value is <a href="http://www.sitepoint.com/javascript-truthy-falsy/">Truthy</a>. So when userSignal.unset is called, the callbacks are not&nbsp;invoked.</p>
+<p>What is nice about having a dedicated signal object is that you can bind to it even when it&#39;s value is undefined, thereby avoiding order dependencies and simplyfying your&nbsp;logic.</p>
+<p>backbone-signal also utilizes Backbone&#39;s listenTo and listenToOnce methods, which make it easy to clean up by calling stopListening on the&nbsp;listener.</p>
+<p>backbone-signal is being used in <a href="http://www.rundavoo.com">www.rundavoo.com</a> and has been fun to use, especially with <a href="http://nodejs.org/">node.js</a> <span class="amp">&amp;</span> <a href="http://browserify.org/">Browserify</a>. It&#39;s been a pleasure using a lightweight unframework to freely structure the dataflow logic of the&nbsp;site.</p>
+<p>The api includes:</p>
+<h2 id="loading-unloading">Loading/Unloading</h2>
+<ul>
+<li>load - Invokes the loader when the value is not&nbsp;defined</li>
+<li>forceLoad - Invokes the loader (regardless if the value is&nbsp;defined)</li>
+<li>reload - Unsets the value then invokes the&nbsp;loader</li>
+<li>unload - Invokes the&nbsp;unloader</li>
+<li>setLoader - Sets the Loader&nbsp;callback</li>
+<li>unsetLoader - Unsets the Loader&nbsp;callback</li>
+<li>setUnloader - Sets the Unloader&nbsp;callback</li>
+<li>unsetUnloader - Unsets the Unloader&nbsp;callback</li>
+</ul>
+<h2 id="setters">Setters</h2>
+<ul>
+<li>set - Sets the value with the&nbsp;argument</li>
+<li>unset - Unets the&nbsp;value</li>
+<li>value - Returns the&nbsp;value</li>
+</ul>
+<h2 id="getters-listeners">Getters/Listeners</h2>
+<ul>
+<li>get - Invoke the callback immeditately and on any additional changes to the&nbsp;value</li>
+<li>listen - Listen to any additional changes to the value (does not invoke the callback&nbsp;immeditately)</li>
+<li>getOnce - Invoke the callback immeditately one&nbsp;time</li>
+<li>listenOnce - Listen to any additional changes to the value one&nbsp;time</li>
+<li>getTruthy - Invoke the callback immeditately and on any additional changes to the value if the value is&nbsp;truthy</li>
+<li>listenTruthy - Listen to any additional changes to the value if the value is&nbsp;truthy</li>
+<li>getTruthyOnce - Invoke the callback immeditately or on any additional changes to the value if the value is truthy one time&nbsp;only</li>
+<li>listenTruthyOnce - Listen to any additional changes to the value if the value is truthy one time&nbsp;only</li>
+<li>getFalsy- Invoke the callback immeditately and on any additional changes to the value if the value is&nbsp;falsy</li>
+<li>listenFalsy - Listen to any additional changes to the value if the value is&nbsp;falsy</li>
+<li>getFalsyOnce - Invoke the callback immeditately or on any additional changes to the value if the value is falsy one time&nbsp;only</li>
+<li>listenFalsyOnce - Listen to any additional changes to the value if the value is falsy one time&nbsp;only</li>
+<li>getDefined- Invoke the callback immeditately and on any additional changes to the value if the value is&nbsp;defined</li>
+<li>listenDefined - Listen to any additional changes to the value if the value is&nbsp;defined</li>
+<li>getDefinedOnce - Invoke the callback immeditately or on any additional changes to the value if the value is defined one time&nbsp;only</li>
+<li>listenDefinedOnce - Listen to any additional changes to the value if the value is defined one time&nbsp;only</li>
+<li>unbind - Unbinds the given object from the&nbsp;callback</li>
+<li>loading</li>
+<li>isLoading</li>
+</ul>
+</section><div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'briantakita'; // required: replace example with your forum shortname
+var hrefSegments = window.location.href.replace(/\/$/, "").split("/");
+var disqus_identifier = 'briantakita-' + hrefSegments[hrefSegments.length - 1];
+var disqus_title = document.getElementsByTagName("h1")[0].innerText;
+var disqus_url = window.location.href;
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><noscript><Please>enable JavaScript to view the</Please><a href="http://disqus.com/?ref_noscript"><comments>powered by Disqus.</comments></a></noscript><a href="http://disqus.com" class="dsq-brlink"><comments>powered by</comments><span class="logo-disqus"></span></a></article></div></div><footer><div class="content-wrap"><div class="nav"><a href="/">« Full blog</a></div><section class="about"><p>Brian Takita seeks to expand consciousness within himself &amp; with people around him.</p>
+</section><section class="links"><h2 id="brian-takita-online-">Brian Takita online:</h2>
+<ul>
+<li><a href="http://about.me/brian_takita">about.me</a></li>
+<li><a href="http://www.linkedin.com/in/briantakita">LinkedIn</a></li>
+<li><a href="https://github.com/btakita">Github</a></li>
+<li><a href="https://www.facebook.com/brian.takita.creations">Facebook - Fan Page</a></li>
+<li><a href="https://www.facebook.com/brian.takita">Facebook - Personal</a></li>
+<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>
+<li><a href="https://twitter.com/briantakita">Twitter</a></li>
+<li><a href="http://briantakita.wordpress.com/">Wordpress Blog</a></li>
+<li><a href="http://briantakita.tumblr.com/">Tumblr Blog</a></li>
+<li><a href="https://plus.google.com/1050179096794581818251">Google+</a></li>
+<li><a href="https://www.quora.com/Brian-Takita">Quora</a></li>
+<li><a href="http://pivotallabs.com/author/brian/">Pivotal Labs</a></li>
+</ul>
+</section><section class="feed"><a href="/feed.xml"><img src="/images/Feed-icon.svg" alt="Atom Feed"></a></section></div><section class="copy"><p>&copy; 2014 Brian Takita &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p></section></footer><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43791623-1', 'briantakita.com');
+ga('send', 'pageview');
+console.log("Loaded Google Analytics");</script></body></html>

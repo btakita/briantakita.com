@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width"><title>Fast and Thorough Testing with Jasmine Flow - Brian Takita</title><link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Mission: Expand Consciousness"><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300"><link rel="stylesheet" href="/css/main.css"></head><body class="article-detail"><header class="header"><div class="content-wrap"><div class="logo"><h1><a href="/">Brian Takita</a></h1><p class="description">Mission: Expand Consciousness</p><h2>Fast and Thorough Testing with Jasmine Flow</h2></div></div></header><div id="content"><div class="content-wrap"><article class="article"><section class="content"><p>Automated testing helps to ensure that your software does not have regressions as you make changes. These changes include refactorings, new features, bug fixes, etc. A Software product has an intricate set of behavior which includes a large number of edge&nbsp;cases.</p>
+<p>I&#39;m a <a href="/articles/automated-black-box-testing/">fan of black box</a> testing, because it is decoupled from the implementation. The implication is the <a href="http://briantakita.wordpress.com/2013/09/15/why-its-better-to-strive-toward-accomplishment-rather-than-method/"><strong>what</strong> is verified, rather than the <strong>how</strong></a>.</p>
+<p><span class="more"></span></p>
+<p>Spec frameworks such as rspec and jasmine give you the constructs to perform edge case testing. Unfortunately, the same setup is repeated when verifying different aspects of the state of the system. This leads to long test suites and even to the motivation to skip edge case testing (sacrificing test coverage) or combining tests (sacrificing clarity of intent of the&nbsp;test).</p>
+<p>This juxtaposition led me to create jasmine-flow. The premise of jasmine-flow is to organize tests into a series of steps which you can make assertions up reaching a certain&nbsp;state.</p>
+<pre><code class="lang-javascript">flow(&quot;visit /login|invalid login|valid login&quot;, function(fl) {
+  fl.step(&quot;visit /login&quot;, function() {
+      // I&#39;m assuming the usage a JSDOM here
+      window.location.href = &quot;http://yoursite.com/login&quot;;
+      // setupPage is defined elsewhere to set up your page framework.
+      setupPage();
+    })
+    .aver(&quot;shows a login form&quot;, function() {
+      var $login = $(&quot;#login&quot;);
+      expect($login.length).toEqual(1);
+    })
+
+    .step(&quot;fill out login form with invalid login credentials and submit&quot;, function() {
+      $(&quot;#login .name&quot;).val(&quot;user@example.com&quot;);
+      $(&quot;#login .password&quot;).val(&quot;wrong-password&quot;);
+      $(&quot;#login button&quot;).click();
+      $(&quot;#login&quot;).submit();
+    })
+    .aver(&quot;sends a POST /login with the name and password&quot;, function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(1);
+      expect(mostRecentAjaxRequest.method).toEqual(&quot;POST&quot;);
+      expect(mostRecentAjaxRequest.url).toEqual(&quot;/login&quot;);
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: &quot;user@example.com&quot;, password: &quot;wrong-password&quot;});
+    })
+    .step(&quot;POST /login 403&quot;, function() {
+      mostRecentAjaxRequest.response({
+        status: 403,
+        responseText: JSON.stringify({
+          message: &quot;Invalid email/password combination&quot;
+        })
+      })
+    })
+    .aver(&quot;does not redirect to the home page&quot;, function() {
+      expect(window.location.href).toEqual(&quot;http://yoursite.com/login&quot;);
+    })
+    .aver(&quot;shows an error&quot;, function() {
+      expect($(&quot;#login .error&quot;).text()).toContain(&quot;Invalid email/password combination&quot;);
+    })
+
+    .step(&quot;fill out login form with valid login credentials and submit&quot;, function() {
+      $(&quot;#login .name&quot;).val(&quot;user@example.com&quot;);
+      $(&quot;#login .password&quot;).val(&quot;12345&quot;);
+      $(&quot;#login button&quot;).click();
+      $(&quot;#login&quot;).submit();
+    })
+    .aver(&quot;sends a POST /login with the name and password&quot;, function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(2);
+      expect(mostRecentAjaxRequest.method).toEqual(&quot;POST&quot;);
+      expect(mostRecentAjaxRequest.url).toEqual(&quot;/login&quot;);
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: &quot;user@example.com&quot;, password: &quot;12345&quot;});
+    })
+    .step(&quot;POST /login 200&quot;, function() {
+      mostRecentAjaxRequest.response({
+        status: 200,
+        responseText: JSON.stringify({
+          name: &quot;User&quot;,
+          email: &quot;user@example.com&quot;
+        })
+      })
+    .aver(&quot;redirects to the home page&quot;, function() {
+      expect(window.location.href).toEqual(&quot;/&quot;);
+    })
+  ;
+});
+</code></pre>
+<p>Compare this with the traditional nested describe solution in&nbsp;Jasmine&#8230;</p>
+<pre><code class="lang-javascript">describe(&quot;Someone visits /login&quot;, function() {
+  beforeEach(function() {
+    // I&#39;m assuming the usage a JSDOM here
+    window.location.href = &quot;http://yoursite.com/login&quot;;
+    // setupPage is defined elsewhere to set up your page framework.
+    setupPage();
+  });
+
+  it(&quot;shows a login form&quot;, function() {
+    var $login = $(&quot;#login&quot;);
+    expect($login.length).toEqual(1);
+  });
+
+  describe(&quot;fill out and submitting the login form&quot;, function() {
+    beforeEach(function() {
+      $(&quot;#login .name&quot;).val(&quot;user@example.com&quot;);
+      $(&quot;#login .password&quot;).val(&quot;12345&quot;);
+      $(&quot;#login button&quot;).click();
+      $(&quot;#login&quot;).submit();
+    });
+
+    it(&quot;sends a POST /login with the name and password&quot;, function() {
+      // Using http://github.com/pivotal/jasmine-ajax
+      expect(ajaxRequests.length).toEqual(1);
+      expect(mostRecentAjaxRequest.method).toEqual(&quot;POST&quot;);
+      expect(mostRecentAjaxRequest.url).toEqual(&quot;/login&quot;);
+      expect(JSON.parse(mostRecentAjaxRequest.params)).toEqual({name: &quot;user@example.com&quot;, password: &quot;12345&quot;});
+    });
+
+    describe(&quot;POST /login 200&quot;, function() {
+      beforeEach(function() {
+        mostRecentAjaxRequest.response({
+          status: 200,
+          responseText: JSON.stringify({
+            name: &quot;User&quot;,
+            email: &quot;user@example.com&quot;
+          })
+        });
+      });
+
+      it(&quot;redirects to the home page&quot;, function() {
+        expect(window.location.href).toEqual(&quot;/&quot;);
+      });
+    });
+
+    describe(&quot;POST /login 403&quot;, function() {
+      beforeEach(function() {
+        mostRecentAjaxRequest.response({
+          status: 403,
+          responseText: JSON.stringify({
+            message: &quot;Invalid email/password combination&quot;
+          })
+        });
+      });
+
+      it(&quot;does not redirect to the home page&quot;, function() {
+        expect(window.location.href).toEqual(&quot;http://yoursite.com/login&quot;);
+      });
+
+      it(&quot;shows an error&quot;, function() {
+        expect($(&quot;#login .error&quot;).text()).toContain(&quot;Invalid email/password combination&quot;);
+      });
+    });
+  });
+});
+</code></pre>
+<p>In the nested describe solution, each it requires identical setup code execution which is repeated for each test. This effectively creates a (n log n) test suite for each setup * it. In the jasmine-flow example, the setup code is executed one time, with assertions interspersed&nbsp;(n).</p>
+<p>From a personal experience, I&#39;ve found that it is also easier to organize all of the edge cases since the structure is simpler as a linear flow, opposed to a tree. It&#39;s a bit less pure, but more relevant to linear user&nbsp;actions.</p>
+<p>On my current project, it yielded close to a 10x performance boost to my test suite (400 seconds to 40 seconds). I plan on using this pattern more often, since it also scales in complexity better than a describe (context)&nbsp;tree.</p>
+</section><div id="disqus_thread"></div><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'briantakita'; // required: replace example with your forum shortname
+var hrefSegments = window.location.href.replace(/\/$/, "").split("/");
+var disqus_identifier = 'briantakita-' + hrefSegments[hrefSegments.length - 1];
+var disqus_title = document.getElementsByTagName("h1")[0].innerText;
+var disqus_url = window.location.href;
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><noscript><Please>enable JavaScript to view the</Please><a href="http://disqus.com/?ref_noscript"><comments>powered by Disqus.</comments></a></noscript><a href="http://disqus.com" class="dsq-brlink"><comments>powered by</comments><span class="logo-disqus"></span></a></article></div></div><footer><div class="content-wrap"><div class="nav"><a href="/">« Full blog</a></div><section class="about"><p>Brian Takita seeks to expand consciousness within himself &amp; with people around him.</p>
+</section><section class="links"><h2 id="brian-takita-online-">Brian Takita online:</h2>
+<ul>
+<li><a href="http://about.me/brian_takita">about.me</a></li>
+<li><a href="http://www.linkedin.com/in/briantakita">LinkedIn</a></li>
+<li><a href="https://github.com/btakita">Github</a></li>
+<li><a href="https://www.facebook.com/brian.takita.creations">Facebook - Fan Page</a></li>
+<li><a href="https://www.facebook.com/brian.takita">Facebook - Personal</a></li>
+<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>
+<li><a href="https://twitter.com/briantakita">Twitter</a></li>
+<li><a href="http://briantakita.wordpress.com/">Wordpress Blog</a></li>
+<li><a href="http://briantakita.tumblr.com/">Tumblr Blog</a></li>
+<li><a href="https://plus.google.com/1050179096794581818251">Google+</a></li>
+<li><a href="https://www.quora.com/Brian-Takita">Quora</a></li>
+<li><a href="http://pivotallabs.com/author/brian/">Pivotal Labs</a></li>
+</ul>
+</section><section class="feed"><a href="/feed.xml"><img src="/images/Feed-icon.svg" alt="Atom Feed"></a></section></div><section class="copy"><p>&copy; 2014 Brian Takita &mdash; powered by&nbsp;<a href="https://github.com/jnordberg/wintersmith">Wintersmith</a></p></section></footer><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43791623-1', 'briantakita.com');
+ga('send', 'pageview');
+console.log("Loaded Google Analytics");</script></body></html>
