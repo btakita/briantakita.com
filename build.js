@@ -15,6 +15,7 @@ var Metalsmith = require('metalsmith')
   ;
 
 Metalsmith(__dirname)
+  .use(appendDate)
   .use(collections({
     pages: {
       pattern: "pages/*.md"
@@ -28,14 +29,13 @@ Metalsmith(__dirname)
   .use(markdown())
   .use(json())
   .use(branch("posts/*")
-    .use(appendDate)
     .use(appendIntro)
     .use(permalinks({pattern: ':collection/:title'}))
-    .use(appendUrl)
   )
   .use(branch("archive.html")
     .use(permalinks({pattern: ':title'}))
   )
+  .use(appendUrl)
   .use(templates({
     engine: "jade",
     _: _,
@@ -72,15 +72,21 @@ function json() {
 }
 function appendUrl(files, metalsmith, done) {
   for (file in files) {
-    files[file].url = "/" + files[file].path;
+    var path = files[file].path;
+    if (path) {
+      files[file].url = "/" + files[file].path;
+    }
   }
   done();
 }
 function appendDate(files, metalsmith, done) {
   for (file in files) {
-    var date = files[file].date = new Date(files[file].date);
-    files[file].dateFormat = moment(date).format('DD. MMMM YYYY');
-    files[file].rfc822date = rfc822(date);
+    var date = files[file].date;
+    if (date) {
+      var date2 = files[file].date = new Date(files[file].date);
+      files[file].dateFormat = moment(date2).format('DD. MMMM YYYY');
+      files[file].rfc822date = rfc822(date2);
+    }
   }
   done();
 }

@@ -1,7 +1,7 @@
 deploy:
 
 	rm -rf ./build
-	wintersmith build
+	node build.js
 	cd ./build && \
 	git init . && \
 	git add . && \
