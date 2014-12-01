@@ -6,5 +6,5 @@ deploy:
 	git init . && \
 	git add . && \
 	git commit -m "Deploy"; \
-	git push "git@github.com:btakita/btakita.github.io.git" master:gh-pages --force && \
+	git push "git@github.com:btakita/btakita.github.io.git" master:master --force && \
 	rm -rf .git
