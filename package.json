@@ -1,11 +1,8 @@
 {
   "dependencies": {
-    "moment": "2.x",
+    "moment": "2.3.x",
     "underscore": "1.4.x",
     "typogr": "0.5.x"
   },
-  "repository": "none",
-  "devDependencies": {
-    "grunt-wintersmith": "0.0.2"
-  }
+  "repository": "none"
 }
