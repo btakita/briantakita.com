@@ -5,9 +5,11 @@ date: 9/7/13 10:16 AM
 template: article.jade
 ---
 
-![From Parthiv Haldipur http://www.flickr.com/photos/hmmmmm/3903176411/ - Licensed under Creative Commons](neurons.jpg)
+![From Parthiv Haldipur http://www.flickr.com/photos/hmmmmm/3903176411/ - Licensed under Creative Commons](/images/neurons.jpg)
 
 I have recently released [backbone-signal](https://github.com/btakita/backbone-signal), which is a [reactive programming](https://en.wikipedia.org/wiki/Reactive_programming) library with a practical & javascripty model api.
+
+<span class="more"></span>
 
 ```javascript
 // backbone-signal extends Backbone.Model

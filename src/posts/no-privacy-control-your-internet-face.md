@@ -9,6 +9,8 @@ template: article.jade
 
 With all of the revelations over how the NSA is snooping over your personal communications, companies storing and controlling your data, encryption backdoors and the fact that it's always crackable, one thing is becoming clear.
 
+<span class="more"></span>
+
 **There is no privacy on the internet**.
 
 Ok, maybe if you are really good at covering your tracks, then there is a bit of privacy, but for most people doing most tasks, privacy is an illusion and has been for a while.

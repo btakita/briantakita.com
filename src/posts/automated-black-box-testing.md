@@ -11,6 +11,8 @@ When you write tests against your user facing requirements (black box and accept
 
 When you use automated tests for white box testing (unit tests), you lock down how your software is designed.
 
+<span class="more"></span>
+
 I've worked on products which often has changing requirements, and whenever there were unit tests and I needed to make breaking internal changes, I've found myself having to make a decision to delete the tests, refactor them, or change the software in a different way.
 
 That false decision led me to totally eschew white box testing as much as possible in favor of black box testing. It's been working great, since I'm free to improve the design of the software without being hobbled by irrelevant tests and false positives.

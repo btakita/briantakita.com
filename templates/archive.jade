@@ -5,8 +5,8 @@ extends layout
 
 block content
   - var lineHeight = 2.2;
-  - var archive = _.chain(env.helpers.getArticles(contents)).groupBy(function(item) {
-  -   return item.date.getFullYear()
+  - var archive = _.chain(posts).groupBy(function(post) {
+  -   return post.date.getFullYear()
   - }).value()
   - var map = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   section.archive
@@ -18,16 +18,16 @@ block content
         - var last = (years.length - 1 == i);
         li.year(style='height: '+h+'em')
           span.year-label(style='line-height: '+h+'em', class=(last?'last':''))= year
-          - var yearArticles = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
-          - var months = Object.keys(yearArticles);
+          - var yearPosts = _.groupBy(archive[year], function(item) { return map[item.date.getMonth()] })
+          - var months = Object.keys(yearPosts);
           ul
             each month, i in months
-              - var articles = yearArticles[month]
-              - h = articles.length * lineHeight;
+              - var posts = yearPosts[month]
+              - h = posts.length * lineHeight;
               - var lastM = last && (months.length - 1 == i);
               li.month(style='height: '+h+'em')
                 span.month-label(style='line-height: '+h+'em', class=(lastM?'last':''))= month
-                each article, i in articles
-                  - var lastA = lastM && (articles.length - 1 == i);
-                  a(href=article.url, style='line-height: '+lineHeight+'em', class=(lastA?'last':''))= article.title
+                each post, i in posts
+                  - var lastA = lastM && (posts.length - 1 == i);
+                  a(href=post.url, style='line-height: '+lineHeight+'em', class=(lastA?'last':''))= post.title
 

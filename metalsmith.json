@@ -1,0 +1,21 @@
+{
+  "source": "src",
+  "destination": "build",
+  "metadata": {
+    "title": "Brian Takita",
+    "description": "Mission: Expand Consciousness"
+  },
+  "plugins": {
+    "metalsmith-drafts": {},
+    "metalsmith-jade": {
+      "pretty":false
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-permalinks": {
+      "pattern": ":title"
+    },
+    "metalsmith-templates": {
+      "engine": "jade"
+    }
+  }
+}

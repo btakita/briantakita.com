@@ -10,6 +10,7 @@ The wonderful web makes it very easy for someone to publish their thoughts and o
 
 Fortunately, you can take control over your name on the web, without having to spend thousands of dollars that online reputation repair firms charge.
 
+<span class="more"></span>
 
 [Brandyourself.com](http://brandyourself.com) makes it easy to inexpensively control your SEO destiny. Here is my [profile](http://briantakita.brandyourself.com/).
 

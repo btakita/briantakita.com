@@ -1,6 +1,3 @@
----
-view: none
----
 ##Brian Takita online:
 
 * [about.me](http://about.me/brian_takita)

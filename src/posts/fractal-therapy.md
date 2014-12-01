@@ -9,6 +9,8 @@ The Universe & nature evolves as fractals over time and space. If you aren't fam
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/LemPnZn54Kw" frameborder="0" allowfullscreen></iframe>
 
+<span class="more"></span>
+
 Being in nature, listening to the ocean, listening to a heartbeat. All of these activities are soothing and reduce stress. These subjects are full of fractals.
 
 Indeed, even watching a deep dive into a fractal is soothing.

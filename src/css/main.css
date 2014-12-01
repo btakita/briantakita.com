@@ -121,11 +121,9 @@ iframe {
   margin-top: -0.3em;
 }
 
-body.article-detail > header h1 {
-  font-size: 2.5em;
+body.article-detail > header h2 {
   font-style: italic;
-  font-weight: 400;
-  margin-bottom: -0.2em;
+  text-align: center;
 }
 
 body.article-detail > header {

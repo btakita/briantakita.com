@@ -9,6 +9,8 @@ Automated testing helps to ensure that your software does not have regressions a
 
 I'm a [fan of black box](/articles/automated-black-box-testing/) testing, because it is decoupled from the implementation. The implication is the [**what** is verified, rather than the **how**](http://briantakita.wordpress.com/2013/09/15/why-its-better-to-strive-toward-accomplishment-rather-than-method/).
 
+<span class="more"></span>
+
 Spec frameworks such as rspec and jasmine give you the constructs to perform edge case testing. Unfortunately, the same setup is repeated when verifying different aspects of the state of the system. This leads to long test suites and even to the motivation to skip edge case testing (sacrificing test coverage) or combining tests (sacrificing clarity of intent of the test).
 
 This juxtaposition led me to create jasmine-flow. The premise of jasmine-flow is to organize tests into a series of steps which you can make assertions up reaching a certain state.
