@@ -2,10 +2,12 @@
 title: Philosophy - Existence is God & God Exists
 author: briantakita
 date: 12/1/14 2:30 PM
+description: Philosophies are conceptual models. Conceptual models have a domain language. If we expand the scope of certain definitions, we have the ability to expand consciousness. If we are able to make more associations between concepts, consciousness expands.
+image: http://www.briantakita.com/images/1200px-Creation_of_Adam.jpg
 template: article.jade
 ---
 
-![From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons](/images/1200px-Creación_de_Adám.jpg)
+![From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons](/images/1200px-Creation_of_Adam.jpg)
 
 Philosophies are conceptual models. Conceptual models have a domain language. If we expand the scope of certain definitions, we have the ability to expand consciousness. If we are able to make more associations between concepts, consciousness expands.
 
