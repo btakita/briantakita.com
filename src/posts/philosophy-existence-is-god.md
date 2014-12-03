@@ -11,7 +11,7 @@ I'm evolving a <a href="https://github.com/btakita/philosophy" target="_blank">p
 
 <span class="more"></span>
 
-### The Story about a tool to explore Existence
+### A tool to explore Existence
 
 My motive is to build a tool that can use everyday terminology to explore the scope of Existence. The domain is Existence & the task is to create a domain language to explore Existence.
 
