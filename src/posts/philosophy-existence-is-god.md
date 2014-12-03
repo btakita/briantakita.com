@@ -1,5 +1,5 @@
 ---
-title: Philosophy - Existence is God
+title: Philosophy - Existence is God & God Exists
 author: briantakita
 date: 12/1/14 2:30 PM
 template: article.jade
@@ -25,11 +25,13 @@ For example, if we wish to focus on the Physical Universe, Physical Existence me
 
 ### God Exists
 
-I'm happy to utilize, and prove, <a href="https://github.com/btakita/philosophy/blob/master/src/god.md" target="_blank">God's</a> existence. Since Existence is God and Existence, well exists, God Exists in this Philosophy. It's about how you define God & Existence.
+I'm happy to utilize, and prove, <a href="https://github.com/btakita/philosophy/blob/master/src/god.md" target="_blank">God's</a> existence. Since Existence is God and Existence, well exists, God Exists in this Philosophy. It's about how God & Existence is defined.
 
-While there has been some critique on Ann Rand's statement "Existence Exists", <a href="http://edwardfeser.blogspot.com/2014/01/does-existence-exist.html" target="_blank">these</a> <a href="http://maverickphilosopher.typepad.com/maverick_philosopher/2011/05/ayn-rand-on-existence-exists.html" target="_blank">critiques</a> are based on the definition of "exists" being scoped to mean "physical existence". The "Existence is God" Philosophy defines existence as "Everything that 'is', or more simply, everything". That includes all thoughts ever thought, all possible concepts, including the notion of Existence being everything. Thus Existence Exists. Thus God Exists.
+While there has been some critique on Ann Rand's statement "Existence Exists", <a href="http://edwardfeser.blogspot.com/2014/01/does-existence-exist.html" target="_blank">these</a> <a href="http://maverickphilosopher.typepad.com/maverick_philosopher/2011/05/ayn-rand-on-existence-exists.html" target="_blank">critiques</a> are based on the definition of "exists" being scoped to mean "physical existence".
 
-I enjoy speaking to <a href="https://github.com/btakita/philosophy/blob/master/src/atheism.md" target="_blank">atheists</a> because ideas from atheism led to me expanding the scope of God. Also, atheists tend to be skeptical toward dogmas, which leads to further exploration. This exploration expands consciousness, which I have as one of my primary life goals.
+The "Existence is God" Philosophy defines existence as "Everything that 'is', or more simply, everything" or the <a href="https://github.com/btakita/philosophy/blob/master/src/universal-set.md" target="_blank">Universal Set</a> of everything. That includes all thoughts ever thought, all possible concepts, including the notion of Existence being everything. Thus Existence Exists. Everything (even fiction) exists. Thus God Exists.
+
+I enjoy speaking to <a href="https://github.com/btakita/philosophy/blob/master/src/atheism.md" target="_blank">atheists</a> because ideas from atheism led to me expanding the scope of God. Also, atheists tend to be skeptical toward dogmas, which leads to further exploration. This exploration expands consciousness.
 
 ### Exploration & Collaboration
 
