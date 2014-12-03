@@ -9,12 +9,12 @@ html(lang='en')
       meta(name='viewport', content='width=device-width')
       meta(property='og:url' content=(domain + url + "/"))
       meta(property='og:title' content=title)
-      meta(property='og:description' content=description || "")
+      meta(property='og:description' content=description || siteDescription)
       meta(property='og:image' content=image || "")
       title
         block title
           = name
-      link(rel='alternate', href='/feed.xml', type='application/rss+xml', title=description)
+      link(rel='alternate', href='/feed.xml', type='application/rss+xml', title=siteDescription)
       link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Anonymous+Pro:400,700,400italic,700italic|Merriweather:400,700,300')
       link(rel='stylesheet', href='/css/main.css')
   body(class=bodyclass)
@@ -24,7 +24,7 @@ html(lang='en')
           div.logo
             h1
               a(href="/")= name
-            p.description= description
+            p.description= siteDescription
             block subheader
     div#content
       div.content-wrap

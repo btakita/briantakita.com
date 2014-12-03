@@ -8,7 +8,7 @@ rss(version='2.0',
     title= "Brian Takita"
     atom:link(href=domain + '/feed.xml', rel='self', type='application/rss+xml')
     | #{"<link>"+domain+"</link>"}
-    description= description
+    description= siteDescription
     pubDate= posts[0].rfc822date
     language en
     for post in posts

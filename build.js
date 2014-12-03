@@ -45,7 +45,7 @@ Metalsmith(__dirname)
     moment: moment,
     domain: "http://www.briantakita.com",
     name: "Brian Takita",
-    description: "Mission: Expand Consciousness",
+    siteDescription: "Mission: Expand Consciousness",
     aboutSection: marked(fs.readFileSync(__dirname + "/src/partials/about.md").toString()),
     linksSection: marked(fs.readFileSync(__dirname + "/src/partials/links.md").toString())
   }))
