@@ -14,6 +14,7 @@
     "metalsmith-jade": "^0.0.3",
     "metalsmith-markdown": "^0.2.1",
     "metalsmith-permalinks": "^0.4.0",
+    "metalsmith-redirect": "^1.0.2",
     "metalsmith-templates": "^0.6.0",
     "moment": "^2.8.4",
     "then-jade": "^2.2.1",

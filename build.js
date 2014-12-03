@@ -5,6 +5,7 @@ var Metalsmith = require('metalsmith')
   , collections = require('metalsmith-collections')
   , permalinks  = require('metalsmith-permalinks')
   , templates  = require('metalsmith-templates')
+  , redirect = require("metalsmith-redirect")
   , typogr = require("typogr")
   , marked = require('marked')
   , fs = require("fs")
@@ -47,6 +48,9 @@ Metalsmith(__dirname)
     description: "Mission: Expand Consciousness",
     aboutSection: marked(fs.readFileSync(__dirname + "/src/partials/about.md").toString()),
     linksSection: marked(fs.readFileSync(__dirname + "/src/partials/links.md").toString())
+  }))
+  .use(redirect({
+    '/posts/philosophy-existence-is-god': '/posts/philosophy-existence-is-god-god-exists'
   }))
   .destination('./build')
   .build(function(err) {

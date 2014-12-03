@@ -5,6 +5,8 @@ date: 12/1/14 2:30 PM
 template: article.jade
 ---
 
+![From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons](/images/1200px-Creación_de_Adám.jpg)
+
 Philosophies are conceptual models. Conceptual models have a domain language. If we expand the scope of certain definitions, we have the ability to expand consciousness. If we are able to make more associations between concepts, consciousness expands.
 
 I'm evolving a <a href="https://github.com/btakita/philosophy" target="_blank">philosophy</a> that has it's own <a href="https://github.com/btakita/philosophy/blob/master/src/domain-driven-design.md" target="_blank">domain language</a>. The domain language is similar to their common cultural definitions, however I expand the scope of these words. Expanding the scope of these words enables conceptual patterns to be reused across different scopes in <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>.
