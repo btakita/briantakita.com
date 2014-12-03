@@ -1,10 +1,10 @@
-xml
-  urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    url
-      loc= domain + "/"
-      priority 0.5
-    - for(i in posts) {if (posts[i]) {
-    url
-      loc= domain + posts[i].url
-      priority 0.5
-    - }}
+doctype xml
+urlset(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+  url
+    loc= domain + "/"
+    priority 0.5
+  - for(i in posts) {if (posts[i]) {
+  url
+    loc= domain + posts[i].url
+    priority 0.5
+  - }}
