@@ -9,9 +9,9 @@ template: article.jade
 <p style="text-align: center; display: block;"><img src="/images/unicorn.jpg" alt="From http://casiestewart.com/unicornrainbow/ - https://lh4.googleusercontent.com/-ylo97AfxI9c/SuW-sv-oDII/AAAAAAAAGxc/tVIc_fh1A9A/s2048/unicorn.jpg - Licensed under Creative Commons" style="width: 376px; display: inline;">
 </p>
 
-Magic exists! Well, if you have listened to me lately, you will hear that <a href="https://github.com/btakita/philosophy/blob/master/src/exist.md" target="_blank">everything exists (including fiction)</a>. When everything exists, we can recapture the entirety of language from those who wish to impose restrictions on <a href="" target="_blank">Existence</a>. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
+<a href="https://github.com/btakita/philosophy/blob/master/src/magic.md" target="_blank">Magic</a> exists! Well, if you have listened to me lately, you will hear that <a href="https://github.com/btakita/philosophy/blob/master/src/exist.md" target="_blank">everything exists (including fiction)</a>. When everything exists, we can recapture the entirety of language from those who wish to impose restrictions on <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
 
-I'm happy to see my own homespun approach have a stong connection to an established Philosophical branch. The <a href="http://en.wikipedia.org/wiki/Philosophy_of_language" target="_blank">Philosophy of Language (Wikipedia)</a> brings concepts together into a system of logic to yield magical & insightful connections in <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>.
+I'm happy to see my own homespun approach have a stong connection to an established Philosophical branch. The <a href="http://en.wikipedia.org/wiki/Philosophy_of_language" target="_blank">Philosophy of Language (Wikipedia)</a> brings concepts together into a system of logic to yield magical & insightful connections in Existence.
 
 <span class="more"></span>
 
@@ -27,7 +27,7 @@ My practice started with agile software development as a consultant for startups
 
 Domain Driven Design states coherence is facilitated when members of an organization speak the same domain language language. That means that when everybody in the business uses the same terminology, better overall communication, better overall thought, & more innovative connections. The necessary precision is determined by what the concept is being used for (i.e. a sales presentation or software implementation).
 
-I also grew up with an interest in spirituality & the nature of Existence. I wanted to unify everything in Existence. What if we use Domain Driven Design principles where the Domain is Existence? Magic!
+I also grew up with an interest in <a href="https://github.com/btakita/philosophy/blob/master/src/spirituality.md" target="_blank">spirituality</a> & the nature of Existence. I wanted to unify everything in Existence. What if we use Domain Driven Design principles where the Domain is Existence? Magic!
 
 ## Culture & Magic
 
