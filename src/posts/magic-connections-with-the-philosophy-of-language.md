@@ -1,7 +1,7 @@
 ---
 title: Magic Connections with the Philosophy of Language
 author: briantakita
-date: 12/9/14 2:30 AM
+date: 12/9/14 11:15 PM
 description: Magic exists! Well, if you have listened to me lately, you will hear that everything exists (including fiction). When everything exists, we can recapture the entirety of language from those who wish to impose restrictions on Existence. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
 template: article.jade
 ---
@@ -77,7 +77,7 @@ We can expand the scope of Language to be utilized by any entity signaling anoth
 
 ## Awareness of the Ecosystem of Language
 
-Language is the ecosystem (& battlefield) of culture's mindshare & heartshare by the magic users who propagate definitions & meaning. Language influences (even determines) how we, as a culture, act. We, as participating entities, have the power to be aware of & change the language. We can influence each other to become harmonious, loving, intelligent, peaceful, beautiful, playful, creative, magical.
+Language is an evolutionary ecosystem of the culture's mindshare & heartshare by those who propagate definitions & meaning. Language influences (even determines) how we, as a culture, act. We, as participating entities, have the power to be aware of & change the language. We can influence each other to become harmonious, loving, intelligent, peaceful, beautiful, playful, creative, magical.
 
 Language is also a tool of empowerment. Awareness of context & choice of words effectively shape your mental model & the model of those who listen to you. Language, in it's many forms, is a key tool that has been Expanding Consciousness of Life.
 

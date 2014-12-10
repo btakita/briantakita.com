@@ -50,6 +50,14 @@ Metalsmith(__dirname)
     linksSection: marked(fs.readFileSync(__dirname + "/src/partials/links.md").toString())
   }))
   .use(redirect({
+    '/articles/automated-black-box-testing/': '/posts/automated-black-box-testing/',
+    '/articles/backbone-signal-practical-reactive-programming-in-javascript/': '/posts/backbone-signal-practical-reactive-programming-in-javascript/',
+    '/articles/diy-seo/': '/posts/diy-seo/',
+    '/articles/fast-and-thorough-testing-with-jasmine-flow/': '/posts/fast-and-thorough-testing-with-jasmine-flow/',
+    '/articles/fractal-therapy/': '/posts/fractal-therapy/',
+    '/articles/github-pages-custom-dns-gotcha/': '/posts/github-pages-custom-dns-gotcha/',
+    '/articles/no-privacy-control-your-internet-face/': '/posts/no-privacy-control-your-internet-face/',
+    '/articles/re-doing-good-in-the-addiction-economy/': '/posts/re-doing-good-in-the-addiction-economy/',
     '/posts/philosophy-existence-is-god': '/posts/philosophy-existence-is-god-god-exists'
   }))
   .destination('./build')
