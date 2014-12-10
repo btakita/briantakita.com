@@ -2,14 +2,14 @@
 title: Magic Connections with the Philosophy of Language
 author: briantakita
 date: 12/9/14 11:15 PM
-description: Magic exists! Well, if you have listened to me lately, you will hear that everything exists (including fiction). When everything exists, we can recapture the entirety of language from those who wish to impose restrictions on Existence. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
+description: Magic exists! Well, if you have listened to me lately, you will hear that everything exists (including fiction). When everything exists, we can recapture the entirety of language from those who impose restrictions on Existence. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
 template: article.jade
 ---
 
 <p style="text-align: center; display: block;"><img src="/images/unicorn.jpg" alt="From http://casiestewart.com/unicornrainbow/ - https://lh4.googleusercontent.com/-ylo97AfxI9c/SuW-sv-oDII/AAAAAAAAGxc/tVIc_fh1A9A/s2048/unicorn.jpg - Licensed under Creative Commons" style="width: 376px; display: inline;">
 </p>
 
-<a href="https://github.com/btakita/philosophy/blob/master/src/magic.md" target="_blank">Magic</a> exists! Well, if you have listened to me lately, you will hear that <a href="https://github.com/btakita/philosophy/blob/master/src/exist.md" target="_blank">everything exists (including fiction)</a>. When everything exists, we can recapture the entirety of language from those who wish to impose restrictions on <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
+<a href="https://github.com/btakita/philosophy/blob/master/src/magic.md" target="_blank">Magic</a> exists! Well, if you have listened to me lately, you will hear that <a href="https://github.com/btakita/philosophy/blob/master/src/exist.md" target="_blank">everything exists (including fiction)</a>. When everything exists, we can recapture the entirety of language from those who impose restrictions on <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
 
 I'm happy to see my own homespun approach have a stong connection to an established Philosophical branch. The <a href="http://en.wikipedia.org/wiki/Philosophy_of_language" target="_blank">Philosophy of Language (Wikipedia)</a> brings concepts together into a system of logic to yield magical & insightful connections in Existence.
 
