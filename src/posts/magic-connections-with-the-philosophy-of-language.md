@@ -62,15 +62,15 @@ Language has a magical effect on entities. Language sets the conceptual scope of
 
 Marketing entities understand the power of language & images. That's why Marketing departments & politicians spend hours picking the right name & terminology. That's why you see ads defining & redefining words for the audience. That's why some people are given labels, like "terrorist", "freedom fighter", "anarchist", "republican", "democrat", etc. These words affect the perceived identities of the people with the labels. These words make it easy to kill, to oppress, & to ignore.
 
-## And What is Language?
+## What is Language?
 
 Language has often been thought of as a human trait.
 
-<a href="http://en.wikipedia.org/wiki/Language" target="_blank">Language (Wikipedia)</a> states:
+<a href="http://en.wikipedia.org/wiki/Language" target="_blank">Language (Wikipedia)</a>:
 
 > Language is the human ability to acquire and use complex systems of communication, and a language is any specific example of such a system.
 
-Utilizing <a href="http://thefreedictionary.com/language" target="_blank">Language (thefreedictionary.com)</a>:
+<a href="http://thefreedictionary.com/language" target="_blank">Language (thefreedictionary.com)</a>:
 
 > Communication of thoughts and feelings through a system of arbitrary signals, such as voice sounds, gestures, or written symbols.
 
