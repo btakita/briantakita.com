@@ -5,9 +5,9 @@ date: 9/8/13 2:13 PM
 template: article.jade
 ---
 
-From my [wordpress blog](http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-addiction-economy/)
+From my <a href="http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-addiction-economy/" target="_blank">wordpress blog</a>
 
-[Doing Good in the Addiction Economy](http://kajsotala.fi/2013/09/doing-good-in-the-addiction-economy/)
+<a href="http://kajsotala.fi/2013/09/doing-good-in-the-addiction-economy/" target="_blank">Doing Good in the Addiction Economy</a>
 
 Interesting but long winded post, IMO. But then, maybe my impatience toward long posts is telling in the short term rewards culture we live in. Of course time is valuable, and trying to get to the core concept of some the writing is often the goal. We don’t seem to savor the journey as much, or the journey has changed to be our lives toward success…
 
