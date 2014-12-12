@@ -5,17 +5,17 @@ date: 9/7/13 3:13 PM
 template: article.jade
 ---
 
-The Universe & nature evolves as fractals over time and space. If you aren't familiar, here's a 55 minute documentary. It's worth watching.
+<a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a> (Universe & <a href="https://github.com/btakita/philosophy/blob/master/src/nature.md" target="_blank">nature</a>) evolves as <a href="https://github.com/btakita/philosophy/blob/master/src/fractal.md" target="_blank">fractals</a> over time and space. If you aren't familiar, here's a 55 minute documentary. It's worth watching.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/LemPnZn54Kw" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/HvXbQb57lsE&origin=http://www.briantakita.com" frameborder="0" allowfullscreen></iframe></p>
 
 <span class="more"></span>
 
-Being in nature, listening to the ocean, listening to a heartbeat. All of these activities are soothing and reduce stress. These subjects are full of fractals.
+Being in nature, listening to the ocean, listening to a heartbeat. All of these activities are soothing and reduce stress. Existence is full of fractals.
 
-Indeed, even watching a deep dive into a fractal is soothing.
+Even watching a fractal zoom is soothing. Watch this in full screen!
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/0jGaio87u3A" frameborder="0" allowfullscreen></iframe>
+<p><iframe width="420" height="315" src="https://www.youtube.com/embed/PbwaFQ2r2c4&origin=http://www.briantakita.com" frameborder="0" allowfullscreen></iframe></p>
 
 It turns out there are some [therapies](https://www.google.com/search?q=fractal+therapy) that utilize Fractals. An [article in Psychology Today](http://www.psychologytoday.com/blog/codes-joy/201209/fun-fractals) suggests spending 20 minutes a day for a week being exposed to fractals. This could mean being in nature, blowing bubbles, looking at artwork with Fractals...
 
