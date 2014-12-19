@@ -24,7 +24,7 @@ Our <a href="https://github.com/btakita/philosophy/blob/master/src/culture.md" t
 
 > History can also refer to the academic discipline which uses a narrative to examine and analyse a sequence of past events, and objectively determine the patterns of cause and effect that determine them.
 
-Our culture says History is the recorded narrative of the sequence of Human events. However, we've heard the usages: The history of human civilization. The history of Mars. The history of the Universe. The history of Middle Earth. This indicates that the vernacular has expanded the definition of history to include all of time and fiction worlds.
+Our culture says History is the recorded narrative of the sequence of Human events. However, we've heard the usages: The history of human civilization; The history of Mars; The history of the Universe; The history of Middle Earth. This indicates that the vernacular has expanded the definition of history to include all of time and fiction worlds.
 
 <a href="http://en.wikipedia.org/wiki/Biography" target="_blank">Biographies</a> & <a href="http://en.wikipedia.org/wiki/Autobiography" target="_blank">Autobiographies</a> are also considered history.
 
