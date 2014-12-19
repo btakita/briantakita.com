@@ -5,7 +5,9 @@ date: 9/7/13 10:16 AM
 template: article.jade
 ---
 
+<a href="/posts/backbone-signal-practical-reactive-programming-in-javascript/">
 ![From Parthiv Haldipur http://www.flickr.com/photos/hmmmmm/3903176411/ - Licensed under Creative Commons](/images/neurons.jpg)
+</a>
 
 I have recently released <a href="https://github.com/btakita/backbone-signal" target="_blank">backbone-signal (github.com)</a>, which is a <a href="https://en.wikipedia.org/wiki/Reactive_programming" target="_blank">reactive programming (Wikipedia)</a> library with a practical & javascripty model api.
 
