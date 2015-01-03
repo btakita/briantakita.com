@@ -5,6 +5,7 @@ var Metalsmith = require('metalsmith')
   , collections = require('metalsmith-collections')
   , permalinks  = require('metalsmith-permalinks')
   , templates  = require('metalsmith-templates')
+  , ignore = require("metalsmith-ignore")
   , redirect = require("metalsmith-redirect")
   , typogr = require("typogr")
   , marked = require('marked')
@@ -27,6 +28,10 @@ Metalsmith(__dirname)
       reverse: true
     }
   }))
+  .use(ignore([
+    "pages/*.draft",
+    "posts/*.draft"
+  ]))
   .use(markdown())
   .use(json())
   .use(branch("posts/*")
@@ -58,7 +63,8 @@ Metalsmith(__dirname)
     '/articles/github-pages-custom-dns-gotcha/': '/posts/github-pages-custom-dns-gotcha/',
     '/articles/no-privacy-control-your-internet-face/': '/posts/no-privacy-control-your-internet-face/',
     '/articles/re-doing-good-in-the-addiction-economy/': '/posts/re-doing-good-in-the-addiction-economy/',
-    '/posts/philosophy-existence-is-god': '/posts/philosophy-existence-is-god-god-exists'
+    '/posts/philosophy-existence-is-god/': '/posts/do-not-worry-everything-exists/',
+    '/posts/philosophy-existence-is-god-god-exists/': '/posts/do-not-worry-everything-exists/'
   }))
   .destination('./build')
   .build(function(err) {

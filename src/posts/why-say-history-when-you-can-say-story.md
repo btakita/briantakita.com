@@ -34,4 +34,4 @@ We already can use story for history since both are a recounting of a "sequence 
 
 History can also be used for story since the vernacular usage of history includes fiction worlds, geological events, & events in the physical Universe.
 
-The defining line is blurred. Story & History can be used Interchangeably.
+The defining line is blurred. Story & History can be used Interchangeably. The usages of Story & History are connected. Enjoy the connection.
