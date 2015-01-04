@@ -24,14 +24,14 @@ Our <a href="https://github.com/btakita/philosophy/blob/master/src/culture.md" t
 
 > History can also refer to the academic discipline which uses a narrative to examine and analyse a sequence of past events, and objectively determine the patterns of cause and effect that determine them.
 
-Our culture says History is the recorded narrative of the sequence of Human events. However, we've heard the usages: The history of human civilization; The history of Mars; The history of the Universe; The history of Middle Earth. This indicates that the vernacular has expanded the definition of history to include all of time and fiction worlds.
+Our culture says History is the recorded narrative of the sequence of Human events. However, we've heard the usages: The history of human civilization; The history of Mars; The history of the Universe; The history of Middle Earth. The vernacular has expanded the definition of history to include all of time and fiction worlds.
 
 <a href="http://en.wikipedia.org/wiki/Biography" target="_blank">Biographies</a> & <a href="http://en.wikipedia.org/wiki/Autobiography" target="_blank">Autobiographies</a> are also considered history.
 
 ## Story & History can be used Interchangeably
 
-We already can use story for history since both are a recounting of a "sequence of events".
+We already can use story in place of history since both are a recounting of a "sequence of events".
 
-History can also be used for story since the vernacular usage of history includes fiction worlds, geological events, & events in the physical Universe.
+History can also be used in place of story since the vernacular usage of history includes fiction worlds, geological events, & physical events.
 
 The defining line is blurred. Story & History can be used Interchangeably. The usages of Story & History are connected. Enjoy the connection.

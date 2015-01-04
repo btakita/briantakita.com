@@ -27,18 +27,24 @@ Adding context gives precise meaning. An atheist can accurately say; God does no
 
 ### Everything is Governed by Nature
 
-The nature of Physical & Conceptual Existence follows behaviour that we can study using the arts (spirituality included) & sciences.
+The nature of Physical & Conceptual Existence follows behaviour that we can study using the arts (spirituality included) & sciences. Supernatural phenomena is caused by unknown Natural Law.
+
+### The Nature of God is Defined by each Person
 
 God is a concept, who's meaning is as individual as the person who hold it.
 
-### The Nature of God
-
 God, to me, is Existence (conceptual & physical). Every person has a belief system. The simple abstraction of the belief system is the God, even if we don't call it God.
 
-Together, our actions create God; We can create God the jealous, wrathful, & cruel; We can create God the loving, compassionate, & nurturing.
+God involves creation. Our feelings, thoughts, & actions create God; We can create God the jealous, wrathful, & cruel; We can create God the loving, compassionate, & nurturing.
+
+### The Need for Exoteric Religion?
+
+A person's belief system influences the person's thoughts, actions, & interpretations.
+
+Some <a href="http://en.wikipedia.org/wiki/Exoteric" target="_blank">Exoteric Religions</a> impose a belief system composed of some outdated traditions. There are unifying ethics that create harmony with self & others, however these ethics can be taught without Exoteric Religion.
 
 ### Our Nature & Calling
 
 Having compassion for ourselves & each other connects us in harmonious interdependence. A symbiotic spiral of evolving intelligence, love, dignity.
 
-When we love, respect, & have compassion for each other, we live. We love. God bless!
+When we love, respect, & have compassion for ourselves & each other, we live.
