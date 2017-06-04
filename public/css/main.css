@@ -222,8 +222,7 @@ footer .feed img {
   display: inline;
 }
 
-.post .content img {
-  display: block;
+#content img {
   width: 100%;
 }
 
