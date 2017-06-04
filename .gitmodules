@@ -1,0 +1,3 @@
+[submodule "ctx-core"]
+	path = ctx-core
+	url = https://github.com/ctx-core/ctx-core.git

@@ -1,7 +1,7 @@
 deploy:
 
 	rm -rf ./build
-	node build.js
+	./build.sh
 	cd ./build && \
 	git init . && \
 	git add . && \

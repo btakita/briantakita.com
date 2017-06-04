@@ -1,0 +1,25 @@
+<Layout
+  bodyclass="articles"
+  prepend__footer="{{prepend__footer}}"
+>
+  <div class="posts">
+    {{#each posts as post}}
+      <PostIntro post="{{post}}"></PostIntro>
+    {{/each}}
+  </div>
+</Layout>
+<script type="text/babel">
+  import Layout from 'layout/layout.html'
+  import PostIntro from 'posts.html/post_intro.html'
+  export default {
+    data() {
+      return {
+        prepend__footer: `<div class="nav"><a href="/archive"> « Archives</a></div>`
+      }
+    },
+    components: {
+      Layout,
+      PostIntro
+    }
+  }
+</script>

@@ -1,0 +1,18 @@
+<section class="post intro">
+  <header><p class="date"><span>{{post.date}}</span></p>
+    <h2><a href="{{post.path}}">{{post.title}}</a></h2></header>
+  <div class="content">
+    {{{post.intro}}}
+    <p class="more"><a href="{{post.path}}">Read more&hellip;</a></p>
+  </div>
+</section>
+<script type="text/babel">
+  import Layout from 'layout/layout.html'
+  import PostIntro from 'posts.html/post_intro.html'
+  export default {
+    components: {
+      Layout,
+      PostIntro
+    }
+  }
+</script>
