@@ -2,7 +2,6 @@
 title: "Re: Doing Good in the Addiction Economy"
 author: Brian Takita
 date: 9/8/13 2:13 PM
-template: article.jade
 ---
 
 From my <a href="http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-addiction-economy/" target="_blank">wordpress blog</a>

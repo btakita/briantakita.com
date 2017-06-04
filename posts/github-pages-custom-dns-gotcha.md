@@ -2,7 +2,6 @@
 title: Github Pages Custom DNS Gotcha
 author: Brian Takita
 date: 9/4/13 11:53 PM
-template: article.jade
 ---
 
 I set up <a href="http://briantakita.com" target="_blank">briantakita.com</a> using <a href="http://pages.github.com/" target="_blank">Github Pages</a> & <a href="http://www.metalsmith.io/" target="_blank">metalsmith</a>. Overall, it took some effort to setup & learn, but it turned out to be fairly painless. In this aritcle, I talk about setting up the DNS to point <a href="http://briantakita.com" target="_blank">briantakita.com</a> to btakita.github.io.

@@ -2,7 +2,6 @@
 title: Automated Black Box Testing
 author: Brian Takita
 date: 9/14/13 5:31 PM
-template: article.jade
 ---
 
 Automated testing encourages your software to behave a certain way going forward into the future.

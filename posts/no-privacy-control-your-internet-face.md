@@ -2,7 +2,6 @@
 title: There is no privacy! Control your internet face
 author: Brian Takita
 date: 9/7/13 9:39 PM
-template: article.jade
 ---
 
 <a href="/posts/no-privacy-control-your-internet-face/">

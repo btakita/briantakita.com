@@ -2,7 +2,6 @@
 title: Fractal Therapy
 author: Brian Takita
 date: 9/7/13 3:13 PM
-template: article.jade
 image: http://www.briantakita.com/images/web-fractal_BloggS74.com_-1024x640.jpg
 ---
 

@@ -2,7 +2,6 @@
 title: backbone-signal - Practical Reactive Programming in Javascript
 author: Brian Takita
 date: 9/7/13 10:16 AM
-template: article.jade
 ---
 
 <a href="/posts/backbone-signal-practical-reactive-programming-in-javascript/">

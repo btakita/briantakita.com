@@ -4,7 +4,6 @@ author: Brian Takita
 date: 12/9/14 11:15 PM
 description: Magic exists! Well, if you have listened to me lately, you will hear that everything exists (including fiction). When everything exists, we can recapture the entirety of language from those who impose restrictions on Existence. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
 image: http://www.briantakita.com/images/unicorn.jpg
-template: article.jade
 ---
 
 <p style="text-align: center; display: block;">
