@@ -108,7 +108,7 @@ async function main() {
           {date: new Date(metadata.date)})
       )
     }
-    return posts
+    return posts.sort((a, b) => b.date - a.date)
   }
   function $build__dir(page={}) {
     return normalize(`build/${$path(page)}`)
