@@ -1,5 +1,5 @@
 <section class="post intro">
-  <header><p class="date"><span>{{post.date}}</span></p>
+  <header><p class="date"><span>{{format__date__prose(post.date)}}</span></p>
     <h2><a href="{{post.path}}">{{post.title}}</a></h2></header>
   <div class="content">
     {{{post.intro}}}
@@ -8,11 +8,13 @@
 </section>
 <script type="text/babel">
   import Layout from 'layout/layout.html'
-  import PostIntro from 'posts.html/post_intro.html'
+  import {format__date__prose} from 'ctx-core/date/lib'
   export default {
+    helpers: {
+      format__date__prose
+    },
     components: {
-      Layout,
-      PostIntro
+      Layout
     }
   }
 </script>

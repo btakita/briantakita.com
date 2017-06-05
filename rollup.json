@@ -1,0 +1,7 @@
+{
+  "browser": [
+  ],
+  "http": [
+    "briantakita.com/http.rollup.js"
+  ]
+}

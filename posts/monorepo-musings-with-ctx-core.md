@@ -1,7 +1,7 @@
 ---
 title: Monorepo Musings with ctx-core
 author: Brian Takita
-date: 2/25/15 11:00
+date: 2/25/16 11:00
 description: Monorepos Create a Holistic Way to Develop Domains & Platforms
 ---
 

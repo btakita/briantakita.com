@@ -1,5 +1,4 @@
 import {promisify} from 'util'
-import {runInThisContext} from 'vm'
 import glob from 'glob'
 import {readFile
       , writeFile} from 'fs'
