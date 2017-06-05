@@ -1,8 +1,8 @@
 deploy:
 
 	rm -rf ./build
-	./build.sh
-	cd ./build && \
+	build-pages.sh
+	pushd build && \
 	git init . && \
 	git add . && \
 	git commit -m "Deploy"; \

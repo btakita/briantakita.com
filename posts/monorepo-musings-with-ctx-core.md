@@ -19,5 +19,3 @@ I'm developing full-stack applications using node.js & es6/es2017. An advantage 
 As desirable features emerge in other libraries, the Framework would need to integrate the new feature. If a library is no longer desirable to you, it may be difficult to decouple from that library. A Framework has inertia. Once a Framework gains a community, it has an obligation to keep a feature set out while maintaining a simple interface. This often has a cost of complexity & loss of freedom.
 
 As any software project (Frameworks included) is used & as new tech emerges, the idioms of the project often change. 
-
----

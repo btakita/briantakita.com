@@ -6,4 +6,3 @@ cp -R public/* build/
 rollup -c ./pages/build.pages.rollup.js
 node ./private/dist/build.pages.js
 echo Done build-pages.sh
-cat
