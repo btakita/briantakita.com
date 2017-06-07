@@ -20,7 +20,7 @@
     "NODE_ENV": "development"
   },
   "legacyWatch": true,
-  "ext": "md,js,html,json,CNAME",
+  "ext": "md,css,js,html,json,CNAME",
   "execMap": {
     "sh": "bash"
   }
