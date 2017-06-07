@@ -1,0 +1,58 @@
+# development only
+
+# HTTP server
+server {
+  listen       80;
+  server_name  briantakita.lvh.me;
+  location / {
+    root /www/briantakita.com;
+    try_files $uri @node;
+  }
+  location @node {
+    proxy_pass          http://localhost:3111;
+    proxy_set_header    Host             $host;
+    proxy_set_header    X-Real-IP        $remote_addr;
+    proxy_set_header    X-Forwarded-For  $proxy_add_x_forwarded_for;
+    proxy_set_header    X-Client-Verify  SUCCESS;
+    proxy_set_header    X-Client-DN      $ssl_client_s_dn;
+    proxy_set_header    X-SSL-Subject    $ssl_client_s_dn;
+    proxy_set_header    X-SSL-Issuer     $ssl_client_i_dn;
+    proxy_read_timeout 1800;
+    proxy_connect_timeout 1800;
+  }
+}
+
+# HTTPS server
+## sudo mkdir -p /etc/nginx/ssl
+## sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/censible-ctx.key -out /etc/ssl/certs/phoenix-ctx.crt
+server {
+  listen       443;
+  server_name  briantakita.lvh.me;
+
+  ssl                  on;
+  ssl_certificate      /etc/ssl/certs/phoenix-ctx.crt;
+  ssl_certificate_key  /etc/ssl/private/censible-ctx.key;
+  ssl_session_timeout  5m;
+
+  ssl_protocols  SSLv2 SSLv3 TLSv1;
+  ssl_ciphers  ALL:!ADH:!EXPORT56:RC4+RSA:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP;
+  ssl_prefer_server_ciphers   on;
+
+  location / {
+    root /www/briantakita.com;
+    try_files $uri @node;
+  }
+  location @node {
+    root /www/briantakita.com;
+    proxy_pass          http://localhost:3111;
+    proxy_set_header    Host             $host;
+    proxy_set_header    X-Real-IP        $remote_addr;
+    proxy_set_header    X-Forwarded-For  $proxy_add_x_forwarded_for;
+    proxy_set_header    X-Client-Verify  SUCCESS;
+    proxy_set_header    X-Client-DN      $ssl_client_s_dn;
+    proxy_set_header    X-SSL-Subject    $ssl_client_s_dn;
+    proxy_set_header    X-SSL-Issuer     $ssl_client_i_dn;
+    proxy_read_timeout 1800;
+    proxy_connect_timeout 1800;
+  }
+}
