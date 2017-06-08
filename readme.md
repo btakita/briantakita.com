@@ -2,6 +2,28 @@
 
 www.briantakita.com site
 
+## Installation
+
+```
+git clone https://github.com/btakita/btakita.github.io.git
+git submodule init
+git submodule update
+```
+
+I recommend using <a href="https://github.com/direnv/direnv" target="_blank">direnv</a>.
+
+## Development
+
+Open a console & run each of the following scripts in it's own tab:
+
+`bin/ensure-watch.sh`
+
+`bin/pages-watch.sh`
+
+`bin/ensure-server.sh`
+
+By default, server is run on http://localhost:3111
+
 ## TODO:
 
 * Feeling Abstraction
