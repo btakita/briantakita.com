@@ -1,7 +1,7 @@
 ---
 title: Automated Black Box Testing
 author: Brian Takita
-date: 9/14/13 5:31 PM
+date: 9/14/13 17:31
 ---
 
 Automated testing encourages your software to behave a certain way going forward into the future.

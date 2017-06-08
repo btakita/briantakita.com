@@ -1,7 +1,7 @@
 ---
 title: Why Say History When You Can Say Story?
 author: Brian Takita
-date: 12/19/14 1:50 AM
+date: 12/19/14 1:50
 description: In culture, we are taught to distinguish history & story as two separate concepts. Some (falsely) think of history being a masculine version of story (his story). However, history & story can be used interchangeably. Here's why.
 ---
 

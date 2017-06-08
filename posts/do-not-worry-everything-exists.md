@@ -1,7 +1,7 @@
 ---
 title: Do Not Worry, Everything Exists
 author: Brian Takita
-date: 1/3/15 3:45 AM
+date: 1/3/15 3:45
 description: Does God exist? Surely, Santa Claus & Unicorns do not exist. Yet we are talking about them. If they don't exist, why & how am I talking about them? Santa Claus & Unicorns do exist, as fictional characters; more on God later. Everything Exists. The concept conceptually exists. It may also physically exist; like the men who name themselves Santa Claus.
 image: http://www.briantakita.com/images/1200px-Creation_of_Adam.jpg
 ---
