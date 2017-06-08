@@ -10,7 +10,7 @@ You can see the source in the <a href="https://github.com/btakita/btakita.github
 
 <hr class="more"/>
 
-I wanted a static site generator that felt like building a custom app, with a domain-driven directory structure, approachable custom build scripts, & isomorphic javascript.
+I wanted a static site generator that felt like building a custom app, with a <a href="https://www.wikiwand.com/en/Domain-driven_design" target="_blank">domain-driven naming conventions</a>, approachable custom build scripts, & isomorphic javascript.
 
 This site was build using existing solutions such as <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="http://wintersmith.io/" target="_blank">Wintersmith</a>, & <a href="http://www.metalsmith.io/" target="_blank">Metalsmith</a>. When using each of these libraries, I felt the desire to strip away the non-essential code & to have things done my way.
 
