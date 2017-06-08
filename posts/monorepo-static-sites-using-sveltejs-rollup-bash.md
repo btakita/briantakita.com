@@ -20,6 +20,14 @@ Some features that I found essential include:
 * generate static html files to serve from github.io
 * isomorphic javascript
 
+With these techs, the following is possible:
+
+* static file builds
+* server side rendering
+* client side rendering
+
+This means the entire html page can be rendered using svelte on the server (or static file) & svelte on the client side (for dynamic components). This means there's no need for other rendering libraries like pug. Only svelte & raw html strings are needed to gain all of the features of dynamic isomorphic components!
+
 With this retooling, I will begin working on components to enhance the experience of authoring & reading meaning-dense information.
 
 Stay tuned&hellip;
