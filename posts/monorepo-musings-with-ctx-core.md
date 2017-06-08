@@ -7,6 +7,8 @@ description: Monorepos Create a Holistic Way to Develop Domains & Platforms
 
 It's been about 2 years since my previous post here. I've been busy working on a few client projects. As a consultant, I'm naturally inclined to accumulate a toolkit of tech (technology & techniques). In the domain of technology, where all levels of the solution stack are subject to change, keeping a toolkit while moving from project to project is a challenge.
 
+<hr class="more"/>
+
 <details>
 <summary>Why I choose Javascript</summary>
 <span>
