@@ -2,6 +2,7 @@
 build/
 node_modules/
 out/
+*.log
 private/dist
 junk.*
 package-lock.json
