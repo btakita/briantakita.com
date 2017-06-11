@@ -1,0 +1,14 @@
+---
+title: When We become a Muse to Our Tools
+author: Brian Takita
+date: 07/11/17 07:00
+---
+What happens when we become a muse to our tools?
+
+When YouTube suggests videos that cater to your proclivities, what you see in your feed will be a reflection on your conscious attention domain.
+ 
+Would the nature of modern conscious enlightenment be a sort of leveling-up administered by machine learning algorithms?
+
+Would we be better off if we consciously create & choose our tools? When would it make sense to take what is easily given with all of the consequences? When would it make sense to create a tool that purely fulfills a need without unwanted attachments?
+
+Some "it depends" questions to consider&hellip;
