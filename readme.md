@@ -18,7 +18,7 @@ Open a console & run each of the following scripts in it's own tab:
 
 `bin/ensure-watch.sh`
 
-`bin/pages-watch.sh`
+`bin/ensure-watch.sh # Yes call it a second time`
 
 `bin/ensure-server.sh`
 
