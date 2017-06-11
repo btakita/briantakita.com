@@ -12,3 +12,7 @@ Would the nature of modern conscious enlightenment be a sort of leveling-up admi
 Would we be better off if we consciously create & choose our tools? When would it make sense to take what is easily given with all of the consequences? When would it make sense to create a tool that purely fulfills a need without unwanted attachments?
 
 Some "it depends" questions to consider&hellip;
+
+<hr class="more"/>
+
+This post was inspired by <a href="https://www.youtube.com/watch?v=2QuoMkTCrQU" target="_blank">Alan Watts</a>.
