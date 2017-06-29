@@ -1,5 +1,8 @@
 ## TODO:
 
+* Each new citizen dilutes the value of a vote
+* Quantum Energy spent on observation
+  * http://www.bbc.com/earth/story/20170215-the-strange-link-between-the-human-mind-and-quantum-physics
 * Paradox of Pattern Language
     * Scope & Applicability
     * Fear of the abstract
