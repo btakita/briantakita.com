@@ -1,7 +1,7 @@
 ---
 title: Trump: United States Sovereignty & the United Nations
 author: Brian Takita
-date: 07/10/17 13:30
+date: 06/10/17 13:30
 ---
 There are many in the UN & global corporate/finance that seek a <a href="https://www.wikiwand.com/en/Carbon_tax" target="_blank">carbon tax</a>. It's not going to happen but that's not due to a lack of effort. This is why Trump pulled the US out of the multi-lateral Paris accord. The US was under energy sanctions & the US gave away money to "developing" economies such as China & India. This was a form of sovereign wealth transfer guided by global governance. Fortunately it was voluntary & Trump acted correctly in pulling out of the accord, though the UN is suing to keep the US locked in. Effectively, this is using international trade law to impose governance upon the US.
 

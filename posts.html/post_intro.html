@@ -9,6 +9,10 @@
 <script type="text/babel">
   import {format__date__prose} from 'ctx-core/date/lib'
   export default {
+    oncreate() {
+      console.info('!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+      console.info(this)
+    },
     helpers: {
       format__date__prose
     }

@@ -1,7 +1,7 @@
 ---
 title: When We become a Muse to Our Tools
 author: Brian Takita
-date: 07/11/17 07:00
+date: 06/11/17 07:00
 ---
 What happens when we become a muse to our tools?
 
