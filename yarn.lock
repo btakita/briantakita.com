@@ -312,6 +312,10 @@ balanced-match@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-0.4.2.tgz#cb3f3e3c732dc0f01ee70b403f302e61d7709838"
 
+balanced-match@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
+
 bcrypt-pbkdf@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
@@ -345,6 +349,13 @@ brace-expansion@^1.0.0:
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
   dependencies:
     balanced-match "^0.4.1"
+    concat-map "0.0.1"
+
+brace-expansion@^1.1.7:
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
+  dependencies:
+    balanced-match "^1.0.0"
     concat-map "0.0.1"
 
 braces@^1.8.2:
@@ -821,6 +832,17 @@ glob@3:
     inherits "2"
     minimatch "0.3"
 
+glob@^7.0.0:
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.0.4"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@^7.0.5, glob@^7.1.1:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.1.tgz#805211df04faaf1c63a3600306cdf5ade50b2ec8"
@@ -991,6 +1013,10 @@ inquirer@^3.0.1:
     string-width "^2.0.0"
     strip-ansi "^3.0.0"
     through "^2.3.6"
+
+interpret@^1.0.0:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
 
 invariant@^2.2.0:
   version "2.2.2"
@@ -1233,9 +1259,9 @@ koa-send@^4.1.0:
     mz "^2.6.0"
     resolve-path "^1.3.3"
 
-koa-static@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/koa-static/-/koa-static-4.0.0.tgz#425251f151cb066615da42f2d481670dbc3eddd8"
+koa-static@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/koa-static/-/koa-static-4.0.1.tgz#b99521ed848d7adb79acae9c824d8d8277a8c4d5"
   dependencies:
     debug "^2.6.8"
     koa-send "^4.1.0"
@@ -1447,6 +1473,12 @@ minimatch@^3.0.0, minimatch@^3.0.2:
   dependencies:
     brace-expansion "^1.0.0"
 
+minimatch@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
+  dependencies:
+    brace-expansion "^1.1.7"
+
 minimist@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-0.0.8.tgz#857fcabfc3397d2625b8228262e86aa7a011b05d"
@@ -1534,19 +1566,25 @@ nodemon@^1.11.0:
     undefsafe "0.0.3"
     update-notifier "0.5.0"
 
+nodent-compiler@>=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nodent-compiler/-/nodent-compiler-3.1.0.tgz#01f8c43b6c4425dabec25c915a8cf308e7d37da9"
+  dependencies:
+    acorn ">=2.5.2"
+    acorn-es7-plugin ">=1.1.6"
+    source-map "^0.5.6"
+
 nodent-runtime@>=3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/nodent-runtime/-/nodent-runtime-3.0.4.tgz#a801ecb7bb0f6c39a69b24cc2fa370cfa8b492da"
 
-nodent@^3.0.19:
-  version "3.0.19"
-  resolved "https://registry.yarnpkg.com/nodent/-/nodent-3.0.19.tgz#9e2468a5a6d2ebc1a1cf3a6bfd1f02fee5e802e1"
+nodent@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nodent/-/nodent-3.1.0.tgz#dd3613b9bed38ef503e82e27318491ce42505a0f"
   dependencies:
-    acorn ">=2.5.2"
-    acorn-es7-plugin ">=1.1.6"
+    nodent-compiler ">=3.1.0"
     nodent-runtime ">=3.0.4"
     resolve "^1.2.0"
-    source-map "^0.5.6"
 
 nopt@^4.0.1:
   version "4.0.1"
@@ -1813,6 +1851,12 @@ readdirp@^2.0.0:
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
 
+rechoir@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  dependencies:
+    resolve "^1.1.6"
+
 regenerator-runtime@^0.10.0:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.3.tgz#8c4367a904b51ea62a908ac310bf99ff90a82a3e"
@@ -2003,16 +2047,17 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup-watch@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/rollup-watch/-/rollup-watch-4.0.0.tgz#309051b9403b9e5445c5746c9eba9a466951d39e"
+rollup-watch@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/rollup-watch/-/rollup-watch-4.3.1.tgz#5aa1eaeab787addf368905d102b39d6fc5ce4a8b"
   dependencies:
     chokidar "^1.7.0"
     require-relative "0.8.7"
+    rollup-pluginutils "^2.0.1"
 
-rollup@^0.43.0:
-  version "0.43.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.43.0.tgz#b36bdb75fa5e0823b6de8aee18ff7b5655520543"
+rollup@^0.45.2:
+  version "0.45.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.45.2.tgz#63a284c2b31234656f24e9e9717fabb6a7f0fa43"
   dependencies:
     source-map-support "^0.4.0"
 
@@ -2055,6 +2100,14 @@ setprototypeof@1.0.2:
 setprototypeof@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.0.3.tgz#66567e37043eeb4f04d91bd658c0cbefb55b8e04"
+
+shelljs@^0.7.8:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/shelljs/-/shelljs-0.7.8.tgz#decbcf874b0d1e5fb72e14b164a9683048e9acb3"
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
 
 sigmund@~1.0.0:
   version "1.0.1"
@@ -2201,9 +2254,13 @@ supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
 
-svelte@^1.11.2, svelte@^1.23.4:
+svelte@^1.11.2:
   version "1.23.4"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-1.23.4.tgz#d9d1f60143c0e672e4b0b2500820045a3dd0a382"
+
+svelte@^1.25.0:
+  version "1.25.0"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-1.25.0.tgz#e5d84eeec57befabe8f09344f954f3bb04859f51"
 
 tar-fs@^1.15.1:
   version "1.15.2"
