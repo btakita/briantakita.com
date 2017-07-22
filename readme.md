@@ -27,3 +27,7 @@ By default, server is run on http://localhost:3111
 ### [pages/build.pages.js](./pages/build.pages.js)
 
 This module builds all of the static pages on briantakita.com. Using <a href="https://buble.surge.sh" target="_blank">buble</a> makes it easy create a parallelized build while avoiding callback hell. The advantage of not using a build tool such as grunt, is it's easier to utilize existing libraries & to reduce <a href="https://www.wikiwand.com/en/No_Silver_Bullet" target="_blank">accidental complexity</a>.
+
+## Deployment
+
+`make`
