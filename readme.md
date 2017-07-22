@@ -2,6 +2,8 @@
 
 www.briantakita.com site
 
+See http://www.briantakita.com/posts/monorepo-static-sites-using-sveltejs-rollup-bash/
+
 ## Installation
 
 ```
