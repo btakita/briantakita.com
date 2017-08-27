@@ -5,7 +5,7 @@ date: 07/22/17 05:00
 ---
 Now it's time to implement server side rendering (SSR) using SvelteJS.
 
-With the next release of <a href="https://censible.co/" target="_blank">Censible</a>, I will be migrating from <a href="https://pugjs.org" target="_blank">pug</a> to <a href="https://svelte.technology" target="_blank">sveltejs</a>. The key concepts are <a href="https://svelte.technology/guide#server-side-rendering" target="_blank">Server Side Rendering</a>, <a href="https://github.com/sveltejs/svelte/pull/649" target="_blank">Hydration</a>, & client/server architectural options.
+On my current project, I will be migrating from <a href="https://pugjs.org" target="_blank">pug</a> to <a href="https://svelte.technology" target="_blank">sveltejs</a>. The key concepts are <a href="https://svelte.technology/guide#server-side-rendering" target="_blank">Server Side Rendering</a>, <a href="https://github.com/sveltejs/svelte/pull/649" target="_blank">Hydration</a>, & client/server architectural options.
 
 <hr class="more"/>
 
