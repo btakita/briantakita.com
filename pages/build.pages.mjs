@@ -2,7 +2,6 @@ import {promisify} from 'util'
 import glob from 'glob'
 import {readFile
       , writeFile} from 'fs'
-import mkdirp from 'mkdirp'
 import {dirname, basename, normalize} from 'path'
 import marked from 'marked'
 import typogr from 'typogr'
@@ -12,6 +11,7 @@ import post__page from 'posts.html/post__page.html'
 import archive__page from 'posts.html/archive__page.html'
 import feed__xml from 'posts.html/feed__xml.html'
 import sitemap__xml from 'posts.html/sitemap__xml.html'
+const mkdirp = require('mkdirp')
 main()
   .catch(error => console.error(error))
 async function main() {
@@ -25,7 +25,7 @@ async function main() {
     write__sitemap__xml()
   ])
   async function write__posts__page() {
-    const html = posts__page.render({posts})
+    const {html} = posts__page.render({posts})
     return promisify(writeFile)('build/index.html', html)
   }
   async function write__post__page() {
@@ -33,7 +33,7 @@ async function main() {
         , promises__mkdir = []
     for (let i=0; i < posts.length; i++) {
       const post = posts[i]
-          , html = post__page.render(post)
+          , {html} = post__page.render(post)
           , build__dir = $build__dir(post)
       htmls.push(html)
       promises__mkdir.push(
@@ -51,11 +51,11 @@ async function main() {
     return await Promise.all(promises__writeFile)
   }
   async function write__archive__page() {
-    const html = archive__page.render({posts})
+    const {html} = archive__page.render({posts})
     return promisify(writeFile)('build/archive.html', html)
   }
   async function write__feed__xml() {
-    const xml =
+    const {html: xml} =
             [
               '<?xml version="1.0" encoding="utf-8" ?>',
               feed__xml.render({
@@ -66,7 +66,7 @@ async function main() {
     return promisify(writeFile)('build/feed.xml', xml)
   }
   async function write__sitemap__xml() {
-    const xml =
+    const {html: xml} =
             [
               '<?xml version="1.0" encoding="utf-8" ?>',
               sitemap__xml.render({

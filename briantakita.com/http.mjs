@@ -1,6 +1,6 @@
 import {assign__env} from 'ctx-core/env'
 import {assign} from 'ctx-core/object/lib'
-import {use__log__request$time
+import {use__log__time__request
       , use__echo} from 'ctx-core/koa/lib'
 import use__error from 'ctx-core/error/koa'
 import use__debug from 'ctx-core/debug/koa'
@@ -20,7 +20,7 @@ throng({
 }, start)
 function start() {
   info(`${logPrefix}|start`)
-  use__log__request$time(app)
+  use__log__time__request(app)
   use__error(app)
   use__debug(app)
   use__briantakita_com(app)
