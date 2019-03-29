@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.25, maximum-scale=1" />
+	<meta name='theme-color' content='#aa1e1e'>
+	<meta name="description" content=""/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="Bloomfield Networks"/>
+	<meta property="og:site_name" content="briantakita.com"/>
+	<meta property="og:description" content=""/>
+	<meta property="og:url" content="https://briantakita.com"/>
+	<meta property="og:image" content="https://briantakita.com/bloomfield-networks-logo.svg"/>
+	<meta name="twitter:card" content="summary"/>
+	<meta name="twitter:site" content="BloomfieldNetworks"/>
+	<meta name="twitter:title" content=""/>
+	<meta name="twitter:description" content=""/>
+	<meta name="twitter:url" content="https://briantakita.com"/>
+	<meta name="twitter:image" content="https://briantakita.com/bloomfield-networks-logo.svg"/>
+	%sapper.base%
+
+	<link rel='stylesheet' href='/global.css'>
+	<link rel='manifest' href='/manifest.json'>
+	<link rel='icon' type='image/png' href='/favicon.png'>
+
+	<!-- Sapper generates a <style> tag containing critical CSS
+	     for the current page. CSS for the rest of the app is
+	     lazily loaded when it precaches secondary pages -->
+	%sapper.styles%
+
+	<!-- This contains the contents of the <svelte:head> component, if
+	     the current page has one -->
+	%sapper.head%
+</head>
+<body>
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Brian Takita",
+			"description": "",
+			"url": "https://briantakita.com"
+		}
+	</script>
+	<!-- The application will be rendered inside this element,
+	     because `app/client.js` references it -->
+	<div id='sapper'>%sapper.html%</div>
+
+	<!-- Sapper creates a <script> tag containing `app/client.js`
+	     and anything else it needs to hydrate the app and
+	     initialise the router -->
+	%sapper.scripts%
+</body>
+</html>

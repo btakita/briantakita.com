@@ -1,15 +1,5 @@
-<Layout
-  bodyclass="articles"
-  prepend__footer="{{prepend__footer}}"
->
-  <div class="posts">
-    {{#each posts as post}}
-      <PostIntro post="{{post}}"></PostIntro>
-    {{/each}}
-  </div>
-</Layout>
 <script type="text/babel">
-  import Layout from '__/layout/layout.html'
+  import Layout from '@briantakita/layout/Layout.html'
   import PostIntro from 'posts.html/post_intro.html'
   export default {
     data() {
@@ -23,3 +13,14 @@
     }
   }
 </script>
+
+<Layout
+  bodyclass="articles"
+  prepend__footer="{{prepend__footer}}"
+>
+  <div class="posts">
+    {{#each posts as post}}
+      <PostIntro post="{{post}}"></PostIntro>
+    {{/each}}
+  </div>
+</Layout>
