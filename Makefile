@@ -2,5 +2,6 @@ deploy:
 
 	build-pages.sh
 	cd build && \
-	git commit -m "Deploy" && \
+	git add .
+	git commit -am "Deploy" && \
 	git push
