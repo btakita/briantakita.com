@@ -33,7 +33,7 @@ export async function get(req, res) {
 		`)}
 	</channel>
 </rss>
-	`.trim
+	`.trim()
 	res.writeHead(200, {
 		'Cache-Control': `max-age=${30 * 60 * 1e3}`,
 		'Content-Type': 'application/rss+xml'
