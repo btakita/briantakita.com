@@ -35,4 +35,13 @@ tmux send-keys 'yarn run dev' 'C-m'
 tmux select-layout even-vertical
 tmux select-pane -t 0
 
+cd $BTAKITA_DIR/build
+
+tmux new-window
+tmux rename-window build
+tmux split-window -v
+tmux send-keys 'tig' 'C-m'
+tmux select-layout even-vertical
+tmux select-pane -t 0
+
 tmux select-window -t 0
