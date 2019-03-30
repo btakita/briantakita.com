@@ -24,7 +24,7 @@ Advantages for discoverable abstractions include:
   * easier refactoring (e.g. a rename refactoring is a search/replace)
   * provides a more comprehensive & accurate model of the system in one's head
   
-### Ambiguous name Example &mdash; `id`
+### Ambiguous name Example — `id`
 
 `id` fields with context are a good candidate to combine into a single tag.
 

@@ -15,12 +15,12 @@ export async function get(req, res) {
 	<channel>
 		<title>Brian Takita</title>
 		<atom:link
-			href="{domain}/feed.xml"
+			href="${domain}/feed.xml"
 			rel="self"
 			type="application/rss+xml"/>
 		${escape__html(`<link>${domain}</link>`)}
 		<description>Mission: Expand Consciousness</description>
-		<pubDate>{new Date(ARR__post[0].date).toUTCString()}</pubDate>
+		<pubDate>${new Date(ARR__post[0].date).toUTCString()}</pubDate>
 		<language>en</language>
 		${ARR__post.map(post => `
 			<item>

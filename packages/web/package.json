@@ -14,7 +14,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/date": "^3.0.1",
-		"@ctx-core/html": "^6.0.7",
+		"@ctx-core/html": "^6.0.8",
 		"compression": "^1.7.4",
 		"dotenv": "^7.0.0",
 		"express": "^4.16.4",
