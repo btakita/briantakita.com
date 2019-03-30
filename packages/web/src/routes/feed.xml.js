@@ -1,4 +1,5 @@
 import { domain } from '@briantakita/web/src/domain/lib'
+import { escape__html } from '@ctx-core/html'
 import { _ARR__post } from './posts/_lib'
 export async function get(req, res) {
 	const ARR__post = await _ARR__post()
@@ -17,7 +18,7 @@ export async function get(req, res) {
 			href="{domain}/feed.xml"
 			rel="self"
 			type="application/rss+xml"/>
-		{\`<link>${domain}</link>\`}
+		${escape__html(`<link>${domain}</link>`)}
 		<description>Mission: Expand Consciousness</description>
 		<pubDate>{new Date(ARR__post[0].date).toUTCString()}</pubDate>
 		<language>en</language>
