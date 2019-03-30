@@ -1,3 +1,6 @@
 [submodule "packages/ctx-core"]
 	path = packages/ctx-core
 	url = https://github.com/ctx-core/ctx-core.git
+[submodule "build"]
+	path = build
+	url = git@github.com:btakita/btakita.github.io.git

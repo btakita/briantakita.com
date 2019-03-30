@@ -1,0 +1,15 @@
+<script type="text/babel">
+  import { format__date__prose } from '@ctx-core/date'
+  export let post
+</script>
+
+<section class="post intro PostIntro">
+  <header>
+    <p class="date"><span>{format__date__prose(new Date(post.date))}</span></p>
+    <h2><a href="{post.path}">{post.metadata.title}</a></h2>
+  </header>
+  <div class="content">
+    {@html post.metadata.intro}
+    <p class="more"><a href="/posts/{post.slug}">Full post&hellip;</a></p>
+  </div>
+</section>

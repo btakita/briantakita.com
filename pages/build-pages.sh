@@ -1,8 +1,8 @@
 #!/bin/bash
-rm -f ./private/dist/build.pages.js
 rm -rf build/*
 mkdir -p build
-cp -R public/* build/
-rollup -c ./pages/build.pages.rollup.js
-node ./private/dist/build.pages.js
+pushd packages/web
+npm run export
+popd
+cp -R packages/web/__sapper__/export/* build/
 echo Done build-pages.sh

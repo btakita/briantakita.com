@@ -323,41 +323,4 @@ code.lang-markdown .bullet {
     width: auto;
     padding: 0 1em;
   }
-  .header {
-    margin: 1em 0;
-  }
-  .header h1 {
-    font-size: 1.4em;
-    margin-bottom: 0.6em;
-  }
-  .header .description {
-    font-size: 1em;
-  }
-  .post {
-    margin: 1em 0 2.5em;
-  }
-  .archive {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .archive * {
-    float: none !important;
-    line-height: 1.6 !important;
-    width: auto !important;
-    height: auto !important;
-    text-align: left !important;
-    border: 0 !important;
-    margin: 0 !important;
-  }
-  footer .nav {
-    margin: 1em 0;
-  }
-  footer .about, footer .links {
-    padding: 0;
-    font-size: 0.9em;
-    padding-top: 1.6em;
-  }
-  footer .about p, footer .links p {
-    margin-bottom: 1em;
-  }
 }

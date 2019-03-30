@@ -1,0 +1,27 @@
+<script>
+	import { __subheader } from '@briantakita/web/src/layout/store'
+</script>
+
+<header class="header">
+  <div class="content-wrap">
+    <div class="logo"><h1><a href="/">Brian Takita</a></h1>
+      <p class="description">Mission: Expand Consciousness</p>
+    </div>
+  </div>
+</header>
+<h2 class="subheader content-wrap">
+	{@html $__subheader || ''}
+</h2>
+
+<style type="text/scss">
+  .header {
+		margin: 0 0 1em;
+		h1 {
+			font-size: 1.4em;
+			margin-bottom: 0.6em;
+		}
+    .description {
+      font-size: 1em;
+    }
+	}
+</style>

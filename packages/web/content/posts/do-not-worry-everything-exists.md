@@ -7,7 +7,7 @@ image: http://www.briantakita.com/images/1200px-Creation_of_Adam.jpg
 ---
 
 <a href="/posts/do-not-worry-everything-exists/">
-![From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons](/images/1200px-Creation_of_Adam.jpg)
+<img src="/images/1200px-Creation_of_Adam.jpg" alt="From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons" />
 </a>
 
 Does God exist? Surely, Santa Claus & Unicorns do not exist. Yet we are talking about them. If they don't exist, why & how am I talking about them?

@@ -1,0 +1,98 @@
+<script context="module">
+	export async function preload({ params, query }) {
+		const response = await this.fetch('posts.json')
+		const ARR__post = await response.json()
+		return { ARR__post }
+	}
+</script>
+
+<script>
+	import { ARR__month_abbrev } from '@ctx-core/date'
+  const lineHeight = 2.2
+	export let ARR__post
+	let ARR__post__BY__year
+	let ARR__post__BY__month__BY__year
+	let ARR__year
+	let date
+	$: {
+		const ARR__post__BY__year__ = {}
+		for (let i = ARR__post.length - 1; i; i--) {
+			const post = ARR__post[i]
+			const year = new Date(post.date).getFullYear()
+			const ARR__post__ = ARR__post__BY__year__[year] || (ARR__post__BY__year__[year] = [])
+			ARR__post__.push(post)
+		}
+		ARR__post__BY__year = ARR__post__BY__year__
+	}
+	$: {
+		const ARR__post__BY__month__BY__year__ = {}
+		for (let year in ARR__post__BY__year) {
+			const ARR__post__BY__month = ARR__post__BY__month__BY__year__[year] || {}
+			ARR__post__BY__month__BY__year__[year] = ARR__post__BY__month
+			const posts__year = ARR__post__BY__year[year]
+			for (let i = 0; i < posts__year.length; i++) {
+				const post = posts__year[i]
+				const month = new Date(post.date).getMonth()
+				const ARR__post__ = ARR__post__BY__month[month] || (ARR__post__BY__month[month] = [])
+				ARR__post__.push(post)
+			}
+		}
+		ARR__post__BY__month__BY__year = ARR__post__BY__month__BY__year__
+	}
+	$: ARR__year = Object.keys(ARR__post__BY__year)
+	function last(list, i) {
+		return list.length - 1 == i
+	}
+	function height(ARR__post) {
+		return lineHeight * ARR__post.length
+	}
+</script>
+
+<section class="archive">
+	<h2>Archive</h2>
+	<ul>
+		{#each ARR__year as year, i}
+			<li class="year">
+				<span
+					style="line-height: {height(ARR__post__BY__year[year])}em;"
+					class="year-label {last(ARR__year, i) ? 'last' : ''}"
+				>{year}</span>
+				<ul>
+					{#each Object.keys(ARR__post__BY__month__BY__year[year]) as month, j}
+						<li
+							class="month"
+							style="height: {height(ARR__post__BY__month__BY__year[year][month])};"
+						>
+							<span
+								style="line-height: {height(ARR__post__BY__month__BY__year[year][month])};"
+								class="month-label {last(ARR__post__BY__month__BY__year[year], j) ? 'last' : ''}"
+							>{ARR__month_abbrev[month]}</span>
+							{#each ARR__post__BY__month__BY__year[year][month] as post, k}
+								<a href="{post.url}"
+									 style="line-height: {height(ARR__post__BY__month__BY__year[year][month])}em;"
+									 class="{last(ARR__post__BY__month__BY__year[year][month], k) ? 'last' : ''}"
+								>{post.metadata.title}</a>
+							{/each}
+						</li>
+					{/each}
+				</ul>
+			</li>
+		{/each}
+	</ul>
+</section>
+
+<style type="text/scss">
+	.archive {
+		width: 80%;
+		margin: 0 auto;
+		* {
+			float: none !important;
+			line-height: 1.6 !important;
+			width: auto !important;
+			height: auto !important;
+			text-align: left !important;
+			border: 0 !important;
+			margin: 0 !important;
+		}
+	}
+</style>

@@ -14,7 +14,7 @@ Spec frameworks such as rspec and jasmine give you the constructs to perform edg
 
 This juxtaposition led me to create jasmine-flow. The premise of jasmine-flow is to organize tests into a series of steps which you can make assertions up reaching a certain state.
 
-```javascript
+```js
 flow("visit /login|invalid login|valid login", function(fl) {
   fl.step("visit /login", function() {
       // I'm assuming the usage a JSDOM here
@@ -85,7 +85,7 @@ flow("visit /login|invalid login|valid login", function(fl) {
 
 Compare this with the traditional nested describe solution in Jasmine...
 
-```javascript
+```js
 describe("Someone visits /login", function() {
   beforeEach(function() {
     // I'm assuming the usage a JSDOM here

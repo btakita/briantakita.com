@@ -4,9 +4,10 @@
 	<meta charset='utf-8'>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.25, maximum-scale=1" />
 	<meta name='theme-color' content='#aa1e1e'>
-	<meta name="description" content=""/>
+  <meta name="description"
+        content="Mission: Expand Consciousness. Musing about Philosophy, Linguistics, Programming, &amp; Engineering.">
 	<meta property="og:type" content="website"/>
-	<meta property="og:title" content="Bloomfield Networks"/>
+	<meta property="og:title" content="Brian Takita"/>
 	<meta property="og:site_name" content="briantakita.com"/>
 	<meta property="og:description" content=""/>
 	<meta property="og:url" content="https://briantakita.com"/>
@@ -22,6 +23,9 @@
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='manifest' href='/manifest.json'>
 	<link rel='icon' type='image/png' href='/favicon.png'>
+  <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Mission: Expand Consciousness">
+  <link rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400|Anonymous+Pro:400,700,400italic,700italic">
 
 	<!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
@@ -43,12 +47,26 @@
 		}
 	</script>
 	<!-- The application will be rendered inside this element,
-	     because `app/client.js` references it -->
+	     because `client.js` references it -->
 	<div id='sapper'>%sapper.html%</div>
 
 	<!-- Sapper creates a <script> tag containing `app/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
 	%sapper.scripts%
+	<script type="text/javascript">(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-43791623-1', 'briantakita.com');
+	ga('send', 'pageview');
+	console.log("Loaded Google Analytics");</script>
 </body>
 </html>

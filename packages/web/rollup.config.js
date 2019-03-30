@@ -65,7 +65,7 @@ module.exports = {
 		],
 		external: reject(
 			Object.keys(pkg.dependencies),
-			path => /(@btakita|@ctx-core|@sapper)\/.*/.test(path)
+			path => /(@briantakita|@ctx-core|@sapper)\/.*/.test(path)
 		).concat(
 			require('module').builtinModules || Object.keys(process.binding('natives'))
 		),

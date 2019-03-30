@@ -1,0 +1,50 @@
+<script>
+	import { getSession, page } from '@sapper/app.mjs'
+	import { __session__sapper, __page__sapper } from '@ctx-core/sapper/store'
+	import { __title, __class__layout } from '@briantakita/web/src/layout/store'
+	import Header from '@briantakita/web/src/layout/Header.html'
+	import Footer from '@briantakita/web/src/layout/Footer.html'
+	const session = getSession()
+	__session__sapper.set(session)
+	$: __page__sapper.set($page)
+</script>
+
+<svelte:head>
+	<title>{$__title ? `${$__title} — ` : ''}BrianTakita.com</title>
+</svelte:head>
+
+<div class="_layout {$__class__layout}">
+	<Header></Header>
+
+	<main class="content">
+		<div class="content-wrap">
+			<slot></slot>
+		</div>
+	</main>
+
+	<Footer></Footer>
+</div>
+
+<style type="text/scss" @lang="sass">
+	@import '~@briantakita/web/src/css/variables';
+	._layout {
+		position: relative;
+		main {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			min-height: 600px;
+			padding: 0;
+			margin: 0 auto;
+			box-sizing: border-box;
+			@media (max-width: #{$width-phone}) {
+				margin-top: calc(#{$height-header-tablet} + 1rem);
+			}
+			z-index: 0;
+		}
+	}
+	:global(.post) {
+		margin: 1em 0 2.5em;
+	}
+</style>

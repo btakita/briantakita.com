@@ -6,7 +6,7 @@ See http://www.briantakita.com/posts/monorepo-static-sites-using-sveltejs-rollup
 
 ## Installation
 
-```
+```shell
 git clone https://github.com/btakita/btakita.github.io.git
 git submodule init
 git submodule update

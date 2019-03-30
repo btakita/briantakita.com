@@ -12,7 +12,7 @@ To set up the DNS, I followed the <a href="https://help.github.com/articles/sett
 
 I created the CNAME file with:
 
-```
+```shell
 briantakita.com
 ```
 
@@ -22,7 +22,7 @@ However, I got the 404 page on github.
 
 So I ran
 
-```
+```shell
 $ dig briantakita.com +nostats +nocomments +nocmd
 
 ; <<>> DiG 9.8.4-rpz2+rl005.12-P1 <<>> briantakita.com +nostats +nocomments +nocmd

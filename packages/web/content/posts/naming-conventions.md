@@ -5,8 +5,6 @@ date: 2/27/18 16:30
 description: Naming Conventions to encode the meaning & context of abstractions
 ---
 
-# Naming conventions
-
 An Abstraction name encodes the meaning & context of the abstraction. The name consists of tags that are joined together to create a name.
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Naming_convention_(programming)
@@ -72,7 +70,7 @@ A name that begins with `__` can be though of as an unassigned local tag followe
 
 At times, it may be useful to have a ctx object representing a group of abstractions related to a certain tag.
 
-```
+```js
 const __user =
         { user_name: 'Joe',
           user_id: 44,
@@ -86,7 +84,7 @@ const __user =
 
 If a name is already used within a scope, it may be useful to define an alternate name. This is useful when a function takes an abstraction, clones it, & returns a new version of the abstraction.
 
-```
+```js
 async function refresh_user(user) {
   const {user_id} = user
       , response = await fetch_user(user_id)
@@ -99,7 +97,7 @@ async function refresh_user(user) {
 
 Factory functions are prefixed with a `$`, with the name of the created abstraction following.
 
-```
+```js
 const sales_report = $sales_report()
 ```
 
@@ -107,7 +105,7 @@ This technique may be useful in breaking down a function into component parts us
 
 Note that in this example, bottom-up naming is used to highlight that `results` is the type of the abstraction, with the rest of the name being context named top-down.
 
-```
+```js
 async function $sales_report() {
   const [ results__sales_aggregate_query
         , results__sales_regions_query

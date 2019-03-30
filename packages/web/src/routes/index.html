@@ -1,26 +1,22 @@
-<script type="text/babel">
-  import Layout from '@briantakita/layout/Layout.html'
-  import PostIntro from 'posts.html/post_intro.html'
-  export default {
-    data() {
-      return {
-        prepend__footer: `<div class="nav"><a href="/archive"> « Archives</a></div>`
-      }
-    },
-    components: {
-      Layout,
-      PostIntro
-    }
-  }
+<script context="module">
+	export async function preload({ params, query }) {
+	  const response = await this.fetch('posts.json')
+	  const posts = await response.json()
+    return { posts }
+	}
 </script>
 
-<Layout
-  bodyclass="articles"
-  prepend__footer="{{prepend__footer}}"
->
-  <div class="posts">
-    {{#each posts as post}}
-      <PostIntro post="{{post}}"></PostIntro>
-    {{/each}}
-  </div>
-</Layout>
+<script>
+  import { __class__layout } from '@briantakita/web/src/layout/store'
+  import PostIntro from './posts/_PostIntro.html'
+  import { __prepend__footer } from '@briantakita/web/src/layout/store'
+  export let posts
+  __class__layout.set('articles')
+  __prepend__footer.set(`<div class="nav"><a href="/archive"> « Archives</a></div>`)
+</script>
+
+<div class="posts">
+  {#each posts as post}
+    <PostIntro {post}></PostIntro>
+  {/each}
+</div>
