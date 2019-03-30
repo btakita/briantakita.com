@@ -24,20 +24,23 @@ export async function get(req, res) {
 		<language>en</language>
 		${ARR__post.map(post => `
 			<item>
-				<title>${post.metadata.title}</title>
-				{\`<link>${domain}${post.path}</link>\`}
+				<title>${escape__html(post.metadata.title)}</title>
+				${escape__html(`<link>${domain}${post.path}</link>`)}
 				<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 				<guid isPermaLink="true">${domain}${post.path}</guid>
 				<author>${post.metadata.author}</author>
-				<description>${post.metadata.intro}</description>
+				<description>${escape__html(post.metadata.intro)}</description>
 			</item>
 		`)}
 	</channel>
 </rss>
 	`.trim()
-	res.writeHead(200, {
-		'Cache-Control': `max-age=${30 * 60 * 1e3}`,
+	const headers = {
 		'Content-Type': 'application/rss+xml'
-	})
+	}
+	if (process.env.NODE_ENV !== 'development') {
+		headers['Cache-Control'] = `max-age=${5 * 60 * 1e3}` // 5 minutes
+	}
+	res.writeHead(200, headers)
 	res.end(xml)
 }

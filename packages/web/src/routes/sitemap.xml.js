@@ -17,9 +17,12 @@ export async function get(req, res) {
 	`.trim())}
 </urlset>
 	`.trim()
-	res.writeHead(200, {
-		'Cache-Control': `max-age=${30 * 60 * 1e3}`,
+	const headers = {
 		'Content-Type': 'application/xml'
-	})
+	}
+	if (process.env.NODE_ENV !== 'development') {
+		headers['Cache-Control'] = `max-age=${5 * 60 * 1e3}` // 5 minutes
+	}
+	res.writeHead(200, headers)
 	res.end(xml)
 }

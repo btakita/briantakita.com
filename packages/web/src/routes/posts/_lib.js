@@ -22,7 +22,8 @@ export async function _post(file) {
 	const html = marked(content.replace(/^\t+/gm, match => match.split('\t').join('  ')), {
 		renderer
 	})
-	const IDX__more = html.indexOf('<hr class="more"/>')
+	const IDX__more__ = html.indexOf('<hr class="more"/>')
+	const IDX__more = IDX__more__ > -1 ? IDX__more__ : null
 	metadata.intro = html.slice(0, IDX__more)
 	const slug = file.replace(/^[\d-]+/, '').replace(/\.md$/, '')
 	const path = `/posts/${slug}`

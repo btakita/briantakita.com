@@ -23,6 +23,8 @@ Advantages for discoverable abstractions include:
   * easy searching for an abstraction used across the codebase
   * easier refactoring (e.g. a rename refactoring is a search/replace)
   * provides a more comprehensive & accurate model of the system in one's head
+
+<hr class="more"/>
   
 ### Ambiguous name Example — `id`
 
