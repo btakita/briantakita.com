@@ -1,51 +1,118 @@
 <script>
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
+	import Icon from '@ctx-core/font-awesome/Icon.html'
+	import {
+		register__rss,
+		register__linkedin,
+		register__github,
+		register__facebook,
+		register__twitter,
+		register__wordpress,
+		register__quora,
+	} from '@ctx-core/font-awesome'
+	register__rss()
+	register__linkedin()
+	register__github()
+	register__facebook()
+	register__twitter()
+	register__wordpress()
+	register__quora()
 </script>
 
 <footer>
   <div class="content-wrap">
-    {@html $__prepend__footer}
-    <div class="nav"><a href="/archive">« Archives</a></div>
-    <section class="about"><p>Brian Takita seeks to expand consciousness within himself &amp; with people around
-      him.</p>
-    </section>
-    <section class="links"><p>##Brian Takita online:</p>
+    {@html $__prepend__footer || ''}
+    <section class="links">
       <ul>
-        <li><a href="http://about.me/brian_takita">about.me</a></li>
-        <li><a href="http://www.linkedin.com/in/briantakita">LinkedIn</a></li>
-        <li><a href="https://github.com/btakita">Github</a></li>
-        <li><a href="https://www.facebook.com/brian.takita.creations">Facebook - Fan Page</a></li>
-        <li><a href="https://www.facebook.com/brian.takita">Facebook - Personal</a></li>
-        <li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>
-        <li><a href="https://twitter.com/briantakita">Twitter</a></li>
-        <li><a href="http://briantakita.wordpress.com/">Wordpress Blog</a></li>
-        <li><a href="http://briantakita.tumblr.com/">Tumblr Blog</a></li>
-        <li><a href="https://plus.google.com/1050179096794581818251">Google+</a></li>
-        <li><a href="https://www.quora.com/Brian-Takita">Quora</a></li>
-        <li><a href="http://pivotallabs.com/author/brian/">Pivotal Labs</a></li>
+        <li>
+          <a href="/feed.xml" title="Atom Feed">
+            <Icon name="rss"></Icon>
+          </a>
+        </li>
+<!--				<li class="about-me"><a href="http://about.me/brian_takita">about.me</a></li>-->
+        <li>
+          <a href="https://github.com/btakita" title="Github">
+            <Icon name="github"></Icon>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/briantakita" title="LinkedIn">
+            <Icon name="linkedin"></Icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/brian.takita" title="Facebook">
+            <Icon name="facebook"></Icon>
+          </a>
+        </li>
+<!--				<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>-->
+        <li>
+          <a href="https://twitter.com/briantakita" title="Twitter">
+            <Icon name="twitter"></Icon>
+          </a>
+        </li>
+        <li>
+          <a href="http://briantakita.wordpress.com/" title="Wordpress Blog">
+            <Icon name="wordpress"></Icon>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.quora.com/Brian-Takita" title="Quora">
+            <Icon name="quora"></Icon>
+          </a>
+        </li>
       </ul>
     </section>
-    <section class="feed"><a href="/feed.xml"><img src="/images/Feed-icon.svg" alt="Atom Feed"></a></section>
     <section class="sitemap"><a href="/sitemap.xml">&nbsp;</a></section>
   </div>
   <section class="copy"><p>&copy; 2019 Brian Takita</p></section>
 </footer>
 
 <style type="text/scss">
-  footer {
-		.nav {
-			margin: 1em 0;
+  @import '~@briantakita/web/src/css/variables';
+	:global(footer) {
+		:global(svg) {
+			fill: $color__text;
 		}
-		.about, .links {
-			padding: 0;
+	}
+	footer {
+		margin: 3em 0;
+		> .copy {
+			border-top: 1px dashed #d2d2d2;
+			margin-top: 1em;
+			padding: 2.2em 3em;
+			font-size: 0.7em;
+			text-align: center;
+			font-style: italic;
+			a {
+				color: $color__link__mid;
+			}
+		}
+		.archive {
+			margin: 5em 0 3.5em;
+			text-align: center;
+			a {
+				padding: 0 0.5em;
+				font-size: 1.2em;
+				text-decoration: none;
+			}
+		}
+		.links {
+			padding: 1.6em 0 0;
 			font-size: 0.9em;
-			padding-top: 1.6em;
-      p {
-        margin-bottom: 1em;
-      }
+			overflow: hidden;
+			ul {
+				list-style-type: none;
+				li {
+					float: left;
+					width: 2rem;
+					height: 2rem;
+					margin: 0 0.4rem;
+				}
+			}
 		}
-    .sitemap {
-      display: none;
-    }
+		.sitemap {
+			display: none;
+		}
 	}
 </style>

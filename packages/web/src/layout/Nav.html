@@ -1,0 +1,39 @@
+<script>
+	import { __path__sapper } from '@ctx-core/sapper/store'
+	import Handle__Nav from '@ctx-core/nav/Handle__Nav.html'
+	import Content__Nav from '@ctx-core/nav/Content__Nav.html'
+</script>
+
+<Handle__Nav class="Handle__Nav__briantakita"></Handle__Nav>
+<div class="container__Content__Nav">
+	<Content__Nav class="content-wrap">
+		<a href="/" class:selected="{$__path__sapper === '/'}">Home</a>
+<!--		<a href="/portfolio">Portfolio</a>-->
+		<a href="/interests" class:selected="{$__path__sapper === '/interests'}">Interests</a>
+		<a href="/blog" class:selected="{$__path__sapper === '/blog'}">Blog</a>
+	</Content__Nav>
+</div>
+
+<style type="text/scss">
+	@import '~@briantakita/web/src/css/variables';
+	@import '~@ctx-core/nav/lib';
+	@include content__nav()
+	:global(.Handle__Nav__briantakita) {
+		display: none;
+	}
+	:global(.container__Content__Nav) {
+		position: absolute;
+		top: 3rem;
+		width: 100%;
+		z-index: 1;
+		a {
+			text-decoration: none;
+			&:focus {
+				outline: 0;
+			}
+			&.selected {
+				box-shadow: 0 2px 0 $color__link__mid;
+			}
+		}
+	}
+</style>

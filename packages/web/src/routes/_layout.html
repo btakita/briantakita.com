@@ -2,11 +2,14 @@
 	import { getSession, page } from '@sapper/app.mjs'
 	import { __session__sapper, __page__sapper } from '@ctx-core/sapper/store'
 	import { __title, __class__layout } from '@briantakita/web/src/layout/store'
+	import { __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Header from '@briantakita/web/src/layout/Header.html'
 	import Footer from '@briantakita/web/src/layout/Footer.html'
+	import Nav from '@briantakita/web/src/layout/Nav.html'
 	const session = getSession()
 	__session__sapper.set(session)
 	$: __page__sapper.set($page)
+	$: $page, __prepend__footer.set('')
 </script>
 
 <svelte:head>
@@ -15,6 +18,7 @@
 
 <div class="_layout {$__class__layout}">
 	<Header></Header>
+	<Nav></Nav>
 
 	<main class="content">
 		<div class="content-wrap">
@@ -27,6 +31,117 @@
 
 <style type="text/scss" @lang="sass">
 	@import '~@briantakita/web/src/css/variables';
+	:global(body) {
+		font-family: 'Open Sans', arial, sans-serif;
+		font-size: 21px;
+		line-height: 1.52;
+		background-color: $color__body;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		color: $color__text;
+		@media (min-width: 1600px) {
+			font-size: 26px;
+		}
+		@media (max-width: 900px) {
+			font-size: 18px;
+		}
+	}
+	:global(.content-wrap) {
+		width: 60rem;
+		margin: 0 auto;
+		@media (max-width: 690px) {
+			width: auto;
+			padding: 0 1em;
+		}
+	}
+	:global(body), :global(a) {
+		color: $color__text;
+	}
+	:global(a) {
+		&:hover {
+			color: #ff8000;
+			text-decoration: underline;
+		}
+	}
+	:global(.post) {
+		margin: 2rem 0 4rem;
+		:global(header) {
+			border-top: 1px dashed #d2d2d2;
+			:global(h2) {
+				font-style: italic;
+				text-align: center;
+				font-weight: 400;
+				margin: 0.8em 0;
+				font-size: 1.4em;
+				:global(a) {
+					text-decoration: none;
+				}
+			}
+			:global(.date) {
+				text-align: center;
+				font-size: 0.8em;
+				margin-top: -0.7em;
+				text-rendering: auto;
+				letter-spacing: 1px;
+				font-variant: small-caps;
+				text-transform: lowercase;
+				font-weight: 400;
+				:global(span) {
+					background-color: $color__highlight__text;
+					padding: 0 0.7em;
+				}
+			}
+		}
+		:global(hr.more) {
+			display: none;
+		}
+		:global(code) {
+			font-family: 'Anonymous Pro', monospace;
+			font-size: 0.85em;
+			/*color: #000;*/
+			&.lang-markdown {
+				color: #424242;
+				.header, .strong {
+					font-weight: bold;
+				}
+				&.emphasis {
+					font-style: italic;
+				}
+				.horizontal_rule, .link_label, .code, .header, .link_url {
+					color: #555;
+				}
+				.blockquote, .bullet {
+					color: #bbb;
+				}
+			}
+		}
+		:global(pre) {
+			font-size: 0.9em;
+			overflow: auto;
+			border: 1px dashed #d2d2d2;
+			border-radius: 0.25em;
+			margin-bottom: 1.8em;
+			padding: 1em;
+			:global(code) {
+				display: block;
+				line-height: 1.1;
+			}
+		}
+		:global(p) {
+			:global(code) {
+				padding: 0.1em 0.3em 0.2em;
+				border-radius: 0.3em;
+				position: relative;
+				top: -0.15em;
+				background: #444;
+				color: #fff;
+				white-space: nowrap;
+			}
+		}
+	}
+	:global(img) {
+		width: 100%;
+	}
 	._layout {
 		position: relative;
 		main {
