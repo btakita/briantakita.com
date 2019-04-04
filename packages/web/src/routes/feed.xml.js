@@ -1,8 +1,8 @@
 import { domain } from '@briantakita/web/src/domain/lib'
 import { escape__html } from '@ctx-core/html'
-import { _ARR__post } from './posts/_lib'
+import { _arr__post } from './posts/_lib'
 export async function get(req, res) {
-	const ARR__post = await _ARR__post()
+	const ARR__post = await _arr__post()
 	const xml = `
 <?xml version="1.0" encoding="utf-8" ?>
 <rss

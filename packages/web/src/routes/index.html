@@ -1,34 +1,20 @@
-<h2>What to put on the Homepage?</h2>
+<script context="module">
+	export async function preload({ query, params }) {
+		const response = await this.fetch('/archive.json')
+		const json = await response.json()
+		const { archive_id__latest } = json
+		return {
+			archive_id__latest
+		}
+	}
+</script>
 
-<p>
-	I'm redesigning my site. I will be posting ideas, news, etc.
-	This will be my microblog, which I will <a href="/archive">archive</a>.
-	My <a href="/blog">blog</a> will contain longer articles.
-	This site is also a proof-of-concept, eat your own dogfood of a person-centric "social network" profile.
-	While I'm working on making this process smooth for me, as a programmer,
-		I would also like to extend this experience for non-programmers.
-	I believe there are certain workflows that are productive & encourage flow of expression
-		for people with or without technical persuasion.
-</p>
+<script>
+	import { onMount } from 'svelte'
+	import { __prepend__footer } from '@briantakita/web/src/layout/store'
+	import Archive from '@briantakita/web/src/routes/archive/20190403.html'
+	export let archive_id__latest
+	__prepend__footer.set(`<div class="nav"><a href="/archive"> « Archive</a></div>`)
+</script>
 
-<h3>Holochain</h3>
-
-<p>
-	Lately, I have been turned onto <a href="https://holochain.org/">Holochain</a>.
-	Thank you to <a href="https://medium.com/@sunyatax" target="_blank">Eric Yang</a>,
-		founder of <a href="https://holo.host/project/junto/">Junto</a> for introducing me to this technology.
-</p>
-
-<p>I've read through:</p>
-
-<ul>
-	<li><a href="https://github.com/holochain/holochain-proto/blob/whitepaper/holochain.pdf">Holochain Whitepaper</a></li>
-	<li><a href="https://files.holo.host/2017/11/Holo-Currency-White-Paper_2017-11-28.pdf">Holo Currency Paper</a></li>
-	<li><a href="https://files.holo.host/2018/03/Holo-Green-Paper.pdf">Holo Green Paper</a></li>
-</ul>
-
-<p>
-	I encourage you to read these papers,
-		as they explain the state of distributed networks & the innovations
-		that Holochain & the Holo currency bring.
-</p>
+<Archive></Archive>

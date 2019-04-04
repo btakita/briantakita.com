@@ -1,3 +1,21 @@
+<script context="module">
+	export async function preload({ params, query }) {
+		const response = await this.fetch('/archive.json')
+		const json = await response.json()
+		const { arr__archive_id } = json
+		return {
+			arr__archive_id
+		}
+	}
+</script>
+
+<script>
+	import { basename } from 'path'
+	export let arr__archive_id
+</script>
+
 <h2>Archive</h2>
 
-<p>work in progress - will add archived home page states here</p>
+{#each arr__archive_id as archive_id}
+	<div><a href="/archive/{archive_id}">{archive_id}</a></div>
+{/each}

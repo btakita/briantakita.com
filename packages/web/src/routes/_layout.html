@@ -1,15 +1,18 @@
 <script>
 	import { getSession, page } from '@sapper/app.mjs'
-	import { __session__sapper, __page__sapper } from '@ctx-core/sapper/store'
+	import { andand } from '@ctx-core/function'
+	import { __session__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
 	import { __title, __class__layout } from '@briantakita/web/src/layout/store'
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Header from '@briantakita/web/src/layout/Header.html'
 	import Footer from '@briantakita/web/src/layout/Footer.html'
 	import Nav from '@briantakita/web/src/layout/Nav.html'
 	const session = getSession()
+	let archive_id
 	__session__sapper.set(session)
 	$: __page__sapper.set($page)
 	$: $page, __prepend__footer.set('')
+	$: archive_id = andand(/^\/archive\/([0-9\-]+)/.exec($__path__sapper), 1)
 </script>
 
 <svelte:head>
@@ -22,6 +25,9 @@
 
 	<main class="content">
 		<div class="content-wrap">
+			{#if archive_id}
+				<em>Archive from {archive_id}</em>
+			{/if}
 			<slot></slot>
 		</div>
 	</main>
