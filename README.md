@@ -10,21 +10,24 @@ See http://www.briantakita.com/posts/monorepo-static-sites-using-sveltejs-rollup
 git clone https://github.com/btakita/btakita.github.io.git
 git submodule init
 git submodule update
+npm i -g yarn lerna
+yarn
 ```
 
 I recommend using <a href="https://github.com/direnv/direnv" target="_blank">direnv</a>.
 
 ## Development
 
-Open a console & run each of the following scripts in it's own tab:
+If you have tmux, run:
 
-`bin/ensure-watch.sh`
+`tmux-btakita.sh`
 
-`bin/ensure-watch.sh # Yes call it a second time`
+Otherwise:
 
-`bin/ensure-server.sh`
-
-By default, server is run on http://localhost:3111
+```
+cd packages/web
+yarn run dev
+```
 
 ### [pages/build.pages.js](./pages/build.pages.js)
 
