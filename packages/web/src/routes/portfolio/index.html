@@ -94,8 +94,8 @@
 		<A href="https://sapper.svelte.technology/">Sapper</A>,
 		<A href="https://lernajs.io/">Lerna</A>.
 	It can also be extended to use other toolchains.
-	Organizations can add ctx-core as a external in the `packages/ctx-core` directory,
-		and compose their own set of packages in their composable Monorepo.
+	Organizations can have their own monorepo,
+		compose their own set of packages including ctx-core as a git external.
 </p>
 
 <b>Motivation</b>
@@ -126,7 +126,8 @@
 
 <p>
 	I found that there are usually small libraries & code snippets that can be glued together
-		with a <A href="/posts/naming-conventions">naming convention</A> that utilizes unique, immutable, & composable names.
+		with a <A href="/posts/naming-conventions">naming convention</A>
+		that utilizes unique, immutable, & composable names.
 	As a result, one could find all usages of an entity or concept by doing a project-wide search.
 	Rename refactorings were more accurate & comprehensive due to the uniqueness of names.
 	Composable naming allows one to understand the context & full description of the entity.
