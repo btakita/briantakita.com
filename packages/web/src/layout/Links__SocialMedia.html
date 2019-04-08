@@ -1,0 +1,86 @@
+<script>
+	import Icon from '@ctx-core/font-awesome/Icon.html'
+	import {
+		register__rss,
+		register__email_solid,
+		register__linkedin,
+		register__github,
+		register__facebook,
+		register__twitter,
+		register__wordpress,
+		register__quora,
+	} from '@ctx-core/font-awesome'
+	register__rss()
+	register__email_solid()
+	register__linkedin()
+	register__github()
+	register__facebook()
+	register__twitter()
+	register__wordpress()
+	register__quora()
+</script>
+
+<section class="links Links__SocialMedia">
+  <ul>
+    <li>
+      <a href="/feed.xml" title="Atom Feed">
+        <Icon name="rss"></Icon>
+      </a>
+    </li>
+		<!--				<li class="about-me"><a href="http://about.me/brian_takita">about.me</a></li>-->
+    <li>
+      <a href="mailto:brian.takita@gmail.com" title="Github">
+        <Icon name="email-solid"></Icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/btakita" title="Github">
+        <Icon name="github"></Icon>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/in/briantakita" title="LinkedIn">
+        <Icon name="linkedin"></Icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/brian.takita" title="Facebook">
+        <Icon name="facebook"></Icon>
+      </a>
+    </li>
+		<!--				<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>-->
+    <li>
+      <a href="https://twitter.com/briantakita" title="Twitter">
+        <Icon name="twitter"></Icon>
+      </a>
+    </li>
+    <li>
+      <a href="http://briantakita.wordpress.com/" title="Wordpress Blog">
+        <Icon name="wordpress"></Icon>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.quora.com/Brian-Takita" title="Quora">
+        <Icon name="quora"></Icon>
+      </a>
+    </li>
+  </ul>
+</section>
+
+<style type="text/scss">
+  .Links__SocialMedia {
+		padding: 1.6em 0 0;
+		font-size: 0.9em;
+		overflow: hidden;
+		ul {
+			overflow: hidden;
+			list-style-type: none;
+			li {
+				float: left;
+				width: 2rem;
+				height: 2rem;
+				margin: 0 0.8rem 0 0;
+			}
+		}
+	}
+</style>
