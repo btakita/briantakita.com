@@ -14,9 +14,9 @@
 	},
 	"dependencies": {
 		"@ctx-core/date": "^3.0.1",
-		"@ctx-core/font-awesome": "^7.4.0",
+		"@ctx-core/font-awesome": "^7.5.0",
 		"@ctx-core/html": "^6.0.8",
-		"@ctx-core/nav": "^2.1.4",
+		"@ctx-core/nav": "^2.1.5",
 		"compression": "^1.7.4",
 		"dotenv": "^7.0.0",
 		"express": "^4.16.4",
