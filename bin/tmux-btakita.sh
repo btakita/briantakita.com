@@ -2,7 +2,7 @@
 BTAKITA_DIR_DEFAULT=~/work/btakita.github.io/
 BTAKITA_DIR="${BTAKITA_DIR:-$BTAKITA_DIR_DEFAULT}"
 
-tmux rename-window censible-core
+tmux rename-window briantakita
 tmux send-keys "cd $BTAKITA_DIR" 'C-m'
 cd $BTAKITA_DIR
 tmux split-window -v
