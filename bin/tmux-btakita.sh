@@ -2,17 +2,17 @@
 BTAKITA_DIR_DEFAULT=~/work/btakita.github.io/
 BTAKITA_DIR="${BTAKITA_DIR:-$BTAKITA_DIR_DEFAULT}"
 
-tmux rename-window briantakita
-tmux send-keys "cd $BTAKITA_DIR" 'C-m'
 cd $BTAKITA_DIR
+
+tmux rename-window briantakita
 tmux split-window -v
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
 
+cd $BTAKITA_DIR/packages/ctx-core
+
 tmux new-window
 tmux rename-window ctx-core
-tmux send-keys 'cd packages/ctx-core' 'C-m'
-cd packages/ctx-core
 tmux split-window -v
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0
