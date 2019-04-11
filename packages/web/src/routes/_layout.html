@@ -2,7 +2,7 @@
 	export async function preload({ query, params }) {
 		const response = await this.fetch('/version')
 		const version = await response.text()
-	  return {
+		return {
 			version
 		}
 	}
@@ -16,7 +16,6 @@
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Header from '@briantakita/web/src/layout/Header.html'
 	import Footer from '@briantakita/web/src/layout/Footer.html'
-	import Nav from '@briantakita/web/src/layout/Nav.html'
 	const session = getSession()
 	export let version
 	let archive_id
@@ -31,9 +30,8 @@
 	<title>{$__title ? `${$__title} — ` : ''}BrianTakita.com</title>
 </svelte:head>
 
-<div class="_layout {$__class__layout}">
+<div class="_layout {$__class__layout||''}">
 	<Header></Header>
-	<Nav></Nav>
 
 	<main class="content">
 		<div class="content-wrap">
@@ -65,11 +63,12 @@
 		}
 	}
 	:global(.content-wrap) {
-		width: 60rem;
+		width: 100%;
 		margin: 0 auto;
-		@media (max-width: 690px) {
-			width: auto;
-			padding: 0 1em;
+		padding: 0 1em;
+		@media (min-width: $width-slider-nav) {
+			width: 60rem;
+			padding: 0;
 		}
 	}
 	:global(body), :global(a) {
@@ -171,9 +170,6 @@
 			padding: 0;
 			margin: 0 auto;
 			box-sizing: border-box;
-			@media (max-width: #{$width-phone}) {
-				margin-top: calc(#{$height-header-tablet} + 1rem);
-			}
 			z-index: 0;
 		}
 	}

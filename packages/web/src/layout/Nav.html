@@ -6,31 +6,42 @@
 </script>
 
 <Handle__Nav class="Handle__Nav__briantakita"></Handle__Nav>
-<div class="container__Content__Nav">
-	<Content__Nav class="content-wrap">
-		<Item__Nav href="/" selected="{$__path__sapper === '/'}">Home</Item__Nav>
-		<Item__Nav href="/portfolio" selected="{$__path__sapper === '/portfolio'}">Portfolio</Item__Nav>
-		<Item__Nav href="/interests" selected="{$__path__sapper === '/interests'}">Interests</Item__Nav>
-		<Item__Nav href="/blog" selected="{$__path__sapper === '/blog'}">Blog</Item__Nav>
-	</Content__Nav>
-</div>
+<Content__Nav class="content-wrap">
+	<Item__Nav href="/" selected="{$__path__sapper === '/'}">Home</Item__Nav>
+	<Item__Nav href="/portfolio" selected="{$__path__sapper === '/portfolio'}">Portfolio</Item__Nav>
+	<Item__Nav href="/interests" selected="{$__path__sapper === '/interests'}">Interests</Item__Nav>
+	<Item__Nav href="/blog" selected="{$__path__sapper === '/blog'}">Blog</Item__Nav>
+</Content__Nav>
 
 <style type="text/scss">
 	@import '~@briantakita/web/src/css/variables';
 	@import '~@ctx-core/nav/lib';
-	@include content__nav()
-	:global(.Handle__Nav__briantakita) {
-		display: none;
+	@include handle__nav()
+	@include content__nav($selected-background: mix($color__body, $color__header, 10%))
+	@include content__nav__slide_from_right()
+	:global(.Handle__Nav) {
+		fill: $color__link__mid;
+		@media(max-width: #{$width-slider-nav}) {
+			position: absolute;
+			top: 0.6rem;
+			right: 0.4rem;
+		}
 	}
-	:global(.container__Content__Nav) {
-		position: absolute;
-		top: 3rem;
+	:global(.Content__Nav.content-wrap) {
 		height: auto;
-		width: 100%;
 		z-index: 1;
+		@media(min-width: #{$width-slider-nav}) {
+			width: 100%;
+		}
+		@media(max-width: #{$width-slider-nav}) {
+			width: 10rem;
+			position: fixed;
+			top: 0;
+			height: 100vh;
+			background-color: mix($color__body, $color__header, 50%);
+		}
 		:global(a) {
 			margin-right: 0.8rem;
-			padding: 0 2rem;
 			&.selected {
 				box-shadow: 0 2px 0 $color__link__mid;
 			}
