@@ -2,15 +2,16 @@
 	import { __path__sapper } from '@ctx-core/sapper/store'
 	import Handle__Nav from '@ctx-core/nav/Handle__Nav.html'
 	import Content__Nav from '@ctx-core/nav/Content__Nav.html'
+	import Item__Nav from '@ctx-core/nav/Item__Nav.html'
 </script>
 
 <Handle__Nav class="Handle__Nav__briantakita"></Handle__Nav>
 <div class="container__Content__Nav">
 	<Content__Nav class="content-wrap">
-		<a href="/" class:selected="{$__path__sapper === '/'}">Home</a>
-		<a href="/portfolio" class:selected="{$__path__sapper === '/portfolio'}">Portfolio</a>
-		<a href="/interests" class:selected="{$__path__sapper === '/interests'}">Interests</a>
-		<a href="/blog" class:selected="{$__path__sapper === '/blog'}">Blog</a>
+		<Item__Nav href="/" selected="{$__path__sapper === '/'}">Home</Item__Nav>
+		<Item__Nav href="/portfolio" selected="{$__path__sapper === '/portfolio'}">Portfolio</Item__Nav>
+		<Item__Nav href="/interests" selected="{$__path__sapper === '/interests'}">Interests</Item__Nav>
+		<Item__Nav href="/blog" selected="{$__path__sapper === '/blog'}">Blog</Item__Nav>
 	</Content__Nav>
 </div>
 
@@ -24,14 +25,12 @@
 	:global(.container__Content__Nav) {
 		position: absolute;
 		top: 3rem;
+		height: auto;
 		width: 100%;
 		z-index: 1;
-		a {
-			text-decoration: none;
+		:global(a) {
 			margin-right: 0.8rem;
-			&:focus {
-				outline: 0;
-			}
+			padding: 0 2rem;
 			&.selected {
 				box-shadow: 0 2px 0 $color__link__mid;
 			}
