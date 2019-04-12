@@ -17,7 +17,7 @@
 	@import '~@briantakita/web/src/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include handle__nav()
-	@include content__nav($selected-background: mix($color__body, $color__header, 10%))
+	@include content__nav($background__selected: mix($color__body, $color__header, 10%))
 	@include content__nav__slide_from_right()
 	:global(.Handle__Nav) {
 		fill: $color__link__mid;
@@ -30,9 +30,6 @@
 	:global(.Content__Nav.content-wrap) {
 		height: auto;
 		z-index: 1;
-		@media(min-width: #{$width-slider-nav}) {
-			width: 100%;
-		}
 		@media(max-width: #{$width-slider-nav}) {
 			width: 10rem;
 			position: fixed;
