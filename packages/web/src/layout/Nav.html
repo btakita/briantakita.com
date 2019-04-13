@@ -19,14 +19,14 @@
 	@include handle__nav();
 	@include content__nav();
 	@include content__nav__selected__underline($background: $color__text);
-	@media(max-width: #{$width-slider-nav}) {
+	@media(max-width: #{$width__nav__slider}) {
 		@include content__nav__selected__background($background: mix($color__body, $color__header, 10%));
 		@include content__nav__cancel__selected__underline();
 	}
 	@include content__nav__slide_from_right();
 	:global(.Handle__Nav) {
 		fill: $color__link__mid;
-		@media(max-width: #{$width-slider-nav}) {
+		@media(max-width: #{$width__nav__slider}) {
 			position: absolute;
 			top: 0.6rem;
 			right: 0.4rem;
@@ -35,7 +35,7 @@
 	:global(.Content__Nav.content-wrap) {
 		height: auto;
 		z-index: 1;
-		@media(max-width: #{$width-slider-nav}) {
+		@media(max-width: #{$width__nav__slider}) {
 			width: 10rem;
 			position: fixed;
 			top: 0;
