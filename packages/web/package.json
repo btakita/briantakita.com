@@ -16,7 +16,7 @@
 		"@ctx-core/a__target": "^1.0.3",
 		"@ctx-core/date": "^3.0.1",
 		"@ctx-core/font-awesome": "^7.5.4",
-		"@ctx-core/google": "^4.3.0",
+		"@ctx-core/google": "^4.4.0",
 		"@ctx-core/html": "^6.0.11",
 		"@ctx-core/nav": "^5.0.1",
 		"compression": "^1.7.4",
