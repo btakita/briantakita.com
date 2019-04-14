@@ -8,8 +8,10 @@ cypress/screenshots
 templates/.*
 export
 
+.env
 .idea/
 out/
+tmp/
 *.log
 private/dist
 junk.*

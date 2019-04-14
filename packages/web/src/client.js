@@ -1,4 +1,4 @@
-import * as sapper from '@sapper/app.mjs'
+import * as sapper from '@sapper/app'
 sapper.start({
 	target: document.querySelector('#sapper'),
 })

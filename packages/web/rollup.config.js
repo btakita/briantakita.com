@@ -13,10 +13,11 @@ import pkg from './package.json'
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const { style } = require('@ctx-core/sass/svelte.js')
-const extensions = ['.js', '.js', '.jsx', '.json']
+const extensions = ['.mjs', '.js', '.jsx', '.json']
 const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
 	'process.env.ROOT__PATH': JSON.stringify('/'),
+	'process.env.GOOGLE_TRACKING_ID': JSON.stringify(process.env.GOOGLE_TRACKING_ID),
 }
 module.exports = {
 	client: {
