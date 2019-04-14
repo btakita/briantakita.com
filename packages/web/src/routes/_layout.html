@@ -32,7 +32,7 @@
 </svelte:head>
 
 {#if _no__dom()}
-{@html _html__webfont__fout({ families: ['Open Sans'] })}
+{@html _html__webfont__fout(['Open Sans'])}
 {/if}
 
 <div class="_layout {$__class__layout||''}">
