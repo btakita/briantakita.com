@@ -5,6 +5,17 @@ date: 2/27/18 16:30
 description: Naming Conventions to encode the meaning & context of abstractions
 ---
 
+Note: The naming convention described in this article
+	<a target="_blank" href="/posts/multi-underscore-tag-naming-convention-analysis">has been named</a>:
+
+Long form: Multi Underscore Tag Naming Convention
+
+Medium form: Tag Naming Convention
+
+Short Form: Tag Naming
+
+---
+
 An Abstraction name encodes the meaning & context of the abstraction.
 The name consists of tags that are joined together to create a name.
 
@@ -12,7 +23,7 @@ The name consists of tags that are joined together to create a name.
 	Naming Convention (programming) (Wikipedia)
 </a>
 
-## Discoverability & Unique vs Ambiguous Names
+## Discoverability: Unique vs Ambiguous Names
 
 A name & tags in the name also acts identifiers to locate
 	the usages of the abstraction in the codebase.
@@ -128,8 +139,10 @@ Factory functions are prefixed with a single `_`,
 	with the name of the created abstraction following.
 
 ```js
-const sales_report = $sales_report()
+const sales_report = _sales_report()
 ```
+
+One can visualize the `sales_report` flowing from the factory `_`.
 
 This technique may be useful in breaking down a function into component parts using scoping.
 In the following example, these queries are run in parallel using `async/await` & `Promise.all`.
@@ -139,7 +152,7 @@ Note that in this example,
 	with the rest of the name being context named top-down.
 
 ```js
-async function $sales_report() {
+async function _sales_report() {
 	const [
 		results__sales_aggregate_query,
 		results__sales_regions_query,
