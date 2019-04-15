@@ -1100,6 +1100,19 @@ auth0-js@^9.10.1:
     url-join "^4.0.0"
     winchan "^0.2.1"
 
+auth0-js@^9.10.2:
+  version "9.10.2"
+  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-9.10.2.tgz#5b374f48a61deaff4906d3f0c0cd46e9590fb5f3"
+  integrity sha512-tvVcL14jTrPq7c535rVLDKHNPW7cW0LKGqeiJA8psa+OGZ0AXv49jLxE+vjxNN6y508JE2bi7p9bhdlJ2pKSRA==
+  dependencies:
+    base64-js "^1.2.0"
+    idtoken-verifier "^1.2.0"
+    js-cookie "^2.2.0"
+    qs "^6.4.0"
+    superagent "^3.8.2"
+    url-join "^4.0.0"
+    winchan "^0.2.1"
+
 auth0-lock@^11.14.1:
   version "11.14.1"
   resolved "https://registry.yarnpkg.com/auth0-lock/-/auth0-lock-11.14.1.tgz#71d64302bf8f343ce6e99f5b98316ef726c87f78"
@@ -3389,11 +3402,6 @@ global-prefix@^1.0.1:
     is-windows "^1.0.1"
     which "^1.2.14"
 
-globalyzer@^0.1.0:
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/globalyzer/-/globalyzer-0.1.4.tgz#bc8e273afe1ac7c24eea8def5b802340c5cc534f"
-  integrity sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==
-
 globby@^6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/globby/-/globby-6.1.0.tgz#f5a6d70e8395e21c858fb0489d64df02424d506c"
@@ -3417,11 +3425,6 @@ globby@^8.0.1:
     ignore "^3.3.5"
     pify "^3.0.0"
     slash "^1.0.0"
-
-globrex@^0.1.1:
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/globrex/-/globrex-0.1.2.tgz#dd5d9ec826232730cd6793a5e33a9302985e6098"
-  integrity sha512-uHJgbwAMwNFf5mLst7IWLNg14x1CkeqglJb/K3doi4dw6q2IvAAmM/Y81kevy83wP+Sst+nutFTYOGg3d1lsxg==
 
 globule@^1.0.0:
   version "1.2.1"
@@ -5557,10 +5560,10 @@ npm-bundled@^1.0.1:
   resolved "https://registry.yarnpkg.com/npm-bundled/-/npm-bundled-1.0.6.tgz#e7ba9aadcef962bb61248f91721cd932b3fe6bdd"
   integrity sha512-8/JCaftHwbd//k6y2rEWp6k1wxVfpFzB6t1p825+cUb7Ym2XQfhwIC5KwhrvzZRJu+LtDE585zVaS32+CGtf0g==
 
-npm-check-updates@^3.1.7:
-  version "3.1.7"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-3.1.7.tgz#54ab8cbacbe0c0ddee6228749cbacf4abdc11ffc"
-  integrity sha512-6oN1DPXa7ey5NPuQ7E1CayEBpFW4sLwTo4d6wciqLHcLQ2A6ZcfiBo4zTzQk0EyPAmBsTdyk0ZetetY3BHdoYA==
+npm-check-updates@^3.1.8:
+  version "3.1.8"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-3.1.8.tgz#4ac5af3eafd2a8659c5867fe3e176f90bf84d362"
+  integrity sha512-a/gb2RzV35cBZqVvUtOj6NIg5VODXr5V5fLbP5G+LJTxLosWzsV+SXdmaaXKEAjbNPGl7uZrdXlKuBm/8Mp+HA==
   dependencies:
     bluebird "^3.5.3"
     chalk "^2.4.2"
@@ -7467,14 +7470,13 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-sirv@^0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/sirv/-/sirv-0.2.4.tgz#7db3f02ef424c3fdb74771b134cfc9bd155678d4"
-  integrity sha512-0YaLzpD6dPiJZUqDEwDqk9NLGZDm/nNWvpg8Rym+3hdt5pWGRrlggjjt1KtF0+tZgGtyI4F5f5JZ9XTCp53Oqw==
+sirv@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-0.3.1.tgz#a346c5d9bb4b50f60cb73423041b9c1694532287"
+  integrity sha512-03p4fuXPfhlNrDjUBw5bGF//4i0Rjwf7hVm8XhuKgeguHGQPr4pV+lgAJZKSP9BaJKn+QG9QvTxLX1wSYshccg==
   dependencies:
     "@polka/url" "^0.5.0"
     mime "^2.3.1"
-    tiny-glob "^0.2.0"
 
 sisteransi@^1.0.0:
   version "1.0.0"
@@ -7894,9 +7896,9 @@ supports-color@^6.1.0:
     has-flag "^3.0.0"
 
 svelte@beta:
-  version "3.0.0-beta.23"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.23.tgz#fa96b91638e34bbaed01aad50df4d4192e252d70"
-  integrity sha512-jn9AI6idldjcIOuFZkA/HvULv97jjrtS1FVh7bjnFx7i7IuDpMFRbn+WYmnPoW+JXvLMFnNa+BbraDfjrMARSg==
+  version "3.0.0-beta.26"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.26.tgz#68c1ba96a4bf642ce0025d29d1e08a1535a9765d"
+  integrity sha512-Zjt1oeJGtTeJJz9mczDl3rj8ZZwTmVObz5OYfkkjIwrzAs2BvvgAxwRhTgSjLSbrQmtloFf66ea1whX8NP/Y6A==
 
 swap-case@^1.1.0:
   version "1.1.2"
@@ -8003,14 +8005,6 @@ timed-out@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/timed-out/-/timed-out-4.0.1.tgz#f32eacac5a175bea25d7fab565ab3ed8741ef56f"
   integrity sha1-8y6srFoXW+ol1/q1Zas+2HQe9W8=
-
-tiny-glob@^0.2.0:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.6.tgz#9e056e169d9788fe8a734dfa1ff02e9b92ed7eda"
-  integrity sha512-A7ewMqPu1B5PWwC3m7KVgAu96Ch5LA0w4SnEN/LbDREj/gAD0nPWboRbn8YoP9ISZXqeNAlMvKSKoEuhcfK3Pw==
-  dependencies:
-    globalyzer "^0.1.0"
-    globrex "^0.1.1"
 
 title-case@^2.1.0:
   version "2.1.1"

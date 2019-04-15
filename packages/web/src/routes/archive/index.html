@@ -2,20 +2,20 @@
 	export async function preload({ params, query }) {
 		const response = await this.fetch('/archive.json')
 		const json = await response.json()
-		const { arr__archive_id } = json
+		const { a1__archive_id } = json
 		return {
-			arr__archive_id
+			a1__archive_id
 		}
 	}
 </script>
 
 <script>
 	import { basename } from 'path'
-	export let arr__archive_id
+	export let a1__archive_id
 </script>
 
 <h2>Archive</h2>
 
-{#each arr__archive_id as archive_id}
+{#each a1__archive_id as archive_id}
 	<div><a href="/archive/{archive_id}">{archive_id}</a></div>
 {/each}

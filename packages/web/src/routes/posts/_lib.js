@@ -32,6 +32,7 @@ export async function _post(file) {
 		metadata,
 		slug,
 		date: new Date(metadata.date),
+		txt__date: metadata.date,
 		path,
 		url,
 	}

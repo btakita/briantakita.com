@@ -8,7 +8,7 @@
 </script>
 <script>
 	import { __class__layout, __prepend__footer } from '@briantakita/web/src/layout/store'
-	import { format__date__prose } from '@ctx-core/date'
+	import Date__Local from '@ctx-core/date/Date__Local.html'
 	import { __subheader } from '@briantakita/web/src/layout/store'
 	export let post
 	export let title = ''
@@ -20,7 +20,7 @@
 <section class="post">
 	<div class="content">
 		<header>
-			<p class="date"><span>{format__date__prose(new Date(post.date))}</span></p>
+			<p class="date"><span><Date__Local date="{post.txt__date}"></Date__Local></span></p>
 			<h2><a href="{post.path}">{post.metadata.title}</a></h2>
 		</header>
 		{@html post.html}

@@ -14,7 +14,7 @@
 	},
 	"dependencies": {
 		"@ctx-core/a__target": "^1.0.3",
-		"@ctx-core/date": "^3.0.1",
+		"@ctx-core/date": "^3.2.0",
 		"@ctx-core/font-awesome": "^7.5.4",
 		"@ctx-core/google": "^4.4.0",
 		"@ctx-core/html": "^6.0.11",
@@ -33,7 +33,7 @@
 		"resolve-path": "^1.4.0",
 		"serve-static": "^1.13.2",
 		"shelljs": "^0.8.3",
-		"sirv": "^0.2.4",
+		"sirv": "^0.3.1",
 		"source-map-support": "^0.5.12",
 		"util": "^0.11.1",
 		"yarn": "^1.15.2"

@@ -24,11 +24,6 @@ Emergent Properties or Gestalt resulting from
 	the combination of multiple elements of this methodology
 	will be given limited treatment, with future posts giving fuller treatments.
 
-TODO: In the future, I will post how & why the "Multi Underscore Tag Naming Convention"
-	can assist in creating simpler software that scales with complexity.
-Also, I will explain how this naming convention makes it easy to find abstractions
-	in a codebase with confidence, across any number of software & data layers.
-	
 <hr class="more"/>
 
 ## Deconstructing "Multi Underscore Tag Naming Convention"
