@@ -1,11 +1,11 @@
 <script type="text/babel">
-  import { format__date__prose } from '@ctx-core/date'
+  import Date__Local from '@ctx-core/date/Date__Local.html'
   export let post
 </script>
 
 <section class="post intro PostIntro">
   <header>
-    <p class="date"><span>{format__date__prose(new Date(post.date))}</span></p>
+    <p class="date"><span><Date__Local date="{post.txt__date}"></Date__Local></span></p>
     <h2><a href="{post.path}">{post.metadata.title}</a></h2>
   </header>
   <div class="content">
