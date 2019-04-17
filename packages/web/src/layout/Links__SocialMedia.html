@@ -11,6 +11,7 @@
 		register__wordpress,
 		register__quora,
 	} from '@ctx-core/font-awesome'
+	export let compact = false
 	register__rss()
 	register__email_solid()
 	register__linkedin()
@@ -21,7 +22,10 @@
 	register__quora()
 </script>
 
-<section class="links Links__SocialMedia">
+<section
+	class="links Links__SocialMedia"
+	class:compact={compact}
+>
   <ul>
     <li>
       <A href="/feed.xml" title="Atom Feed">
@@ -44,27 +48,29 @@
         <Icon name="linkedin"></Icon>
       </A>
     </li>
-    <li>
-      <A href="https://www.facebook.com/brian.takita" title="Facebook">
-        <Icon name="facebook"></Icon>
-      </A>
-    </li>
+    {#if !compact}
+      <li>
+        <A href="https://www.facebook.com/brian.takita" title="Facebook">
+          <Icon name="facebook"></Icon>
+        </A>
+      </li>
 		<!--				<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>-->
-    <li>
-      <A href="https://twitter.com/briantakita" title="Twitter">
-        <Icon name="twitter"></Icon>
-      </A>
-    </li>
-    <li>
-      <A href="http://briantakita.wordpress.com/" title="Wordpress Blog">
-        <Icon name="wordpress"></Icon>
-      </A>
-    </li>
-    <li>
-      <A href="https://www.quora.com/Brian-Takita" title="Quora">
-        <Icon name="quora"></Icon>
-      </A>
-    </li>
+      <li>
+        <A href="https://twitter.com/briantakita" title="Twitter">
+          <Icon name="twitter"></Icon>
+        </A>
+      </li>
+      <li>
+        <A href="http://briantakita.wordpress.com/" title="Wordpress Blog">
+          <Icon name="wordpress"></Icon>
+        </A>
+      </li>
+      <li>
+        <A href="https://www.quora.com/Brian-Takita" title="Quora">
+          <Icon name="quora"></Icon>
+        </A>
+      </li>
+    {/if}
   </ul>
 </section>
 
@@ -73,6 +79,18 @@
 		padding: 1.6em 0 0;
 		font-size: 0.9em;
 		overflow: hidden;
+		&.compact {
+			padding: 0;
+			ul {
+				margin: 0;
+				height: 1.9rem;
+        position: relative;
+				li {
+          height: 100%;
+          position: relative;
+        }
+			}
+		}
 		ul {
 			overflow: hidden;
 			list-style-type: none;
