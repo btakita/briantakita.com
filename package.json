@@ -15,7 +15,7 @@
 	"dependencies": {
 		"compression": "^1.7.4",
 		"dotenv": "^7.0.0",
-		"lerna": "^3.13.2",
+		"lerna": "^3.13.3",
 		"mkdirp": "^0.5.1",
 		"nodemon": "^1.18.11",
 		"nodent": "^3.2.10",

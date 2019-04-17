@@ -1,76 +1,76 @@
 <script context="module">
 	export async function preload({ params, query }) {
 		const response = await this.fetch('posts.json')
-		const ARR__post = await response.json()
-		return { ARR__post }
+		const a1__post = await response.json()
+		return { a1__post }
 	}
 </script>
 
 <script>
-	import { a1__month_abbrev } from '@ctx-core/date'
+	import { a1__month__abbrev } from '@ctx-core/date'
 	const lineHeight = 2.2
-	export let ARR__post
-	let ARR__post__BY__year
-	let ARR__post__BY__month__BY__year
-	let ARR__year
+	export let a1__post
+	let __year__a1__post
+	let __year__month__a1__post
+	let a1__year
 	let date
 	$: {
-		const ARR__post__BY__year__ = {}
-		for (let i = ARR__post.length - 1; i; i--) {
-			const post = ARR__post[i]
+		const __year__a1__post__ = {}
+		for (let i = a1__post.length - 1; i; i--) {
+			const post = a1__post[i]
 			const year = new Date(post.date).getFullYear()
-			const ARR__post__ = ARR__post__BY__year__[year] || (ARR__post__BY__year__[year] = [])
-			ARR__post__.push(post)
+			const a1__post__ = __year__a1__post__[year] || (__year__a1__post__[year] = [])
+			a1__post__.push(post)
 		}
-		ARR__post__BY__year = ARR__post__BY__year__
+		__year__a1__post = __year__a1__post__
 	}
 	$: {
-		const ARR__post__BY__month__BY__year__ = {}
-		for (let year in ARR__post__BY__year) {
-			const ARR__post__BY__month = ARR__post__BY__month__BY__year__[year] || {}
-			ARR__post__BY__month__BY__year__[year] = ARR__post__BY__month
-			const posts__year = ARR__post__BY__year[year]
+		const __year__month__a1__post__ = {}
+		for (let year in __year__a1__post) {
+			const a1__post__BY__month = __year__month__a1__post__[year] || {}
+			__year__month__a1__post__[year] = a1__post__BY__month
+			const posts__year = __year__a1__post[year]
 			for (let i = 0; i < posts__year.length; i++) {
 				const post = posts__year[i]
 				const month = new Date(post.date).getMonth()
-				const ARR__post__ = ARR__post__BY__month[month] || (ARR__post__BY__month[month] = [])
-				ARR__post__.push(post)
+				const a1__post__ = a1__post__BY__month[month] || (a1__post__BY__month[month] = [])
+				a1__post__.push(post)
 			}
 		}
-		ARR__post__BY__month__BY__year = ARR__post__BY__month__BY__year__
+		__year__month__a1__post = __year__month__a1__post__
 	}
-	$: ARR__year = Object.keys(ARR__post__BY__year)
+	$: a1__year = Object.keys(__year__a1__post)
 	function last(list, i) {
 		return list.length - 1 == i
 	}
-	function height(ARR__post) {
-		return lineHeight * ARR__post.length
+	function height(a1__post) {
+		return lineHeight * a1__post.length
 	}
 </script>
 
 <section class="archive">
 	<h2>Archive</h2>
 	<ul>
-		{#each ARR__year as year, i}
+		{#each a1__year as year, i}
 			<li class="year">
 				<span
-					style="line-height: {height(ARR__post__BY__year[year])}em;"
-					class="year-label {last(ARR__year, i) ? 'last' : ''}"
+					style="line-height: {height(__year__a1__post[year])}em;"
+					class="year-label {last(a1__year, i) ? 'last' : ''}"
 				>{year}</span>
 				<ul>
-					{#each Object.keys(ARR__post__BY__month__BY__year[year]) as month, j}
+					{#each Object.keys(__year__month__a1__post[year]) as month, j}
 						<li
 							class="month"
-							style="height: {height(ARR__post__BY__month__BY__year[year][month])};"
+							style="height: {height(__year__month__a1__post[year][month])};"
 						>
 							<span
-								style="line-height: {height(ARR__post__BY__month__BY__year[year][month])};"
-								class="month-label {last(ARR__post__BY__month__BY__year[year], j) ? 'last' : ''}"
-							>{ARR__month_abbrev[month]}</span>
-							{#each ARR__post__BY__month__BY__year[year][month] as post, k}
+								style="line-height: {height(__year__month__a1__post[year][month])};"
+								class="month-label {last(__year__month__a1__post[year], j) ? 'last' : ''}"
+							>{a1__month__abbrev[month]}</span>
+							{#each __year__month__a1__post[year][month] as post, k}
 								<a href="{post.url}"
-									 style="line-height: {height(ARR__post__BY__month__BY__year[year][month])}em;"
-									 class="{last(ARR__post__BY__month__BY__year[year][month], k) ? 'last' : ''}"
+									 style="line-height: {height(__year__month__a1__post[year][month])}em;"
+									 class="{last(__year__month__a1__post[year][month], k) ? 'last' : ''}"
 								>{post.metadata.title}</a>
 							{/each}
 						</li>
