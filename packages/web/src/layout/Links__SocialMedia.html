@@ -75,7 +75,8 @@
 </section>
 
 <style type="text/scss">
-  .Links__SocialMedia {
+  @import '~@briantakita/web/src/css/variables';
+	.Links__SocialMedia {
 		padding: 1.6em 0 0;
 		font-size: 0.9em;
 		overflow: hidden;
@@ -84,21 +85,31 @@
 			ul {
 				margin: 0;
 				height: 1.9rem;
-        position: relative;
+				position: relative;
 				li {
-          height: 100%;
-          position: relative;
-        }
+					height: 100%;
+					position: relative;
+				}
 			}
 		}
 		ul {
 			overflow: hidden;
 			list-style-type: none;
+			@media(max-width: #{$width__nav__slider}) {
+				overflow: visible;
+        width: 100%;
+        padding: 0;
+			}
 			li {
 				float: left;
 				width: 2rem;
 				height: 2rem;
 				margin: 0 0.8rem 0 0;
+				@media(max-width: #{$width__nav__slider}) {
+					width: 1.4rem;
+					height: 1.4rem;
+					margin: 0 0.4rem 0 0;
+				}
 			}
 		}
 	}

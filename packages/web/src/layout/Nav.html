@@ -59,6 +59,14 @@
 						:global(.Links__SocialMedia) {
 							display: flex;
 							justify-content: flex-end;
+							width: 100%;
+							padding: 0 0.4rem;
+							@media(max-width: #{$width__nav__slider}) {
+								justify-content: center;
+							}
+							:global(ul) {
+								width: auto;
+							}
 						}
 					}
 					:global(a) {
