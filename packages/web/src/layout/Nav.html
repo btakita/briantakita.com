@@ -12,7 +12,7 @@
 	<Item__Nav href="/portfolio" selected="{$__path__sapper === '/portfolio'}">Portfolio</Item__Nav>
 	<Item__Nav href="/interests" selected="{$__path__sapper === '/interests'}">Interests</Item__Nav>
 	<Item__Nav href="/blog" selected="{$__path__sapper === '/blog'}">Blog</Item__Nav>
-	<Item__Nav>
+	<Item__Nav class="container__Links__SocialMedia">
 		<div slot="in">
 			<Links__SocialMedia compact="{true}"></Links__SocialMedia>
 		</div>
@@ -50,8 +50,17 @@
 		}
 		:global(.dialog) {
 			:global(.container) {
+				display: flex;
 				:global(.Item__Nav) {
 					padding: 0.2rem 0;
+					flex: 0;
+					&.container__Links__SocialMedia {
+						flex: 1;
+						:global(.Links__SocialMedia) {
+							display: flex;
+							justify-content: flex-end;
+						}
+					}
 					:global(a) {
 						margin-right: 0.8rem;
 						fill: $color__text;
