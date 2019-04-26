@@ -6,7 +6,10 @@ description: Reductionist mechanisms in Physical Existence are Energy & Energy T
 ---
 
 <a href="/posts/feeling-abstraction/">
-<img src="/images/feeling-abstraction.jpg" alt="From http://haiphonghoaphuongdo.blogspot.com/2011/07/colorful-vector-abstraction.html - http://2.bp.blogspot.com/-_t6mHvuNOTs/Th23RDI-RgI/AAAAAAAAAL0/T_VMdr6wIcY/s1600/abstract-vector-free-art.jpg - Licensed under Creative Commons" />
+<img
+	src="/images/feeling-abstraction.jpg"
+	alt="Brian Takita - Feeling Abstraction - From http://haiphonghoaphuongdo.blogspot.com/2011/07/colorful-vector-abstraction.html - http://2.bp.blogspot.com/-_t6mHvuNOTs/Th23RDI-RgI/AAAAAAAAAL0/T_VMdr6wIcY/s1600/abstract-vector-free-art.jpg - Licensed under Creative Commons"
+/>
 </a>
 
 Reductionist mechanisms in Physical Existence are Energy & Energy Transfer. We are all physically made of Energy.

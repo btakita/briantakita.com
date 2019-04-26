@@ -5,7 +5,10 @@ date: 9/7/13 21:39
 ---
 
 <a href="/posts/no-privacy-control-your-internet-face/">
-<img src="http://briantakita.files.wordpress.com/2013/09/4959060_750beab5a4.jpg" alt="Brian Takita - Peeping Tom - Created by tuchodi under the Creative Commons License - http://www.flickr.com/photos/tuchodi/4959060" />
+	<img
+		src="http://briantakita.files.wordpress.com/2013/09/4959060_750beab5a4.jpg"
+		alt="Brian Takita - There is no privacy! Control your internet face - Created by tuchodi under the Creative Commons License - http://www.flickr.com/photos/tuchodi/4959060"
+	/>
 </a>
 
 With all of the revelations over how the NSA is snooping over your personal communications, companies storing and controlling your data, encryption backdoors and the fact that it's always crackable, one thing is becoming clear.

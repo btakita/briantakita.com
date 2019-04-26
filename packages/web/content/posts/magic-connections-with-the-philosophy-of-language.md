@@ -7,9 +7,12 @@ image: http://www.briantakita.com/images/unicorn.jpg
 ---
 
 <p style="text-align: center; display: block;">
-<a href="/posts/magic-connections-with-the-philosophy-of-language/">
-<img src="/images/unicorn.jpg" alt="From http://casiestewart.com/unicornrainbow/ - https://lh4.googleusercontent.com/-ylo97AfxI9c/SuW-sv-oDII/AAAAAAAAGxc/tVIc_fh1A9A/s2048/unicorn.jpg - Licensed under Creative Commons" style="width: 376px; display: inline;" />
-</a>
+	<a href="/posts/magic-connections-with-the-philosophy-of-language/">
+		<img
+			src="/images/unicorn.jpg"
+			alt="Brian Takita - Magic Connections with the Philosophy of Language - From http://casiestewart.com/unicornrainbow/ - https://lh4.googleusercontent.com/-ylo97AfxI9c/SuW-sv-oDII/AAAAAAAAGxc/tVIc_fh1A9A/s2048/unicorn.jpg - Licensed under Creative Commons" style="width: 376px; display: inline;"
+		/>
+	</a>
 </p>
 
 <a href="https://github.com/btakita/philosophy/blob/master/src/magic.md" target="_blank">Magic</a> exists! Well, if you have listened to me lately, you will hear that <a href="https://github.com/btakita/philosophy/blob/master/src/exist.md" target="_blank">everything exists (including fiction)</a>. When everything exists, we can recapture the entirety of language from those who impose restrictions on <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a>. We have all heard "that does not exist". We can now say, "that" does exist & "that" is a useful concept.
