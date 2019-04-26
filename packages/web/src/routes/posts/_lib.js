@@ -2,25 +2,19 @@ import fs from 'fs'
 import { extname } from 'path'
 import { promisify } from 'util'
 import { domain } from '@briantakita/web/src/domain/lib'
-import { process_markdown } from '@briantakita/web/src/markdown/lib'
 import { compact } from '@ctx-core/array'
-const marked = require('marked')
 import hljs from '@briantakita/web/src/highlight.js/lib'
+import {
+	_obj__metadata__content,
+	_html__content__markdown,
+} from '@ctx-core/markdown'
 const readFile__promise = promisify(fs.readFile)
 const promise__readdir = promisify(fs.readdir)
 export async function _post(file) {
 	if (extname(file) !== '.md') return
 	const markdown = await readFile__promise(`content/posts/${file}`, 'utf-8')
-	const { content, metadata } = process_markdown(markdown)
-	const date = new Date(`${metadata.pubdate} EDT`) // cheeky hack
-	const renderer = new marked.Renderer()
-	renderer.code = (source, lang) => {
-		const highlighted = hljs.highlight(lang, source).value
-		return `<pre><code>${highlighted}</code></pre>`
-	}
-	const html = marked(content.replace(/^\t+/gm, match => match.split('\t').join('  ')), {
-		renderer
-	})
+	const { content, metadata } = _obj__metadata__content(markdown)
+	const html = _html__content__markdown(content, hljs)
 	const idx__more__ = html.indexOf('<hr class="more"/>')
 	const idx__more = idx__more__ > -1 ? idx__more__ : null
 	metadata.intro = html.slice(0, idx__more)
@@ -46,3 +40,4 @@ export async function _arr__post() {
 			})
 	return arr__post
 }
+

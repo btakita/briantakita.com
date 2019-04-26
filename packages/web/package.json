@@ -13,11 +13,12 @@
 		"test": "run-p --race dev cy:run"
 	},
 	"dependencies": {
-		"@ctx-core/a__target": "^1.1.1",
+		"@ctx-core/a__target": "^1.1.2",
 		"@ctx-core/date": "^3.3.0",
 		"@ctx-core/font-awesome": "^7.5.8",
 		"@ctx-core/google": "^4.4.3",
 		"@ctx-core/html": "^6.0.14",
+		"@ctx-core/markdown": "^1.0.2",
 		"@ctx-core/nav": "^5.1.5",
 		"compression": "^1.7.4",
 		"dotenv": "^7.0.0",
