@@ -3,7 +3,10 @@
 		const { post_id } = params
 		const response = await this.fetch(`posts/${post_id}.json`)
 		const post = await response.json()
-		return { post }
+		if (!post) {
+			this.error(404, 'Post Not Found')
+		}
+		return post && { post }
 	}
 </script>
 <script>

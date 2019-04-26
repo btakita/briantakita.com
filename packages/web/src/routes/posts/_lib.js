@@ -8,11 +8,14 @@ import {
 	_obj__metadata__content,
 	_html__content__markdown,
 } from '@ctx-core/markdown'
+const exists = promisify(fs.exists)
 const readFile__promise = promisify(fs.readFile)
 const promise__readdir = promisify(fs.readdir)
 export async function _post(file) {
 	if (extname(file) !== '.md') return
-	const markdown = await readFile__promise(`${process.cwd()}/content/posts/${file}`, 'utf-8')
+	const txt__path = `${process.cwd()}/content/posts/${file}`
+	if (!(await exists(txt__path))) return
+	const markdown = await readFile__promise(txt__path, 'utf-8')
 	const { content, metadata } = _obj__metadata__content(markdown)
 	const html = _html__content__markdown(content, hljs)
 	const idx__more__ = html.indexOf('<hr class="more"/>')
