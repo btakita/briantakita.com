@@ -173,10 +173,10 @@ R<sub>i<sub>specific</sub>,i<sub>general</sub></sub>
 For example:
 
 <pre>
-arr__customer__active
+a1__customer__active
 </pre>
 
-Is an array (instance) of customer that is of active context.
+Is a 1-dimensional array (instance) of customer that is of active context.
 
 ##### Considerations for specific to general ordering
 

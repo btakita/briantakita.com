@@ -1,8 +1,8 @@
-import { _arr__post } from './_lib'
+import { _a1__post } from './_lib'
 export async function get(req, res) {
 	let json
 	if (process.env.NODE_ENV !== 'production') {
-		json = JSON.stringify(await _arr__post())
+		json = JSON.stringify(await _a1__post())
 	}
 	const headers = {
 		'Content-Type': 'application/json',

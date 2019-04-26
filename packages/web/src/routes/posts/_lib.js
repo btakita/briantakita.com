@@ -31,13 +31,13 @@ export async function _post(file) {
 		url,
 	}
 }
-export async function _arr__post() {
-	const arr__file = await promise__readdir('content/posts')
-	const arr__post =
-		compact(await Promise.all(arr__file.map(_post)))
+export async function _a1__post() {
+	const a1__file = await promise__readdir('content/posts')
+	const a1__post =
+		compact(await Promise.all(a1__file.map(_post)))
 			.sort((a, b) => {
 				return a.date < b.date ? 1 : -1
 			})
-	return arr__post
+	return a1__post
 }
 

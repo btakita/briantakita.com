@@ -1,8 +1,8 @@
 import { domain } from '@briantakita/web/src/domain/lib'
 import { escape__html } from '@ctx-core/html'
-import { _arr__post } from './posts/_lib'
+import { _a1__post } from './posts/_lib'
 export async function get(req, res) {
-	const ARR__post = await _arr__post()
+	const a1__post = await _a1__post()
 	const xml = `
 <?xml version="1.0" encoding="utf-8" ?>
 <rss
@@ -20,9 +20,9 @@ export async function get(req, res) {
 			type="application/rss+xml"/>
 		${escape__html(`<link>${domain}</link>`)}
 		<description>Mission: Expand Consciousness</description>
-		<pubDate>${new Date(ARR__post[0].date).toUTCString()}</pubDate>
+		<pubDate>${new Date(a1__post[0].date).toUTCString()}</pubDate>
 		<language>en</language>
-		${ARR__post.map(post => `
+		${a1__post.map(post => `
 			<item>
 				<title>${escape__html(post.metadata.title)}</title>
 				${escape__html(`<link>${domain}${post.path}</link>`)}
