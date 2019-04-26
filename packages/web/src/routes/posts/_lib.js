@@ -12,7 +12,7 @@ const readFile__promise = promisify(fs.readFile)
 const promise__readdir = promisify(fs.readdir)
 export async function _post(file) {
 	if (extname(file) !== '.md') return
-	const markdown = await readFile__promise(`content/posts/${file}`, 'utf-8')
+	const markdown = await readFile__promise(`${process.cwd()}/content/posts/${file}`, 'utf-8')
 	const { content, metadata } = _obj__metadata__content(markdown)
 	const html = _html__content__markdown(content, hljs)
 	const idx__more__ = html.indexOf('<hr class="more"/>')
