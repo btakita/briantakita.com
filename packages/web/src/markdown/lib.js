@@ -1,3 +1,4 @@
+// See https://github.com/sveltejs/sapper.svelte.technology/blob/master/src/routes/guide/_process_markdown.js
 export function process_markdown(markdown) {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown)
 	const frontMatter = match[1]
