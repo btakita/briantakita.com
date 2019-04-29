@@ -44,4 +44,13 @@ tmux send-keys 'tig' 'C-m'
 tmux select-layout even-vertical
 tmux select-pane -t 0
 
+cd $BTAKITA_DIR/packages/dev
+
+tmux new-window
+tmux rename-window dev
+tmux split-window -v
+tmux send-keys 'tig' 'C-m'
+tmux select-layout even-vertical
+tmux select-pane -t 0
+
 tmux select-window -t 0

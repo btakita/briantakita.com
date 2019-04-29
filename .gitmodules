@@ -4,3 +4,6 @@
 [submodule "build"]
 	path = build
 	url = git@github.com:btakita/btakita.github.io.git
+[submodule "packages/dev"]
+	path = packages/dev
+	url = git@github.com:btakita/dev.git
