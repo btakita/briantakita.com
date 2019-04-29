@@ -1,7 +1,7 @@
 <script context="module">
 	export async function preload({ query, params }) {
 		const response = await this.fetch('/version')
-		const version = await response.text()
+		const version = (await response.text()).trim()
 		return {
 			version
 		}
@@ -13,6 +13,7 @@
 	import { _no__dom } from '@ctx-core/dom'
 	import { andand } from '@ctx-core/function'
 	import { _html__webfont__fout, _html__gtag } from '@ctx-core/google/html'
+	import { __VERSION } from '@ctx-core/env/store'
 	import { __session__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
 	import { __title, __class__layout } from '@briantakita/web/src/layout/store'
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
@@ -20,6 +21,7 @@
 	import Footer from '@briantakita/web/src/layout/Footer.html'
 	const session = getSession()
 	export let version
+	__VERSION.set(version)
 	__session__sapper.set(session)
 	$: __page__sapper.set($page)
 	$: $page, __prepend__footer.set('')
@@ -33,7 +35,7 @@
 {@html _html__webfont__fout({ families: ['Open Sans'] })}
 {/if}
 
-<div class="_layout {$__class__layout||''}">
+<div version="{$__VERSION}" class="_layout {$__class__layout||''}">
 	<Header></Header>
 
 	<main class="content">

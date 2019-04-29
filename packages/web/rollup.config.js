@@ -8,11 +8,11 @@ import svelte from 'rollup-plugin-svelte'
 import { terser } from 'rollup-plugin-terser'
 const { clone } = require('@ctx-core/object')
 const { reject } = require('@ctx-core/array')
-import config from 'sapper/config/rollup.js'
+import config from 'sapper/config/rollup'
 import pkg from './package.json'
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
-const { style } = require('@ctx-core/sass/svelte.js')
+const { style } = require('@ctx-core/sass/svelte')
 const extensions = ['.mjs', '.js', '.jsx', '.json']
 const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
