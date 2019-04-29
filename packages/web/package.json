@@ -56,7 +56,7 @@
 		"rollup-plugin-terser": "^4.0.4",
 		"rollup-watch": "^4.3.1",
 		"sapper": "alpha",
-		"svelte": "beta",
+		"svelte": "^3.1.0",
 		"typogr": "^0.6.8"
 	},
 	"workspaces": {

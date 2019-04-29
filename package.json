@@ -39,7 +39,7 @@
 		"rollup-plugin-sourcemaps": "^0.4.2",
 		"rollup-plugin-svelte": "^5.0.3",
 		"sapper": "alpha",
-		"svelte": "beta",
+		"svelte": "^3.1.0",
 		"typogr": "^0.6.8"
 	},
 	"workspaces": {
