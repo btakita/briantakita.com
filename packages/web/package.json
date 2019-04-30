@@ -20,7 +20,7 @@
 		"@ctx-core/google": "^4.4.6",
 		"@ctx-core/html": "^6.0.17",
 		"@ctx-core/markdown": "^1.0.2",
-		"@ctx-core/nav": "^5.1.8",
+		"@ctx-core/nav": "^6.0.0",
 		"compression": "^1.7.4",
 		"dotenv": "^7.0.0",
 		"express": "^4.16.4",
