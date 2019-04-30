@@ -36,15 +36,16 @@
 {/if}
 
 <div {version} class="_layout {$__class__layout||''}">
-	<Header></Header>
+	<div class="container__Header">
+		<Header></Header>
+	</div>
 
 	<main class="content">
 		<div class="content-wrap">
 			<slot></slot>
 		</div>
+		<Footer></Footer>
 	</main>
-
-	<Footer></Footer>
 </div>
 
 {#if _no__dom()}
@@ -216,12 +217,21 @@
 	}
 	._layout {
 		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		overflow: hidden;
+		.container__Header {
+			flex: 0;
+		}
 		main {
+			flex: 1;
 			position: relative;
 			display: flex;
 			flex-direction: column;
-			overflow: hidden;
+			overflow: auto;
 			min-height: 600px;
+			width: 100%;
 			padding: 0;
 			margin: 0 auto;
 			box-sizing: border-box;
