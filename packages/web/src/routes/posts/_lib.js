@@ -3,7 +3,7 @@ import { extname } from 'path'
 import { promisify } from 'util'
 import { domain } from '@briantakita/web/src/domain/lib'
 import { compact } from '@ctx-core/array'
-import hljs from '@briantakita/web/src/highlight.js/lib'
+import { hljs } from '@briantakita/web/src/highlight.js/lib'
 import {
 	_obj__metadata__content,
 	_html__markdown,

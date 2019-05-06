@@ -19,12 +19,18 @@
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Header from '@briantakita/web/src/layout/Header.html'
 	import Footer from '@briantakita/web/src/layout/Footer.html'
+	import { hljs } from '../highlight.js/lib'
+	import { refresh__initHighlighting } from '@ctx-core/highlight.js'
 	const session = getSession()
 	export let version
 	__VERSION.set(version)
 	__session__sapper.set(session)
 	$: __page__sapper.set($page)
-	$: $page, __prepend__footer.set('')
+	$: {
+		$page
+		__prepend__footer.set('')
+		refresh__initHighlighting(hljs)
+	}
 </script>
 
 <svelte:head>
@@ -54,6 +60,9 @@
 
 <style type="text/scss" @lang="sass">
 	@import '~@briantakita/web/src/css/variables';
+	:global(*) {
+		@import '~highlight.js/styles/dracula';
+	}
 	:global(*) {
 		box-sizing: border-box;
 	}

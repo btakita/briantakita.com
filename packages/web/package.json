@@ -18,6 +18,7 @@
 		"@ctx-core/env": "^6.0.16",
 		"@ctx-core/font-awesome": "^7.9.0",
 		"@ctx-core/google": "^4.4.7",
+		"@ctx-core/highlight.js": "^1.0.1",
 		"@ctx-core/html": "^6.0.18",
 		"@ctx-core/markdown": "^3.0.1",
 		"@ctx-core/nav": "^6.2.1",
