@@ -6,7 +6,7 @@ import { compact } from '@ctx-core/array'
 import hljs from '@briantakita/web/src/highlight.js/lib'
 import {
 	_obj__metadata__content,
-	_html__content__markdown,
+	_html__markdown,
 } from '@ctx-core/markdown'
 const exists = promisify(fs.exists)
 const readFile__promise = promisify(fs.readFile)
@@ -17,7 +17,7 @@ export async function _post(file) {
 	if (!(await exists(txt__path))) return
 	const markdown = await readFile__promise(txt__path, 'utf-8')
 	const { content, metadata } = _obj__metadata__content(markdown)
-	const html = _html__content__markdown(content, hljs)
+	const html = _html__markdown(content, hljs)
 	const idx__more__ = html.indexOf('<hr class="more"/>')
 	const idx__more = idx__more__ > -1 ? idx__more__ : null
 	metadata.intro = html.slice(0, idx__more)
