@@ -37,7 +37,7 @@
 		"resolve-path": "^1.4.0",
 		"serve-static": "^1.14.0",
 		"shelljs": "^0.8.3",
-		"sirv": "^0.4.0",
+		"sirv": "^0.4.2",
 		"source-map-support": "^0.5.12",
 		"util": "^0.12.0",
 		"yarn": "^1.15.2"
@@ -59,7 +59,7 @@
 		"rollup-plugin-terser": "^4.0.4",
 		"rollup-watch": "^4.3.1",
 		"sapper": "alpha",
-		"svelte": "^3.2.1",
+		"svelte": "^3.2.2",
 		"typogr": "^0.6.8"
 	},
 	"workspaces": {
