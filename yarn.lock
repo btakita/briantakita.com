@@ -1216,10 +1216,10 @@ auth0@^2.17.0:
     rest-facade "^1.10.1"
     retry "^0.10.1"
 
-aws-sdk@^2.451.0:
-  version "2.451.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.451.0.tgz#d2c0e92dc0d35276063d8030a668bc4a5a94ea52"
-  integrity sha512-ruVK/fnUFHumSgcqVkJTHLS9eWXc8lf14ZW2G6RVR0baj2MMNDS5gxInuy8GM24Exe0GfnDFk6PnPiSuQs4AVQ==
+aws-sdk@^2.452.0:
+  version "2.452.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.452.0.tgz#b33c29c4250d45a803f9b8b26dedacc96f60699d"
+  integrity sha512-l6J2NmUg12xpDKG9YdlPje5+Z+nNvqyWMA85ookzPqwx8RcD28D3vg4K1aGi27/oo/3NsngR3XfKUBPSqUpUMA==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -7888,10 +7888,10 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
   integrity sha1-tf3AjxKH6hF4Yo5BXiUTK3NkbG0=
 
-sirv@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/sirv/-/sirv-0.4.0.tgz#531bafb86806135bac7ac053cb19efa42a0347e9"
-  integrity sha512-k/dcRW7Ry2VgERDiLyyq3peGZEnqP2EcTcG5646QjoLwz7lnDA50i20m/3Rn7J4FLtimyoKQsG4E2BItctwjhg==
+sirv@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/sirv/-/sirv-0.4.2.tgz#842ed22f3aab58faee84eea66cf66066e123d6db"
+  integrity sha512-dQbZnsMaIiTQPZmbGmktz+c74zt/hyrJEB4tdp2Jj0RNv9J6B/OWR5RyrZEvIn9fyh9Zlg2OlE2XzKz6wMKGAw==
   dependencies:
     "@polka/url" "^0.5.0"
     mime "^2.3.1"
@@ -8335,10 +8335,10 @@ supports-color@^6.1.0:
   dependencies:
     has-flag "^3.0.0"
 
-svelte@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.2.1.tgz#2bd89dbb49de623cea72730a4acaf92b4c1ec8e4"
-  integrity sha512-DH3WZHua5t87AjvCx8gU5cLQlhRF/KCyRWLpz4TXWwDVs1FEibIhXTXUWRd0EqU8/m/1e4stzL4MnboF8LxyHg==
+svelte@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.2.2.tgz#e647879b0a0edb4d4bb5f8af971af8a1f4cb29ef"
+  integrity sha512-B6ePpPodCQodVFDwv/uByaWs0KvXojaXZiB/db1x7WXbyxgLJ8xZF3j1lk5M83Ox0AWlX0fQnCTAaZmfT6xqdw==
 
 swap-case@^1.1.0:
   version "1.1.2"
