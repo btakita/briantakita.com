@@ -8,6 +8,7 @@
 		"build": "sapper build",
 		"export": "sapper export",
 		"start": "sapper start",
+		"deploy": "bin/deploy-web.sh",
 		"cy:run": "cypress run",
 		"cy:open": "cypress open",
 		"test": "run-p --race dev cy:run"

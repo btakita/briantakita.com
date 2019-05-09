@@ -6,6 +6,7 @@
 	<meta name='theme-color' content='#aa1e1e'>
   <meta name="description"
         content="Mission: Expand Consciousness. Musing about Philosophy, Linguistics, Programming, &amp; Engineering.">
+	<meta property="og:locale" content="en_US"/>
 	<meta property="og:type" content="website"/>
 	<meta property="og:title" content="Brian Takita"/>
 	<meta property="og:site_name" content="briantakita.com"/>
@@ -24,14 +25,7 @@
   <link rel="alternate" href="/feed.xml" type="application/rss+xml" title="Mission: Expand Consciousness">
   <link rel="stylesheet"
         href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400|Anonymous+Pro:400,700,400italic,700italic">
-
-	<!-- Sapper generates a <style> tag containing critical CSS
-	     for the current page. CSS for the rest of the app is
-	     lazily loaded when it precaches secondary pages -->
 	%sapper.styles%
-
-	<!-- This contains the contents of the <svelte:head> component, if
-	     the current page has one -->
 	%sapper.head%
 </head>
 <body>
@@ -44,13 +38,7 @@
 			"url": "https://briantakita.com"
 		}
 	</script>
-	<!-- The application will be rendered inside this element,
-	     because `client.js` references it -->
 	<div id='sapper'>%sapper.html%</div>
-
-	<!-- Sapper creates a <script> tag containing `app/client.js`
-	     and anything else it needs to hydrate the app and
-	     initialise the router -->
 	%sapper.scripts%
 </body>
 </html>
