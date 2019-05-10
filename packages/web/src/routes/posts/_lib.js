@@ -13,7 +13,7 @@ const readFile__promise = promisify(fs.readFile)
 const promise__readdir = promisify(fs.readdir)
 export async function _post(file) {
 	if (extname(file) !== '.md') return
-	const txt__path = `${process.cwd()}/content/posts/${file}`
+	const txt__path = `${process.cwd()}/src/routes/posts/_content/${file}`
 	if (!(await exists(txt__path))) return
 	const markdown = await readFile__promise(txt__path, 'utf-8')
 	const { content, metadata } = _obj__metadata__content(markdown)
@@ -35,7 +35,7 @@ export async function _post(file) {
 	}
 }
 export async function _a1__post() {
-	const a1__file = await promise__readdir('content/posts')
+	const a1__file = await promise__readdir('src/routes/posts/_content/')
 	const a1__post =
 		compact(await Promise.all(a1__file.map(_post)))
 			.sort((a, b) => {
