@@ -9,20 +9,20 @@
 </script>
 
 <script>
-	import { getSession, page } from '@sapper/app'
+	import { stores } from '@sapper/app'
 	import { _style } from '@ctx-core/html'
 	import { _has__dom, _no__dom, _BoundingClientRect } from '@ctx-core/dom'
 	import { andand, tick } from '@ctx-core/function'
 	import { _html__webfont__fout, _html__gtag } from '@ctx-core/google/html'
 	import { __VERSION } from '@ctx-core/env/store'
-	import { __session__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
+	import { __session__sapper, __preloading__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
 	import { __title, __class__layout } from '@briantakita/web/src/layout/store'
 	import { __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Header from '@briantakita/web/src/layout/Header.html'
 	import Footer from '@briantakita/web/src/layout/Footer.html'
 	import { hljs } from '../highlight.js/lib'
 	import { refresh__initHighlighting } from '@ctx-core/highlight.js'
-	const session = getSession()
+	const { page, preloading, session } = stores()
 	export let version
 	let dom__container__Header
 	let height__container__Header
@@ -30,7 +30,9 @@
 	let style__layout
 	let style__container__Header
 	__VERSION.set(version)
-	__session__sapper.set(session)
+	$: __page__sapper.set($page)
+	$: __preloading__sapper.set($preloading)
+	$: __session__sapper.set($session)
 	$: height__container__Header =
 		dom__container__Header
 		&& _BoundingClientRect(dom__container__Header).height
