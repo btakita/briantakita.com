@@ -1,25 +1,14 @@
 <script>
   import A from '@ctx-core/a__target/A__Target.html'
-	import Icon from '@ctx-core/font-awesome/Icon.html'
-	import {
-		register__rss,
-		register__email_solid,
-		register__linkedin,
-		register__github,
-		register__facebook,
-		register__twitter,
-		register__wordpress,
-		register__quora,
-	} from '@ctx-core/font-awesome'
+  import FA_rss_solid from '@ctx-core/font-awesome/ui/FA-rss-solid.html'
+  import FA_envelope_solid from '@ctx-core/font-awesome/ui/FA-envelope-solid.html'
+  import FA_linkedin_brand from '@ctx-core/font-awesome/ui/FA-linkedin-brand.html'
+  import FA_github_brand from '@ctx-core/font-awesome/ui/FA-github-brand.html'
+  import FA_facebook_brand from '@ctx-core/font-awesome/ui/FA-facebook-brand.html'
+  import FA_twitter_brand from '@ctx-core/font-awesome/ui/FA-twitter-brand.html'
+  import FA_wordpress_brand from '@ctx-core/font-awesome/ui/FA-wordpress-brand.html'
+  import FA_quora_brand from '@ctx-core/font-awesome/ui/FA-quora-brand.html'
 	export let compact = false
-	register__rss()
-	register__email_solid()
-	register__linkedin()
-	register__github()
-	register__facebook()
-	register__twitter()
-	register__wordpress()
-	register__quora()
 </script>
 
 <section
@@ -29,45 +18,45 @@
   <ul>
     <li>
       <A href="/feed.xml" title="Atom Feed">
-        <Icon name="rss"></Icon>
+        <FA_rss_solid></FA_rss_solid>
       </A>
     </li>
 		<!--				<li class="about-me"><a href="http://about.me/brian_takita">about.me</a></li>-->
     <li>
       <A href="mailto:brian.takita@gmail.com" title="Github">
-        <Icon name="email-solid"></Icon>
+        <FA_envelope_solid></FA_envelope_solid>
       </A>
     </li>
     <li>
       <A href="https://github.com/btakita" title="Github">
-        <Icon name="github"></Icon>
+        <FA_github_brand></FA_github_brand>
       </A>
     </li>
     <li>
       <A href="http://www.linkedin.com/in/briantakita" title="LinkedIn">
-        <Icon name="linkedin"></Icon>
+        <FA_linkedin_brand></FA_linkedin_brand>
       </A>
     </li>
     {#if !compact}
       <li>
         <A href="https://www.facebook.com/brian.takita" title="Facebook">
-          <Icon name="facebook"></Icon>
+          <FA_facebook_brand></FA_facebook_brand>
         </A>
       </li>
 		<!--				<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>-->
       <li>
         <A href="https://twitter.com/briantakita" title="Twitter">
-          <Icon name="twitter"></Icon>
+          <FA_twitter_brand></FA_twitter_brand>
         </A>
       </li>
       <li>
         <A href="http://briantakita.wordpress.com/" title="Wordpress Blog">
-          <Icon name="wordpress"></Icon>
+          <FA_wordpress_brand></FA_wordpress_brand>
         </A>
       </li>
       <li>
         <A href="https://www.quora.com/Brian-Takita" title="Quora">
-          <Icon name="quora"></Icon>
+          <FA_quora_brand></FA_quora_brand>
         </A>
       </li>
     {/if}
