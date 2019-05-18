@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "[post_id].597f5f2d.css",
+  "sources": [
+    "../../../../../../src/routes/posts/[post_id].html"
+  ],
+  "sourcesContent": [
+    "<script context=\"module\">\n\texport async function preload({ params, query }) {\n\t\tconst { post_id } = params\n\t\tconst response = await this.fetch(`posts/${post_id}.json`)\n\t\tconst post = await response.json()\n\t\tif (!post) {\n\t\t\tthis.error(404, 'Post Not Found')\n\t\t}\n\t\treturn post && { post }\n\t}\n</script>\n<script>\n\timport { __class__layout, __prepend__footer } from '@briantakita/web/src/layout/store'\n\timport Date__Local from '@ctx-core/date/Date__Local.html'\n\timport { __subheader } from '@briantakita/web/src/layout/store'\n\texport let post\n\texport let title = ''\n\t__class__layout.set('post-detail')\n\t__prepend__footer.set(`<div class=\"nav\"><a href=\"/\"> « Full blog</a></div>`)\n\t$: __subheader.set(title)\n</script>\n\n<section class=\"post\">\n\t<div class=\"content\">\n\t\t<header>\n\t\t\t<p class=\"date\"><span><Date__Local date=\"{post.txt__date}\"></Date__Local></span></p>\n\t\t\t<h2><a href=\"{post.path}\">{post.metadata.title}</a></h2>\n\t\t</header>\n\t\t{@html post.html}\n\t\t<div id=\"disqus_thread\"></div>\n\t\t<script type=\"text/javascript\">\n\t\t\t/**\n\t\t\t *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.\n\t\t\t *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/\n\t\t\tvar disqus_config = function () {\n\t\t\t\tthis.page.url = window.location.href\n\t\t\t\tvar hrefSegments = window.location.pathname.split('/')\n\t\t\t\tvar identifier = 'briantakita-' + hrefSegments[hrefSegments.length - 1]\n\t\t\t\tthis.page.identifier = identifier\n\t\t\t};\n\t\t\t(function () { // DON'T EDIT BELOW THIS LINE\n\t\t\t\tvar d = document, s = d.createElement('script')\n\t\t\t\ts.src = 'https://briantakita.disqus.com/embed.js'\n\t\t\t\ts.setAttribute('data-timestamp', +new Date());\n\t\t\t\t(d.head || d.body).appendChild(s)\n\t\t\t})()\n\t\t</script>\n\t\t<noscript>Please enable JavaScript to view the <a href=\"https://disqus.com/?ref_noscript\">comments powered by Disqus.</a></noscript>\n  </div>\n</section>\n\n<style type=\"text/scss\">:global(body.post-detail) > :global(header) {\n  padding: 1rem 0;\n  margin-bottom: 2rem; }</style>"
+  ],
+  "names": [],
+  "mappings": "AAmDgC,gBAAgB,AAAC,CAAW,MAAM,AAAE,CAAC,AACnE,OAAO,CAAE,IAAI,CAAC,CAAC,CACf,aAAa,CAAE,IAAI,AAAE,CAAC"
+}

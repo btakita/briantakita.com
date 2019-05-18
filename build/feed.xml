@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss
+	version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+>
+	<channel>
+		<title>Brian Takita</title>
+		<atom:link
+			href="https://briantakita.com/feed.xml"
+			rel="self"
+			type="application/rss+xml"/>
+		&lt;link&gt;https://briantakita.com&lt;/link&gt;
+		<description>Mission: Expand Consciousness</description>
+		<pubDate>Mon, 15 Apr 2019 20:20:00 GMT</pubDate>
+		<language>en</language>
+		
+			<item>
+				<title>Multi Underscore Tag Naming Convention Analysis</title>
+				&lt;link&gt;https://briantakita.com/posts/multi-underscore-tag-naming-convention-analysis&lt;/link&gt;
+				<pubDate>Mon, 15 Apr 2019 20:20:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/multi-underscore-tag-naming-convention-analysis</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Note:
+I am primarily a practitioner &amp;amp; have not amassed
+  a large reservoir of bibliographic references.
+Apologies for ideas have been previously published without being reference.
+I do not include them due to my ignorance or lack of a bibliographic system.
+I gratefully accept any bibliographic references to ideas that I may present.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;scope&quot;&gt;Scope&lt;/h2&gt;
+&lt;p&gt;This article is primarily scoped to the Ontology of the &amp;quot;Multi Underscore Tag Naming Convention&amp;quot;.
+In it, the name of this method will be deconstructed, along with the methodology.
+There will be some treatment into why or the implications of design choices as well,
+  but that will be limited to keep the scope focused on the Ontology.
+Emergent Properties or Gestalt resulting from
+  the combination of multiple elements of this methodology
+  will be given limited treatment, with future posts giving fuller treatments.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Naming Conventions</title>
+				&lt;link&gt;https://briantakita.com/posts/naming-conventions&lt;/link&gt;
+				<pubDate>Tue, 27 Feb 2018 21:30:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/naming-conventions</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Note: The naming convention described in this article
+  &lt;a target=&quot;_blank&quot; href=&quot;/posts/multi-underscore-tag-naming-convention-analysis&quot;&gt;has been named&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Long form: Multi Underscore Tag Naming Convention&lt;/p&gt;
+&lt;p&gt;Medium form: Tag Naming Convention&lt;/p&gt;
+&lt;p&gt;Short Form: Tag Naming&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;An Abstraction name encodes the meaning &amp;amp; context of the abstraction.
+The name consists of tags that are joined together to create a name.&lt;/p&gt;
+&lt;a target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Naming_convention_(programming)&quot;&gt;
+  Naming Convention (programming) (Wikipedia)
+&lt;/a&gt;
+
+&lt;h2 id=&quot;discoverability-unique-vs-ambiguous-names&quot;&gt;Discoverability: Unique vs Ambiguous Names&lt;/h2&gt;
+&lt;p&gt;A name &amp;amp; tags in the name also acts identifiers to locate
+  the usages of the abstraction in the codebase.
+This attribute is also known as discoverability.&lt;/p&gt;
+&lt;p&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://en.wikipedia.org/wiki/Discoverability&quot;&gt;Discoverability (Wikipedia)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Unique &amp;amp; Accurate names for abstractions help discoverability.
+Ambiguous names hurt discoverability.&lt;/p&gt;
+&lt;p&gt;Advantages for discoverable abstractions include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;easy searching for an abstraction used across the codebase&lt;/li&gt;
+&lt;li&gt;easier refactoring (e.g. a rename refactoring is a search/replace)&lt;/li&gt;
+&lt;li&gt;provides a more comprehensive &amp;amp; accurate model of the system in one&amp;#39;s head&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Svelte JS from Pug</title>
+				&lt;link&gt;https://briantakita.com/posts/sveltejs-from-pug&lt;/link&gt;
+				<pubDate>Sat, 22 Jul 2017 09:00:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/sveltejs-from-pug</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Now it&amp;#39;s time to implement server side rendering (SSR) using SvelteJS.&lt;/p&gt;
+&lt;p&gt;On my current project, I will be migrating from &lt;a href=&quot;https://pugjs.org&quot; target=&quot;_blank&quot;&gt;pug&lt;/a&gt; to &lt;a href=&quot;https://svelte.technology&quot; target=&quot;_blank&quot;&gt;sveltejs&lt;/a&gt;. The key concepts are &lt;a href=&quot;https://svelte.technology/guide#server-side-rendering&quot; target=&quot;_blank&quot;&gt;Server Side Rendering&lt;/a&gt;, &lt;a href=&quot;https://github.com/sveltejs/svelte/pull/649&quot; target=&quot;_blank&quot;&gt;Hydration&lt;/a&gt;, &amp;amp; client/server architectural options.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Svelte JS from Riot JS</title>
+				&lt;link&gt;https://briantakita.com/posts/sveltejs-from-riotjs&lt;/link&gt;
+				<pubDate>Tue, 04 Jul 2017 00:30:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/sveltejs-from-riotjs</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Creating Web Components/Web Apps has never been more pleasurable.
+It&amp;#39;s out with the old &amp;amp; in with the new. I converted my client&amp;#39;s project to use Svelte JS from Riot JS. This post highlights some considerations why I chose Svelte &amp;amp; a a sample web component using Svelte.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>When We become a Muse to Our Tools</title>
+				&lt;link&gt;https://briantakita.com/posts/when-we-become-a-muse-to-our-tools&lt;/link&gt;
+				<pubDate>Sun, 11 Jun 2017 11:00:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/when-we-become-a-muse-to-our-tools</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;What happens when we become a muse to our tools?&lt;/p&gt;
+&lt;p&gt;When YouTube suggests videos that cater to your proclivities, what you see in your feed will be a reflection on your conscious attention domain.&lt;/p&gt;
+&lt;p&gt;Would the nature of modern conscious enlightenment be a sort of leveling-up administered by machine learning algorithms?&lt;/p&gt;
+&lt;p&gt;Would we be better off if we consciously create &amp;amp; choose our tools? When would it make sense to take what is easily given with all of the consequences? When would it make sense to create a tool that purely fulfills a need without unwanted attachments?&lt;/p&gt;
+&lt;p&gt;Some &amp;quot;it depends&amp;quot; questions to consider&amp;hellip;&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Trump: United States Sovereignty &amp; the United Nations</title>
+				&lt;link&gt;https://briantakita.com/posts/trump-us-sovereignty-united-nations&lt;/link&gt;
+				<pubDate>Sat, 10 Jun 2017 17:30:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/trump-us-sovereignty-united-nations</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;There are many in the UN &amp;amp; global corporate/finance that seek a &lt;a href=&quot;https://www.wikiwand.com/en/Carbon_tax&quot; target=&quot;_blank&quot;&gt;carbon tax&lt;/a&gt;. It&amp;#39;s not going to happen but that&amp;#39;s not due to a lack of effort. This is why Trump pulled the US out of the multi-lateral Paris accord. The US was under energy sanctions &amp;amp; the US gave away money to &amp;quot;developing&amp;quot; economies such as China &amp;amp; India. This was a form of sovereign wealth transfer guided by global governance. Fortunately it was voluntary &amp;amp; Trump acted correctly in pulling out of the accord, though the UN is suing to keep the US locked in. Effectively, this is using international trade law to impose governance upon the US.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Monorepo Static Sites using Svelte JS, Rollup, ctx-core, &amp; Bash</title>
+				&lt;link&gt;https://briantakita.com/posts/monorepo-static-sites-using-sveltejs-rollup-bash&lt;/link&gt;
+				<pubDate>Wed, 07 Jun 2017 09:30:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/monorepo-static-sites-using-sveltejs-rollup-bash</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;BrianTakita.com is now built using a technology chain consisting of &lt;a href=&quot;https://svelte.technology&quot; target=&quot;_blank&quot;&gt;SvelteJS&lt;/a&gt;, &lt;a href=&quot;https://rollupjs.org/&quot; target=&quot;_blank&quot;&gt;RollupJS&lt;/a&gt;, &lt;a href=&quot;https://github.com/ctx-core/ctx-core&quot; target=&quot;_blank&quot;&gt;ctx-core&lt;/a&gt;, &amp;amp; good ol&amp;#39; Bash.&lt;/p&gt;
+&lt;p&gt;You can see the source in the &lt;a href=&quot;https://github.com/btakita/briantakita.com&quot; target=&quot;_blank&quot;&gt;briantakita.com&lt;/a&gt; repo.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Monorepo Musings with ctx-core</title>
+				&lt;link&gt;https://briantakita.com/posts/monorepo-musings-with-ctx-core&lt;/link&gt;
+				<pubDate>Thu, 25 Feb 2016 16:00:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/monorepo-musings-with-ctx-core</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;It&amp;#39;s been about 2 years since my previous post here.
+I&amp;#39;ve been busy working on a few client projects.
+As a consultant, I&amp;#39;m naturally inclined to accumulate a toolkit of tech (technology &amp;amp; techniques).
+In the domain of technology, where all levels of the solution stack are subject to change,
+  keeping a toolkit while moving from project to project is a challenge.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Feeling Abstraction</title>
+				&lt;link&gt;https://briantakita.com/posts/feeling-abstraction&lt;/link&gt;
+				<pubDate>Sun, 18 Jan 2015 01:00:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/feeling-abstraction</guid>
+				<author>Brian Takita</author>
+				<description>&lt;a href=&quot;/posts/feeling-abstraction/&quot;&gt;
+&lt;img
+  src=&quot;/images/feeling-abstraction.jpg&quot;
+  alt=&quot;Brian Takita - Feeling Abstraction - From http://haiphonghoaphuongdo.blogspot.com/2011/07/colorful-vector-abstraction.html - http://2.bp.blogspot.com/-_t6mHvuNOTs/Th23RDI-RgI/AAAAAAAAAL0/T_VMdr6wIcY/s1600/abstract-vector-free-art.jpg - Licensed under Creative Commons&quot;
+/&gt;
+&lt;/a&gt;
+
+&lt;p&gt;Reductionist mechanisms in Physical Existence are Energy &amp;amp; Energy Transfer. We are all physically made of Energy.&lt;/p&gt;
+&lt;p&gt;Feeling an abstract notion such as Energy Transfer may seem tricky; however, it&amp;#39;s simply connection.&lt;/p&gt;
+&lt;p&gt;A trick to feeling abstract terms is connect to something more familiar, such as a physical sensation.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Do Not Worry, Everything Exists</title>
+				&lt;link&gt;https://briantakita.com/posts/do-not-worry-everything-exists&lt;/link&gt;
+				<pubDate>Sat, 03 Jan 2015 08:45:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/do-not-worry-everything-exists</guid>
+				<author>Brian Takita</author>
+				<description>&lt;a href=&quot;/posts/do-not-worry-everything-exists/&quot;&gt;
+  &lt;img
+    src=&quot;/images/1200px-Creation_of_Adam.jpg&quot;
+    alt=&quot;Brian Takita - Do Not Worry, Everything Exists - From Wikipedia http://en.wikipedia.org/wiki/File:Creaci%C3%B3n_de_Ad%C3%A1m.jpg - Licensed under Creative Commons&quot;
+  /&gt;
+&lt;/a&gt;
+
+&lt;p&gt;Does God exist? Surely, Santa Claus &amp;amp; Unicorns do not exist. Yet we are talking about them. If they don&amp;#39;t exist, why &amp;amp; how am I talking about them?&lt;/p&gt;
+&lt;p&gt;Santa Claus &amp;amp; Unicorns do exist, as fictional characters; more on God later. Everything Exists. The concept conceptually exists. It may also physically exist; like the men who &lt;a href=&quot;http://www.huffingtonpost.com/2014/12/23/real-santas_n_6366974.html&quot; target=&quot;_blank&quot;&gt;name themselves Santa Claus&lt;/a&gt;.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Why Say History When You Can Say Story?</title>
+				&lt;link&gt;https://briantakita.com/posts/why-say-history-when-you-can-say-story&lt;/link&gt;
+				<pubDate>Fri, 19 Dec 2014 06:50:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/why-say-history-when-you-can-say-story</guid>
+				<author>Brian Takita</author>
+				<description></description>
+			</item>
+		,
+			<item>
+				<title>Magic Connections with the Philosophy of Language</title>
+				&lt;link&gt;https://briantakita.com/posts/magic-connections-with-the-philosophy-of-language&lt;/link&gt;
+				<pubDate>Wed, 10 Dec 2014 04:15:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/magic-connections-with-the-philosophy-of-language</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p style=&quot;text-align: center; display: block;&quot;&gt;
+  &lt;a href=&quot;/posts/magic-connections-with-the-philosophy-of-language/&quot;&gt;
+    &lt;img
+      src=&quot;/images/unicorn.jpg&quot;
+      alt=&quot;Brian Takita - Magic Connections with the Philosophy of Language - From http://casiestewart.com/unicornrainbow/ - https://lh4.googleusercontent.com/-ylo97AfxI9c/SuW-sv-oDII/AAAAAAAAGxc/tVIc_fh1A9A/s2048/unicorn.jpg - Licensed under Creative Commons&quot; style=&quot;width: 376px; display: inline;&quot;
+    /&gt;
+  &lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/magic.md&quot; target=&quot;_blank&quot;&gt;Magic&lt;/a&gt; exists! Well, if you have listened to me lately, you will hear that &lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/exist.md&quot; target=&quot;_blank&quot;&gt;everything exists (including fiction)&lt;/a&gt;. When everything exists, we can recapture the entirety of language from those who impose restrictions on &lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/existence.md&quot; target=&quot;_blank&quot;&gt;Existence&lt;/a&gt;. We have all heard &amp;quot;that does not exist&amp;quot;. We can now say, &amp;quot;that&amp;quot; does exist &amp;amp; &amp;quot;that&amp;quot; is a useful concept.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m happy to see my own homespun approach have a strong connection to an established Philosophical branch. The &lt;a href=&quot;http://en.wikipedia.org/wiki/Philosophy_of_language&quot; target=&quot;_blank&quot;&gt;Philosophy of Language (Wikipedia)&lt;/a&gt; brings concepts together into a system of logic to yield magical &amp;amp; insightful connections in Existence.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Fast and Thorough Testing with Jasmine Flow</title>
+				&lt;link&gt;https://briantakita.com/posts/fast-and-thorough-testing-with-jasmine-flow&lt;/link&gt;
+				<pubDate>Sat, 14 Sep 2013 23:00:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/fast-and-thorough-testing-with-jasmine-flow</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Automated testing helps to ensure that your software does not have regressions as you make changes. These changes include refactorings, new features, bug fixes, etc. A Software product has an intricate set of behavior which includes a large number of edge cases.&lt;/p&gt;
+&lt;p&gt;I&amp;#39;m a &lt;a href=&quot;/posts/automated-black-box-testing/&quot;&gt;fan of black box&lt;/a&gt; testing, because it is decoupled from the implementation. The implication is the &lt;a href=&quot;http://briantakita.wordpress.com/2013/09/15/why-its-better-to-strive-toward-accomplishment-rather-than-method/&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;what&lt;/strong&gt; is verified, rather than the &lt;strong&gt;how&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Automated Black Box Testing</title>
+				&lt;link&gt;https://briantakita.com/posts/automated-black-box-testing&lt;/link&gt;
+				<pubDate>Sat, 14 Sep 2013 21:31:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/automated-black-box-testing</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;Automated testing encourages your software to behave a certain way going forward into the future.&lt;/p&gt;
+&lt;p&gt;When you write tests against your user facing requirements (black box and acceptance tests), you locking down how your app acts.&lt;/p&gt;
+&lt;p&gt;When you use automated tests for white box testing (unit tests), you lock down how your software is designed.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>&quot;Re: Doing Good in the Addiction Economy&quot;</title>
+				&lt;link&gt;https://briantakita.com/posts/re-doing-good-in-the-addiction-economy&lt;/link&gt;
+				<pubDate>Sun, 08 Sep 2013 18:13:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/re-doing-good-in-the-addiction-economy</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;From my &lt;a href=&quot;http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-addiction-economy/&quot; target=&quot;_blank&quot;&gt;wordpress blog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kajsotala.fi/2013/09/doing-good-in-the-addiction-economy/&quot; target=&quot;_blank&quot;&gt;Doing Good in the Addiction Economy&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Interesting but long winded post, IMO. But then, maybe my impatience toward long posts is telling in the short term rewards culture we live in. Of course time is valuable, and trying to get to the core concept of some the writing is often the goal. We don’t seem to savor the journey as much, or the journey has changed to be our lives toward success…&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>There is no privacy! Control your internet face</title>
+				&lt;link&gt;https://briantakita.com/posts/no-privacy-control-your-internet-face&lt;/link&gt;
+				<pubDate>Sun, 08 Sep 2013 01:39:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/no-privacy-control-your-internet-face</guid>
+				<author>Brian Takita</author>
+				<description>&lt;a href=&quot;/posts/no-privacy-control-your-internet-face/&quot;&gt;
+  &lt;img
+    src=&quot;http://briantakita.files.wordpress.com/2013/09/4959060_750beab5a4.jpg&quot;
+    alt=&quot;Brian Takita - There is no privacy! Control your internet face - Created by tuchodi under the Creative Commons License - http://www.flickr.com/photos/tuchodi/4959060&quot;
+  /&gt;
+&lt;/a&gt;
+
+&lt;p&gt;With all of the revelations over how the NSA is snooping over your personal communications, companies storing and controlling your data, encryption backdoors and the fact that it&amp;#39;s always crackable, one thing is becoming clear.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Fractal Therapy</title>
+				&lt;link&gt;https://briantakita.com/posts/fractal-therapy&lt;/link&gt;
+				<pubDate>Sat, 07 Sep 2013 19:13:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/fractal-therapy</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;&lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/existence.md&quot; target=&quot;_blank&quot;&gt;Existence&lt;/a&gt; (Universe &amp;amp; &lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/nature.md&quot; target=&quot;_blank&quot;&gt;nature&lt;/a&gt;) evolves as &lt;a href=&quot;https://github.com/btakita/philosophy/blob/master/src/fractal.md&quot; target=&quot;_blank&quot;&gt;fractals&lt;/a&gt; over time and space. If you aren&amp;#39;t familiar, here&amp;#39;s a 55 minute documentary. It&amp;#39;s worth watching.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/HvXbQb57lsE&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+</description>
+			</item>
+		,
+			<item>
+				<title>backbone-signal - Practical Reactive Programming in Javascript</title>
+				&lt;link&gt;https://briantakita.com/posts/backbone-signal-practical-reactive-programming-in-javascript&lt;/link&gt;
+				<pubDate>Sat, 07 Sep 2013 14:16:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/backbone-signal-practical-reactive-programming-in-javascript</guid>
+				<author>Brian Takita</author>
+				<description>&lt;a href=&quot;/posts/backbone-signal-practical-reactive-programming-in-javascript/&quot;&gt;
+  &lt;img
+    src=&quot;/images/neurons.jpg&quot;
+    alt=&quot;Brian Takita - backbone-signal - Practical Reactive Programming in Javascript - From Parthiv Haldipur http://www.flickr.com/photos/hmmmmm/3903176411/ - Licensed under Creative Commons&quot;
+  /&gt;
+&lt;/a&gt;
+
+&lt;p&gt;I have recently released &lt;a href=&quot;https://github.com/btakita/backbone-signal&quot; target=&quot;_blank&quot;&gt;backbone-signal (github.com)&lt;/a&gt;, which is a &lt;a href=&quot;https://en.wikipedia.org/wiki/Reactive_programming&quot; target=&quot;_blank&quot;&gt;reactive programming (Wikipedia)&lt;/a&gt; library with a practical &amp;amp; javascripty model api.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>Github Pages Custom DNS Gotcha</title>
+				&lt;link&gt;https://briantakita.com/posts/github-pages-custom-dns-gotcha&lt;/link&gt;
+				<pubDate>Thu, 05 Sep 2013 03:53:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/github-pages-custom-dns-gotcha</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;I set up &lt;a href=&quot;http://briantakita.com&quot; target=&quot;_blank&quot;&gt;briantakita.com&lt;/a&gt; using &lt;a href=&quot;http://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://www.metalsmith.io/&quot; target=&quot;_blank&quot;&gt;metalsmith&lt;/a&gt;. Overall, it took some effort to setup &amp;amp; learn, but it turned out to be fairly painless. In this aritcle, I talk about setting up the DNS to point &lt;a href=&quot;http://briantakita.com&quot; target=&quot;_blank&quot;&gt;briantakita.com&lt;/a&gt; to btakita.github.io.&lt;/p&gt;
+</description>
+			</item>
+		,
+			<item>
+				<title>DIY SEO with BrandYourself.com</title>
+				&lt;link&gt;https://briantakita.com/posts/diy-seo&lt;/link&gt;
+				<pubDate>Thu, 05 Sep 2013 02:07:00 GMT</pubDate>
+				<guid isPermaLink="true">https://briantakita.com/posts/diy-seo</guid>
+				<author>Brian Takita</author>
+				<description>&lt;p&gt;The wonderful web makes it very easy for someone to publish their thoughts and opinions, good and bad, true and false. If you find yourself at the wrong end of a post that shows up in your Google results, the implications can be very damaging. It ceases to be a matter of truth, but a matter of marketing.&lt;/p&gt;
+&lt;p&gt;Fortunately, you can take control over your name on the web, without having to spend thousands of dollars that online reputation repair firms charge.&lt;/p&gt;
+</description>
+			</item>
+		
+	</channel>
+</rss>
