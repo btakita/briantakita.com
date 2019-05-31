@@ -12,13 +12,21 @@ import config from 'sapper/config/rollup'
 import pkg from './package.json'
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
-const { style } = require('@ctx-core/sass/svelte')
+const { _preprocess } = require('@ctx-core/svelte/preprocess')
+const { _preprocess__sass } = require('@ctx-core/sass/svelte')
+import { mdsvex } from 'mdsvex'
+const { _preprocess__svg } = require('@ctx-core/svg/svelte')
 const extensions = ['.mjs', '.js', '.jsx', '.json']
 const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
 	'process.env.ROOT__PATH': JSON.stringify('/'),
 	'process.env.GOOGLE_TRACKING_ID': JSON.stringify(process.env.GOOGLE_TRACKING_ID),
 }
+const preprocess = _preprocess([
+	_preprocess__sass(),
+	mdsvex(),
+	_preprocess__svg(),
+])
 module.exports = {
 	client: {
 		input: config.client.input(),
@@ -29,9 +37,7 @@ module.exports = {
 				dev,
 				hydratable: true,
 				emitCss: true,
-				preprocess: {
-					style,
-				},
+				preprocess,
 			}),
 			globals__plugin(),
 			builtins__plugin(),
@@ -54,9 +60,7 @@ module.exports = {
 			svelte({
 				generate: 'ssr',
 				dev,
-				preprocess: {
-					style,
-				},
+				preprocess,
 			}),
 			resolve({
 				extensions,

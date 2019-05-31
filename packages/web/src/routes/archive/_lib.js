@@ -12,7 +12,7 @@ export const a1__archive_id =
 	map(
 		a1__fs_path__archive,
 		fs_path =>
-			basename(fs_path, '.html').replace(/^_/, '')
+			basename(fs_path, '.svelte').replace(/^_/, '')
 	).sort().reverse()
 export const a1__path__archive =
 	map(
