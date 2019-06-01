@@ -10,7 +10,7 @@
 </script>
 
 <script>
-	import { __prepend__footer } from '@briantakita/web/src/layout/store'
+	import { __prepend__footer } from './_layout/store'
 	import Archive from '@briantakita/web/src/routes/archive/latest.svelte'
 	import Previous from '@briantakita/web/src/routes/archive/previous.svelte'
 	export let segment = ''

@@ -1,6 +1,6 @@
 <script>
-	import Nav from '@briantakita/web/src/layout/Nav.svelte'
-	import { __subheader } from '@briantakita/web/src/layout/store'
+	import Nav from './Nav.svelte'
+	import { __subheader } from './store'
 </script>
 
 <header class="header">

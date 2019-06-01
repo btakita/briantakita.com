@@ -1,9 +1,9 @@
 import fs from 'fs'
 import { extname, basename } from 'path'
 import { promisify } from 'util'
-import { domain } from '@briantakita/web/src/domain/lib'
+import { domain } from '../_domain/lib'
 import { map, compact, sort } from '@ctx-core/array'
-import { hljs } from '@briantakita/web/src/highlight.js/lib'
+import { hljs } from '../_highlight.js/lib'
 import {
 	_frontmatter__content,
 	_html__markdown,

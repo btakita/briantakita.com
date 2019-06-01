@@ -6,9 +6,9 @@
 	}
 </script>
 <script>
-	import { __class__layout, __prepend__footer } from '@briantakita/web/src/layout/store'
+	import { __class__layout, __prepend__footer } from '../_layout/store'
 	import Date__Local from '@ctx-core/date/Date__Local.svelte'
-	import { __subheader } from '@briantakita/web/src/layout/store'
+	import { __subheader } from '../_layout/store'
 	import { __frontmatter } from '@ctx-core/markdown/store'
 	export let path
 	export let segment

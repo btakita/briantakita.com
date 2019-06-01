@@ -1,4 +1,4 @@
-import { domain } from '@briantakita/web/src/domain/lib'
+import { domain } from './_domain/lib'
 import { _a1__post } from './posts/_lib'
 export async function get(req, res) {
 	const a1__post = await _a1__post()

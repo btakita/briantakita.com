@@ -1,5 +1,5 @@
 <script>
-	import { __prepend__footer } from '@briantakita/web/src/layout/store'
+	import { __prepend__footer } from './store'
   import Links__SocialMedia from './Links__SocialMedia.svelte'
 </script>
 
