@@ -13,7 +13,7 @@ date: 9/7/13 10:16 AM
 
 I have recently released <a href="https://github.com/btakita/backbone-signal" target="_blank">backbone-signal (github.com)</a>, which is a <a href="https://en.wikipedia.org/wiki/Reactive_programming" target="_blank">reactive programming (Wikipedia)</a> library with a practical & javascripty model api.
 
-<hr class="more"/>
+<!--more-->
 
 ```js
 // backbone-signal extends Backbone.Model

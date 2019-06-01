@@ -10,7 +10,7 @@ From my <a href="http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-a
 
 Interesting but long winded post, IMO. But then, maybe my impatience toward long posts is telling in the short term rewards culture we live in. Of course time is valuable, and trying to get to the core concept of some the writing is often the goal. We don’t seem to savor the journey as much, or the journey has changed to be our lives toward success…
 
-<hr class="more"/>
+<!--more-->
 
 America is a culture of accomplishment. We feel the not so subtle urge to be successful, especially in the eyes of our peers. Time is money and there are lots of shiny distractions…
 

@@ -6,7 +6,7 @@ date: 9/4/13 23:53
 
 I set up <a href="http://briantakita.com" target="_blank">briantakita.com</a> using <a href="http://pages.github.com/" target="_blank">Github Pages</a> & <a href="http://www.metalsmith.io/" target="_blank">metalsmith</a>. Overall, it took some effort to setup & learn, but it turned out to be fairly painless. In this aritcle, I talk about setting up the DNS to point <a href="http://briantakita.com" target="_blank">briantakita.com</a> to btakita.github.io.
 
-<hr class="more"/>
+<!--more-->
 
 To set up the DNS, I followed the <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages" target="_blank">official instructions</a> and <a href="http://davidensinger.com/2013/03/setting-the-dns-for-github-pages-on-namecheap/" target="_blank">github pages with namecheap</a>.
 

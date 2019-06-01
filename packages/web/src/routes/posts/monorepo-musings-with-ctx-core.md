@@ -11,7 +11,7 @@ As a consultant, I'm naturally inclined to accumulate a toolkit of tech (technol
 In the domain of technology, where all levels of the solution stack are subject to change,
 	keeping a toolkit while moving from project to project is a challenge.
 
-<hr class="more"/>
+<!--more-->
 
 <details>
 <summary>Why I choose Javascript</summary>

@@ -8,7 +8,7 @@ BrianTakita.com is now built using a technology chain consisting of <a href="htt
 
 You can see the source in the <a href="https://github.com/btakita/briantakita.com" target="_blank">briantakita.com</a> repo.
 
-<hr class="more"/>
+<!--more-->
 
 I wanted a static site generator that felt like building a custom app, with a <a href="https://www.wikiwand.com/en/Domain-driven_design" target="_blank">domain-driven naming conventions</a>, approachable custom build scripts, & isomorphic javascript.
 

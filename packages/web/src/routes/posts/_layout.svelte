@@ -1,32 +1,31 @@
 <script context="module">
-	export async function preload({ params, query }) {
-		const { post_id } = params
-		const response = await this.fetch(`posts/${post_id}.json`)
-		const post = await response.json()
-		if (!post) {
-			this.error(404, 'Post Not Found')
+	export async function preload({ path, params, query, }) {
+		return {
+			path,
 		}
-		return post && { post }
 	}
 </script>
 <script>
 	import { __class__layout, __prepend__footer } from '@briantakita/web/src/layout/store'
 	import Date__Local from '@ctx-core/date/Date__Local.svelte'
 	import { __subheader } from '@briantakita/web/src/layout/store'
-	export let post
-	export let title = ''
+	import { __frontmatter } from '@ctx-core/markdown/store'
+	export let path
+	export let segment
 	__class__layout.set('post-detail')
 	__prepend__footer.set(`<div class="nav"><a href="/"> « Full blog</a></div>`)
-	$: __subheader.set(title)
+	$: date = $__frontmatter && new Date($__frontmatter.date)
+	$: txt__date = ($__frontmatter && $__frontmatter.date) || ''
+	$: title = ($__frontmatter && $__frontmatter.title) || ''
 </script>
 
 <section class="post">
 	<div class="content">
 		<header>
-			<p class="date"><span><Date__Local date="{post.txt__date}"></Date__Local></span></p>
-			<h2><a href="{post.path}">{post.metadata.title}</a></h2>
+			<p class="date"><span><Date__Local date="{txt__date}"></Date__Local></span></p>
+			<h2><a href="{path}">{title}</a></h2>
 		</header>
-		{@html post.html}
+		<slot></slot>
 		<div id="disqus_thread"></div>
 		<script type="text/javascript">
 			/**
@@ -49,8 +48,8 @@
   </div>
 </section>
 
-<style type="text/scss">
-	:global(body.post-detail) > :global(header) {
+<style type="text/scss" global>
+	body.post-detail > header {
 		padding: 1rem 0;
 		margin-bottom: 2rem;
 	}

@@ -5637,13 +5637,6 @@ md5.js@^1.3.4:
     inherits "^2.0.1"
     safe-buffer "^5.1.2"
 
-mdsvex@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/mdsvex/-/mdsvex-0.3.0.tgz#773103cf51087a0b31ad96fcb370794b626113a3"
-  integrity sha512-Cs3tKoqG/CrAB/iWUtG3/RjNXo9Z6sYKs5bEKntAr2RfiCs6sA95p1NWdGE7MCY4byA3WSpUYSYpV/io9f6AbQ==
-  dependencies:
-    punycode "^2.1.1"
-
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -7254,7 +7247,7 @@ punycode@^1.4.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-1.4.1.tgz#c0d5a63b2718800ad8e1eb0fa5269c84dd41845e"
   integrity sha1-wNWmOycYgArY4esPpSachN1BhF4=
 
-punycode@^2.1.0, punycode@^2.1.1:
+punycode@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==

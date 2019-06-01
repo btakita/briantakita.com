@@ -24,12 +24,12 @@ export async function get(req, res) {
 		<language>en</language>
 		${a1__post.map(post => `
 			<item>
-				<title>${escape__html(post.metadata.title)}</title>
+				<title>${escape__html(post.frontmatter.title)}</title>
 				${escape__html(`<link>${domain}${post.path}</link>`)}
 				<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 				<guid isPermaLink="true">${domain}${post.path}</guid>
-				<author>${post.metadata.author}</author>
-				<description>${escape__html(post.metadata.intro)}</description>
+				<author>${post.frontmatter.author}</author>
+				<description>${escape__html(post.intro)}</description>
 			</item>
 		`)}
 	</channel>

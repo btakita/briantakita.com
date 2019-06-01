@@ -8,7 +8,7 @@ Automated testing helps to ensure that your software does not have regressions a
 
 I'm a [fan of black box](/posts/automated-black-box-testing/) testing, because it is decoupled from the implementation. The implication is the <a href="http://briantakita.wordpress.com/2013/09/15/why-its-better-to-strive-toward-accomplishment-rather-than-method/" target="_blank">**what** is verified, rather than the **how**</a>.
 
-<hr class="more"/>
+<!--more-->
 
 Spec frameworks such as rspec and jasmine give you the constructs to perform edge case testing. Unfortunately, the same setup is repeated when verifying different aspects of the state of the system. This leads to long test suites and even to the motivation to skip edge case testing (sacrificing test coverage) or combining tests (sacrificing clarity of intent of the test).
 

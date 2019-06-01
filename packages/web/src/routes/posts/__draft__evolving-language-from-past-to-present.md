@@ -30,5 +30,5 @@ Our language is stuck in the past; which introduces misunderstandings, wastes en
 ## Elegance of Reuse & Redefinition of Words
 
 ---
-
+ 
 The pattern of the previous sentence can be generalized to all <a href="https://github.com/btakita/philosophy/blob/master/src/life.md" target="_blank">life</a> & all <a href="https://github.com/btakita/philosophy/blob/master/src/entity.md" target="_blank">Entities</a>.

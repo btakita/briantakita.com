@@ -23,6 +23,7 @@
 	import { hljs } from '../highlight.js/lib'
 	import { refresh__initHighlighting } from '@ctx-core/highlight.js'
 	const { page, preloading, session } = stores()
+	export let segment
 	export let version
 	let dom__container__Header
 	let height__container__Header
@@ -223,12 +224,7 @@
 			}
 		}
 		pre {
-			font-size: 0.9em;
-			overflow: auto;
-			border: 1px dashed #d2d2d2;
-			border-radius: 0.25em;
-			margin-bottom: 1.8em;
-			padding: 1em;
+			padding: 0 0 1em;
 			code {
 				display: block;
 				line-height: 1.1;

@@ -19,7 +19,7 @@ image: http://www.briantakita.com/images/unicorn.jpg
 
 I'm happy to see my own homespun approach have a strong connection to an established Philosophical branch. The <a href="http://en.wikipedia.org/wiki/Philosophy_of_language" target="_blank">Philosophy of Language (Wikipedia)</a> brings concepts together into a system of logic to yield magical & insightful connections in Existence.
 
-<hr class="more"/>
+<!--more-->
 
 ## My Story with Magic
 

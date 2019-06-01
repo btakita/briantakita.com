@@ -8,7 +8,7 @@ The wonderful web makes it very easy for someone to publish their thoughts and o
 
 Fortunately, you can take control over your name on the web, without having to spend thousands of dollars that online reputation repair firms charge.
 
-<hr class="more"/>
+<!--more-->
 
 <a href="http://brandyourself.com" target="_blank">Brandyourself.com</a> makes it easy to inexpensively control your SEO destiny. Here is my <a href="http://briantakita.brandyourself.com/" target="_blank">profile</a>.
 

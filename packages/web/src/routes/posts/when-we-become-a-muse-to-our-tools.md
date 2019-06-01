@@ -13,6 +13,6 @@ Would we be better off if we consciously create & choose our tools? When would i
 
 Some "it depends" questions to consider&hellip;
 
-<hr class="more"/>
+<!--more-->
 
 This post was inspired by <a href="https://www.youtube.com/watch?v=2QuoMkTCrQU" target="_blank">Alan Watts</a>.

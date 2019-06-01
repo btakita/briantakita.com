@@ -9,6 +9,7 @@
 <script>
   import { __class__layout, __prepend__footer } from '@briantakita/web/src/layout/store'
   import PostIntro from '../posts/_PostIntro.svelte'
+	export let segment = ''
   export let posts
   __class__layout.set('articles')
   __prepend__footer.set(`<div class="nav"><a href="/blog/archive"> « Blog Archives</a></div>`)

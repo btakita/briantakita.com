@@ -6,7 +6,7 @@ date: 07/03/17 20:30
 Creating Web Components/Web Apps has never been more pleasurable.
 It's out with the old & in with the new. I converted my client's project to use Svelte JS from Riot JS. This post highlights some considerations why I chose Svelte & a a sample web component using Svelte.
 
-<hr class="more"/>
+<!--more-->
 
 <a href="https://svelte.technology" target="_blank">Svelte JS</a> is a build-time isomorphic library that utilizes a transpilation process to build completely self-contained web components.
 
@@ -50,5 +50,3 @@ This example highlights the following features:
   * sub components
   
 You can <a href="https://svelte.technology/guide" target="_blank">read more about the features of svelte</a>.
-
-<script src="https://gist.github.com/btakita/786d35c18f001908c59194a8cbfe637c.js"></script>

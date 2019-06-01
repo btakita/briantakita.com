@@ -18,7 +18,7 @@ Feeling an abstract notion such as Energy Transfer may seem tricky; however, it'
 
 A trick to feeling abstract terms is connect to something more familiar, such as a physical sensation.
 
-<hr class="more"/>
+<!--more-->
 
 A form of Energy Transfer is heat transfer. Something feeling hot means Heat (Energy) is transferred to your body from that thing; something feeling cold means Heat is transferred from your body to that thing.
 

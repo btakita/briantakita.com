@@ -13,7 +13,7 @@ date: 9/7/13 21:39
 
 With all of the revelations over how the NSA is snooping over your personal communications, companies storing and controlling your data, encryption backdoors and the fact that it's always crackable, one thing is becoming clear.
 
-<hr class="more"/>
+<!--more-->
 
 **There is no privacy on the internet**.
 

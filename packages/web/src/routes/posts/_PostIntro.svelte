@@ -6,10 +6,10 @@
 <section class="post intro PostIntro">
   <header>
     <p class="date"><span><Date__Local date="{post.txt__date}"></Date__Local></span></p>
-    <h2><a href="{post.path}">{post.metadata.title}</a></h2>
+    <h2><a href="{post.path}">{post.frontmatter.title}</a></h2>
   </header>
   <div class="content">
-    {@html post.metadata.intro}
-		<p class="more"><a href="/posts/{post.slug}">Full post&hellip;</a></p>
+    {@html post.intro}
+		<p class="more"><a href="{post.path}">Full post&hellip;</a></p>
   </div>
 </section>

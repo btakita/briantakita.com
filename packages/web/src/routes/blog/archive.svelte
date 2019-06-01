@@ -71,7 +71,7 @@
 								<a href="{post.url}"
 									 style="line-height: {height(__year__month__a1__post[year][month])}em;"
 									 class="{last(__year__month__a1__post[year][month], k) ? 'last' : ''}"
-								>{post.metadata.title}</a>
+								>{post.frontmatter.title}</a>
 							{/each}
 						</li>
 					{/each}

@@ -14,7 +14,7 @@ const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const { _preprocess } = require('@ctx-core/svelte/preprocess')
 const { _preprocess__sass } = require('@ctx-core/sass/svelte')
-import { mdsvex } from 'mdsvex'
+const { _preprocess__markdown } = require('@ctx-core/markdown/svelte')
 const { _preprocess__svg } = require('@ctx-core/svg/svelte')
 const extensions = ['.mjs', '.js', '.jsx', '.json']
 const __replace = {
@@ -22,9 +22,11 @@ const __replace = {
 	'process.env.ROOT__PATH': JSON.stringify('/'),
 	'process.env.GOOGLE_TRACKING_ID': JSON.stringify(process.env.GOOGLE_TRACKING_ID),
 }
+const extensions__svelte = ['.svelte', '.html', '.md', '.svg']
 const preprocess = _preprocess([
 	_preprocess__sass(),
-	mdsvex(),
+//	mdsvex(),
+	_preprocess__markdown(),
 	_preprocess__svg(),
 ])
 module.exports = {
@@ -35,6 +37,7 @@ module.exports = {
 			replace__({ 'process.browser': true }),
 			svelte({
 				dev,
+				extensions: extensions__svelte,
 				hydratable: true,
 				emitCss: true,
 				preprocess,
@@ -60,6 +63,7 @@ module.exports = {
 			svelte({
 				generate: 'ssr',
 				dev,
+				extensions: extensions__svelte,
 				preprocess,
 			}),
 			resolve({
