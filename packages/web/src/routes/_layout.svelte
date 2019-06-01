@@ -52,7 +52,7 @@
 </svelte:head>
 
 {#if _no__dom()}
-{@html _html__webfont__fout({ families: ['Open Sans'] })}
+	{@html _html__webfont__fout({ families: ['Open Sans'] })}
 {/if}
 
 <div
@@ -78,24 +78,24 @@
 </div>
 
 {#if _no__dom()}
-{@html _html__gtag()}
+	{@html _html__gtag()}
 {/if}
 
-<style type="text/scss" @lang="sass">
+<style type="text/scss" global>
 	@import '~@briantakita/web/src/css/variables';
-	:global(*) {
+	* {
 		@import '~highlight.js/styles/dracula';
 	}
-	:global(*) {
+	* {
 		box-sizing: border-box;
 	}
-	:global(html) {
+	html {
 		opacity: 0;
 		&.wf-active {
 			opacity: 1;
 		}
 	}
-	:global(body) {
+	body {
 		font-family: 'Open Sans', arial, sans-serif;
 		font-size: 21px;
 		line-height: 1.52;
@@ -110,10 +110,10 @@
 			font-size: 18px;
 		}
 	}
-	:global(body, a) {
+	body, a {
 		color: $color__text;
 	}
-	:global(.content-wrap) {
+	.content-wrap {
 		width: 100%;
 		margin: 0 auto;
 		padding: 0 1em;
@@ -122,85 +122,87 @@
 			padding: 0;
 		}
 	}
-	:global(h1, h2, h3, h4, h5, h6, p, body, a, img, blockquote, pre) {
+	h1, h2, h3, h4, h5, h6, p, body, a, img, blockquote, pre {
 		margin: 0;
 		padding: 0;
 		border: 0;
 	}
-	:global(h1) {
+	h1 {
 		font-size: 2em;
 		margin-bottom: 1em;
 		text-align: center;
 	}
-	:global(h2) {
+	h2 {
 		font-size: 1.6em;
 		font-weight: 400;
 		line-height: 1.43;
 	}
-	:global(h3) {
+	h3 {
 		font-style: italic;
 		font-weight: 400;
 		font-size: 1.4em;
 		margin-top: 1.8em;
 		margin-bottom: 0.8em;
 	}
-	:global(blockquote) {
+	blockquote {
 		margin: 1.2em 3em;
 		padding-left: 1em;
 		font-style: italic;
 	}
-	:global(hr) {
+	hr {
 		border: 0;
 		border-top: 1px dashed #d2d2d2;
 		height: 0;
 		margin: 1.6em 0;
 	}
-	:global(iframe) {
+	iframe {
 		display: block;
 		margin: 0 auto;
 	}
-	:global(p, ul) {
+	p, ul {
 		margin-bottom: 1.52em;
 	}
-	:global(a) {
+	a {
 		&:hover {
 			text-decoration: underline;
 		}
 	}
-	:global(header) {
-		border-top: 1px dashed #d2d2d2;
-		margin: 0.7rem 0 0;
-		:global(h2) {
-			font-style: italic;
-			text-align: center;
-			font-weight: 400;
-			margin: 0.8em 0;
-			font-size: 1.4em;
-			:global(a) {
-				text-decoration: none;
+	.content {
+		header {
+			border-top: 1px dashed #d2d2d2;
+			margin: 0.7rem 0 0;
+			h2 {
+				font-style: italic;
+				text-align: center;
+				font-weight: 400;
+				margin: 0.8em 0;
+				font-size: 1.4em;
+				a {
+					text-decoration: none;
+				}
 			}
-		}
-		:global(.date) {
-			text-align: center;
-			font-size: 0.8em;
-			margin-top: -0.7em;
-			text-rendering: auto;
-			letter-spacing: 1px;
-			font-variant: small-caps;
-			text-transform: lowercase;
-			font-weight: 400;
-			:global(span) {
-				background-color: $color__highlight__text;
-				padding: 0 0.7em;
+			.date {
+				text-align: center;
+				font-size: 0.8em;
+				margin-top: -0.7em;
+				text-rendering: auto;
+				letter-spacing: 1px;
+				font-variant: small-caps;
+				text-transform: lowercase;
+				font-weight: 400;
+				span {
+					background-color: $color__highlight__text;
+					padding: 0 0.7em;
+				}
 			}
 		}
 	}
-	:global(.post) {
-		margin: 2rem 0 4rem;
-		:global(hr.more) {
+	.post {
+		margin: 1em 0 2.5em;
+		hr.more {
 			display: none;
 		}
-		:global(code) {
+		code {
 			font-family: 'Anonymous Pro', monospace;
 			font-size: 0.85em;
 			/*color: #000;*/
@@ -220,20 +222,20 @@
 				}
 			}
 		}
-		:global(pre) {
+		pre {
 			font-size: 0.9em;
 			overflow: auto;
 			border: 1px dashed #d2d2d2;
 			border-radius: 0.25em;
 			margin-bottom: 1.8em;
 			padding: 1em;
-			:global(code) {
+			code {
 				display: block;
 				line-height: 1.1;
 			}
 		}
-		:global(p) {
-			:global(code) {
+		p {
+			code {
 				padding: 0.1em 0.3em 0.2em;
 				border-radius: 0.3em;
 				position: relative;
@@ -244,7 +246,7 @@
 			}
 		}
 	}
-	:global(img) {
+	img {
 		width: 100%;
 	}
 	._layout {
@@ -275,8 +277,5 @@
 			box-sizing: border-box;
 			z-index: 0;
 		}
-	}
-	:global(.post) {
-		margin: 1em 0 2.5em;
 	}
 </style>

@@ -1,6 +1,6 @@
 <script type="text/babel">
   import Date__Local from '@ctx-core/date/Date__Local.svelte'
-  export let post
+	export let post
 </script>
 
 <section class="post intro PostIntro">
@@ -10,6 +10,6 @@
   </header>
   <div class="content">
     {@html post.metadata.intro}
-    <p class="more"><a href="/posts/{post.slug}">Full post&hellip;</a></p>
+		<p class="more"><a href="/posts/{post.slug}">Full post&hellip;</a></p>
   </div>
 </section>
