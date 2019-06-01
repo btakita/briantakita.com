@@ -11,6 +11,7 @@
 
 <script>
 	import { basename } from 'path'
+	export let segment
 	export let a1__archive_id
 </script>
 

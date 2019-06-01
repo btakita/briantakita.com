@@ -16,7 +16,7 @@
 	"dependencies": {
 		"@ctx-core/a__target": "^2.0.2",
 		"@ctx-core/date": "^5.0.1",
-		"@ctx-core/disqus": "^1.0.0",
+		"@ctx-core/disqus": "^1.0.1",
 		"@ctx-core/env": "^6.0.32",
 		"@ctx-core/fontawesome": "^10.0.12",
 		"@ctx-core/google": "^5.0.2",
