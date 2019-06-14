@@ -1,5 +1,5 @@
 <script>
-	import Nav from './Nav.svelte'
+	import Nav from '../_nav/Nav.svelte'
 	import { __subheader } from './store'
 </script>
 

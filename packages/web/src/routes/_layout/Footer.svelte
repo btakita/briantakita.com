@@ -1,6 +1,6 @@
 <script>
 	import { __prepend__footer } from './store'
-  import Links__SocialMedia from './Links__SocialMedia.svelte'
+  import Links__SocialMedia from '../_nav/Links__SocialMedia.svelte'
 </script>
 
 <footer>
