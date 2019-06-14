@@ -5,6 +5,9 @@ date: 2/25/16 11:00
 description: Monorepos Create a Holistic Way to Develop Domains & Platforms
 ---
 
+```js exec route
+```
+
 It's been about 2 years since my previous post here.
 I've been busy working on a few client projects.
 As a consultant, I'm naturally inclined to accumulate a toolkit of tech (technology & techniques).

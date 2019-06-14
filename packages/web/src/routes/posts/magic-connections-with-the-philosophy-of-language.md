@@ -6,6 +6,9 @@ description: Magic exists! Well, if you have listened to me lately, you will hea
 image: http://www.briantakita.com/images/unicorn.jpg
 ---
 
+```js exec route
+```
+
 <p style="text-align: center; display: block;">
 	<a href="/posts/magic-connections-with-the-philosophy-of-language/">
 		<img

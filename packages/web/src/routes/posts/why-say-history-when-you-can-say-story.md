@@ -5,6 +5,9 @@ date: 12/19/14 1:50
 description: In culture, we are taught to distinguish history & story as two separate concepts. Some (falsely) think of history being a masculine version of story (his story). However, history & story can be used interchangeably. Here's why.
 ---
 
+```js exec route
+```
+
 <a href="/posts/why-say-history-when-you-can-say-story/">
 <img src="/images/encyclopedia-britannica.jpg" alt="From http://www.flickr.com/photos/bostontx/4461314652/ - Licensed under Creative Commons">
 </a>

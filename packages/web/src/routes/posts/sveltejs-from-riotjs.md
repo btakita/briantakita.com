@@ -3,6 +3,10 @@ title: Svelte JS from Riot JS
 author: Brian Takita
 date: 07/03/17 20:30
 ---
+
+```js exec route
+```
+
 Creating Web Components/Web Apps has never been more pleasurable.
 It's out with the old & in with the new. I converted my client's project to use Svelte JS from Riot JS. This post highlights some considerations why I chose Svelte & a a sample web component using Svelte.
 

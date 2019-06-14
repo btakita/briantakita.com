@@ -5,6 +5,9 @@ date: 2/27/18 16:30
 description: Naming Conventions to encode the meaning & context of abstractions
 ---
 
+```js exec route
+```
+
 Note: The naming convention described in this article
 	<a target="_blank" href="/posts/multi-underscore-tag-naming-convention-analysis">has been named</a>:
 

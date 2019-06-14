@@ -5,6 +5,9 @@ date: 9/7/13 3:13 PM
 image: http://www.briantakita.com/images/web-fractal_BloggS74.com_-1024x640.jpg
 ---
 
+```js exec route
+```
+
 <a href="https://github.com/btakita/philosophy/blob/master/src/existence.md" target="_blank">Existence</a> (Universe & <a href="https://github.com/btakita/philosophy/blob/master/src/nature.md" target="_blank">nature</a>) evolves as <a href="https://github.com/btakita/philosophy/blob/master/src/fractal.md" target="_blank">fractals</a> over time and space. If you aren't familiar, here's a 55 minute documentary. It's worth watching.
 
 <iframe title="Fractals - Hunting the Hidden Dimension — PBS Nova" width="560" height="315" src="https://www.youtube.com/embed/HvXbQb57lsE" frameborder="0" allowfullscreen></iframe>

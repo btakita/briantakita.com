@@ -5,6 +5,9 @@ date: 1/17/15 20:00
 description: Reductionist mechanisms in Physical Existence are Energy & Energy Transfer. We are all physically made of Energy. Feeling an abstract notion such as Energy Transfer may seem tricky; however, it's simply connection. A trick to feeling abstract terms is connect to something more familiar, such as a physical sensation.
 ---
 
+```js exec route
+```
+
 <a href="/posts/feeling-abstraction/">
 <img
 	src="/images/feeling-abstraction.jpg"

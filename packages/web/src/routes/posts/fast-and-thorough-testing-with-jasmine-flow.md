@@ -4,6 +4,9 @@ author: Brian Takita
 date: 9/14/13 7:00 PM
 ---
 
+```js exec route
+```
+
 Automated testing helps to ensure that your software does not have regressions as you make changes. These changes include refactorings, new features, bug fixes, etc. A Software product has an intricate set of behavior which includes a large number of edge cases.
 
 I'm a [fan of black box](/posts/automated-black-box-testing/) testing, because it is decoupled from the implementation. The implication is the <a href="http://briantakita.wordpress.com/2013/09/15/why-its-better-to-strive-toward-accomplishment-rather-than-method/" target="_blank">**what** is verified, rather than the **how**</a>.

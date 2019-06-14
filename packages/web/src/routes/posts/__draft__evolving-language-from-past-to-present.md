@@ -5,6 +5,9 @@ date: 12/19/14 1:30 PM
 description: Language is used by humans to communicate & influence how humans think. Words set the boundaries of human thought & communication. Words are abstractions, and can represent anything. We are all magicians, casting spells of anything imaginable with our words. Language is also used by all life & ultimately, all entities. Language has evolved with life, becoming more flexible & nuanced.
 ---
 
+```js exec route
+```
+
 Language is used by humans to communicate & influence how humans think. Language sets the boundaries of human thought & communication. Words are abstractions, and can represent anything. We are all magicians, casting spells of anything imaginable with our words.
 
 Language is also used by all life & ultimately, all entities. Language has evolved with life, becoming more flexible & nuanced.

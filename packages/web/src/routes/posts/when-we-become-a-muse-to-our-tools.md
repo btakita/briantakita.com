@@ -3,6 +3,10 @@ title: When We become a Muse to Our Tools
 author: Brian Takita
 date: 06/11/17 07:00
 ---
+
+```js exec route
+```
+
 What happens when we become a muse to our tools?
 
 When YouTube suggests videos that cater to your proclivities, what you see in your feed will be a reflection on your conscious attention domain.

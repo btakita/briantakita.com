@@ -44,8 +44,8 @@
 </p>
 
 <h2>
-	<A href="https://v3.svelte.technology">Svelte</A>
-		& <A href="https://sapper.svelte.technology">Sapper
+	<A href="https://svelte.dev">Svelte</A>
+		& <A href="https://sapper.svelte.dev">Sapper
 	</A>
 </h2>
 

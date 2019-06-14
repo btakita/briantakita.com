@@ -4,6 +4,9 @@ author: Brian Takita
 date: 6/7/17 5:30
 ---
 
+```js exec route
+```
+
 BrianTakita.com is now built using a technology chain consisting of <a href="https://svelte.technology" target="_blank">SvelteJS</a>, <a href="https://rollupjs.org/" target="_blank">RollupJS</a>, <a href="https://github.com/ctx-core/ctx-core" target="_blank">ctx-core</a>, & good ol' Bash.
 
 You can see the source in the <a href="https://github.com/btakita/briantakita.com" target="_blank">briantakita.com</a> repo.

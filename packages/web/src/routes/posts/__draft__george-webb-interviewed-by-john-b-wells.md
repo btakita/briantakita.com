@@ -1,3 +1,9 @@
+---
+---
+
+```js exec route
+```
+
 George Webb has a detailed narrative on the Beltway game...Explains how defense contracts work, how congress members vote, the Russians, HRC being "bad for business",  Guccifer, Wikileaks, etc.
 
 The threads tying the Clinton machine's failed takeover of the US Government, leftist rabble-rousing, etc. Orders of magnitude more detailed & 

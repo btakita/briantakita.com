@@ -81,8 +81,8 @@
 	A Composable <A href="https://en.wikipedia.org/wiki/Monorepo">Monorepo</A> library
 		written for my preferred toolchain of
 		<A href="https://nodejs.org">node.js</A>,
-		<A href="https://v3.svelte.technology/">Svelte</A>,
-		<A href="https://sapper.svelte.technology/">Sapper</A>,
+		<A href="https://svelte.dev/">Svelte</A>,
+		<A href="https://sapper.svelte.dev/">Sapper</A>,
 		<A href="https://lernajs.io/">Lerna</A>.
 	It can also be extended to use other toolchains.
 	Organizations can have their own monorepo,
