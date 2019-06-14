@@ -11,7 +11,7 @@
 	@import '~@briantakita/web/src/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Item__Nav__selected-underline($background: $color__text);
-	@media(max-width: #{$width__nav__slider}) {
+	@media(max-width: #{$width__wide}) {
 		@include Item__Nav__selected-background($background: mix($color__body, $color__header, 10%));
 		@include Item__Nav__cancel-selected-underline();
 	}
@@ -25,7 +25,7 @@
 				justify-content: flex-end;
 				width: 100%;
 				padding: 0 0.4rem;
-				@media(max-width: #{$width__nav__slider}) {
+				@media(max-width: #{$width__wide}) {
 					justify-content: center;
 				}
 				ul {

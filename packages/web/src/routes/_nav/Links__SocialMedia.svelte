@@ -84,7 +84,7 @@
 		ul {
 			overflow: hidden;
 			list-style-type: none;
-			@media(max-width: #{$width__nav__slider}) {
+			@media(max-width: #{$width__wide}) {
 				overflow: visible;
         width: 100%;
         padding: 0;
@@ -94,7 +94,7 @@
 				width: 2rem;
 				height: 2rem;
 				margin: 0 0.8rem 0 0;
-				@media(max-width: #{$width__nav__slider}) {
+				@media(max-width: #{$width__wide}) {
 					width: 1.4rem;
 					height: 1.4rem;
 					margin: 0 0.4rem 0 0;
