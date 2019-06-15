@@ -44,7 +44,7 @@
 		"sirv": "^0.4.2",
 		"source-map-support": "^0.5.12",
 		"util": "^0.12.0",
-		"yarn": "^1.16.0"
+		"yarn": "^1.17.0"
 	},
 	"devDependencies": {
 		"marked": "^0.6.2",

@@ -1630,10 +1630,10 @@ autoprefixer@^9.6.0:
     postcss "^7.0.16"
     postcss-value-parser "^3.3.1"
 
-aws-sdk@^2.475.0:
-  version "2.475.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.475.0.tgz#69f0f9c97e591fad98a31a4b40dd15bde000cf1e"
-  integrity sha512-C8vRCYOrDxqlpx/HQUvIJteLwTllOQrGZBfGM6DuFBNmMJvkzoJi3MWKj1e+yWXkGzNmbOgpzyVLcKrXyntnTw==
+aws-sdk@^2.476.0:
+  version "2.476.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.476.0.tgz#e7d9cefaae33e14ba3d9203fa4b64647fc1b188b"
+  integrity sha512-GBvp/VjKu5YAiwzLVyfUajq43BXBvxhNUz6D27mG/ttceeFdQxMkZbAHSk36vH7rtECGIgRTw5ok8BoHVCTGuw==
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -8176,10 +8176,10 @@ rollup-watch@^4.3.1:
     require-relative "0.8.7"
     rollup-pluginutils "^2.0.1"
 
-rollup@^1.15.4:
-  version "1.15.4"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.15.4.tgz#3d6d8cbc8f19651d63acdacf874da2f9ed06c8ba"
-  integrity sha512-EjdjLZ6K5z3J7NkboB+aPVBthZt1CexD7u0IIcc7NYGoXAFyV6AbdKrS8elfwGNrYmuBC5ZDOSOzwH9Ad4PQKg==
+rollup@^1.15.5:
+  version "1.15.5"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.15.5.tgz#1c1f7ef799d5b297aab6eb49ca7a6ab9c8aae6a0"
+  integrity sha512-Dix1YCY6BlsVK20SjQHBjKqxW2K+lqNr6BlCKxtdZuYqmUWLm8NzKHdrJyiFFjUO2hSI4wiC7apE+jAkDA3fEQ==
   dependencies:
     "@types/estree" "0.0.39"
     "@types/node" "^12.0.8"
@@ -9797,10 +9797,10 @@ yargs@^7.0.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-yarn@^1.16.0:
-  version "1.16.0"
-  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.16.0.tgz#5701b58ac555ff91f7b889b7d791b3dc86f8f999"
-  integrity sha512-cfemyGlnWKA1zopUUgebTPf8C4WkPIZ+TJmklwcEAJ4u6oWPtJeAzrsamaGGh/+b1XWe8W51yzAImC4AWbWR1g==
+yarn@^1.17.0:
+  version "1.17.0"
+  resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.17.0.tgz#4d42473a54d77e9b90fc17101436af5889e9dd54"
+  integrity sha512-gssWKQKlLqVaE04byB3YktqawKiTlBINNbpaTBvUvVKi8ruLN35CZxUjFuBZZLyQek0HkLnmuF2dA8xNCyI/1A==
 
 yauzl@2.4.1:
   version "2.4.1"
