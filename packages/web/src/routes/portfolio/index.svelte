@@ -122,6 +122,6 @@
 
 <h2>Interested in Web Services?</h2>
 <p>
-	If you are interested in having me build your app, you can
+	If you are interested in collaboration, you can
 		<a href="mailto:brian.takita@gmail.com?subject=App Consultation from Portfolio">email me</a>.
 </p>

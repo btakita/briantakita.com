@@ -23,9 +23,9 @@
     </li>
 		<!--				<li class="about-me"><a href="http://about.me/brian_takita">about.me</a></li>-->
     <li>
-      <A href="mailto:brian.takita@gmail.com" title="Github">
+      <a href="mailto:brian.takita@gmail.com" title="Github" target="_blank">
         <FA_envelope_solid></FA_envelope_solid>
-      </A>
+      </a>
     </li>
     <li>
       <A href="https://github.com/btakita" title="Github">
