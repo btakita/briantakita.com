@@ -26,7 +26,6 @@ const __replace = {
 const extensions__svelte = ['.svelte', '.html', '.md', '.svg']
 const preprocess = _preprocess([
 	_preprocess__sass(),
-//	mdsvex(),
 	_preprocess__markdown(),
 	_preprocess__svg(),
 ])

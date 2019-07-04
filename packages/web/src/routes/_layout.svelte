@@ -205,7 +205,6 @@
 		code {
 			font-family: 'Anonymous Pro', monospace;
 			font-size: 0.85em;
-			/*color: #000;*/
 			&.lang-markdown {
 				color: #424242;
 				.header, .strong {
@@ -230,12 +229,11 @@
 			}
 		}
 		p {
-			code {
+			code, .code {
 				padding: 0.1em 0.3em 0.2em;
 				border-radius: 0.3em;
 				position: relative;
 				top: -0.15em;
-				background: #444;
 				color: #fff;
 				white-space: nowrap;
 			}
