@@ -107,7 +107,7 @@ T<sub>0...i</sub> = ⟨T<sub>0</sub>,...,T<sub>i</sub>⟩
 </pre>
 
 <pre>
-T = ⟨⟨Multi, Underscore⟩, ⟨Tag, ⟨Naming, Convention⟩⟩⟩
+T = ⟨⟨Tag, Graph⟩, ⟨Naming, Convention⟩⟩
 </pre>
 
 ### Underscores
