@@ -1,5 +1,5 @@
 ---
-title: Multi Underscore Tag Naming Convention Analysis
+title: Tag Graph Naming Convention
 author: Brian Takita
 date: 4/15/19 16:20
 description: Naming Convention that utilizes underscores to articulate relationships to tags.
@@ -19,7 +19,7 @@ I gratefully accept any bibliographic references to ideas that I may present.
 
 ## Scope
 
-This article is primarily scoped to the Ontology of the "Multi Underscore Tag Naming Convention".
+This article is primarily scoped to the Ontology of the "Tag Graph".
 In it, the name of this method will be deconstructed, along with the methodology.
 There will be some treatment into why or the implications of design choices as well,
 	but that will be limited to keep the scope focused on the Ontology.
@@ -29,17 +29,17 @@ Emergent Properties or Gestalt resulting from
 
 <!--more-->
 
-## Deconstructing "Multi Underscore Tag Naming Convention"
+## Deconstructing "Tag Graph"
 
-A phrase can be treated as a series of tags, which create the context for meaning.
+A phrase can be treated as a series of tags in a one dimensional graph, which create the context for meaning.
 
-Ordinally, the phrase "Multi Underscore Tag Naming Convention" can be read
+Ordinally, the phrase "Tag Graph" can be read
 	left to right, right to left, or from other combinations of ways.
 The progression of reading each word builds a context.
 The order (left to right/right to left) of read words, generates a graph of
 	progressive contextual development.
 
-### Left to Right: Multi Underscore Tag Naming Convention
+### Left to Right: Tag Graph Naming Convention
 
 This sequence follows the English rules of Grammar for a phrase.
 
@@ -49,22 +49,23 @@ The object is "<a target="_blank" href="https://en.wiktionary.org/wiki/conventio
 
 The prepositions are:
 
-* Multi Underscore - implying multiple underscore characters `_`
 * <a target="_blank" href="https://en.wiktionary.org/wiki/tag">Tag</a>
 		- A keyword, term, or phrase associated with or assigned to data, media,
 			and/or information enabling keyword-based classification; often used to categorize content.
+* <a target="_blank" href="https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)">Graph</a>
+		- a graph is a structure amounting to a set of objects in which some pairs of the objects are in some sense "related"
 * <a target="_blank" href="https://en.wiktionary.org/wiki/naming">Naming</a>
 		- The process of giving names to things.
 			
 The vector can be used:
 
-⟨Multi, Underscore, Tag, Naming, Convention⟩
+⟨Tag, Graph, Naming, Convention⟩
 
 Subvectors can also be extracted:
 
-⟨⟨Multi, Underscore⟩, ⟨Tag, ⟨Naming, Convention⟩⟩⟩
+⟨⟨Tag, Graph⟩, ⟨Naming, Convention⟩⟩⟩
 
-### Right to Left: Convention Naming Tag Underscore Multi
+### Right to Left: Convention Naming Graph Tag
 
 If one reads the phrase right to left, while applying the rules of grammar,
 	a different meaning is built from the reversed phrase.
@@ -74,7 +75,7 @@ However, if one treats each word as a Tag, then the mix of Tags, can yield
 	these tags.
 To stay on scope, this will be left as an exercise to the reader.
 
-(Multi, Underscore, Tag, Naming, Convention)
+⟨Convention, Naming, Graph, Tag⟩
 
 ## Constituent Parts
 
@@ -116,7 +117,7 @@ A vector of `_` characters have different meanings.
 
 ### Single Underscore, `_`
 
-The Multi Underscore Tag Naming Convention build on the single underscore naming convention.
+The Tag Graph Naming Convention build on the single underscore naming convention.
 A single underscore represents a linkage of words into a single tag.
 This series reads from general to specific, where the instance type is the last segment,
 	while the context are the beginning segments.

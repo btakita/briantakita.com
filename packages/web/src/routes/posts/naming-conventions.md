@@ -9,13 +9,13 @@ description: Naming Conventions to encode the meaning & context of abstractions
 ```
 
 Note: The naming convention described in this article
-	<a target="_blank" href="/posts/multi-underscore-tag-naming-convention-analysis">has been named</a>:
+	<a target="_blank" href="/posts/tag-graph-naming-convention">has been named</a>:
 
-Long form: Multi Underscore Tag Naming Convention
+Long form: Tag Graph Naming Convention
 
-Medium form: Tag Naming Convention
+Medium form: Tag Graph Convention
 
-Short Form: Tag Naming
+Short Form: Tag Graph
 
 ---
 

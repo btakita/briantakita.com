@@ -3,6 +3,7 @@ import resolve from 'rollup-plugin-node-resolve'
 import replace from 'rollup-plugin-replace'
 import builtins__plugin from 'rollup-plugin-node-builtins'
 import globals__plugin from 'rollup-plugin-node-globals'
+import json__plugin from 'rollup-plugin-json'
 import commonjs from 'rollup-plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import { terser } from 'rollup-plugin-terser'
@@ -35,6 +36,7 @@ module.exports = {
 		output: config.client.output(),
 		plugins: [
 			replace__({ 'process.browser': true }),
+			json__plugin(),
 			svelte({
 				dev,
 				extensions: extensions__svelte,
@@ -60,6 +62,7 @@ module.exports = {
 		output: config.server.output(),
 		plugins: [
 			replace__({ 'process.browser': false }),
+			json__plugin(),
 			svelte({
 				generate: 'ssr',
 				dev,
