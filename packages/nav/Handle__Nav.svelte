@@ -6,7 +6,7 @@
 <Handle__Nav></Handle__Nav>
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Handle__Nav();
 	.Handle__Nav {

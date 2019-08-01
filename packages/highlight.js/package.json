@@ -1,0 +1,21 @@
+{
+	"name": "@briantakita/highlight.js",
+	"description": "@briantakita/highlight.js",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+		"highlight.js": "^9.15.9"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

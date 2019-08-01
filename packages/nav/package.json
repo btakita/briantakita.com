@@ -1,0 +1,28 @@
+{
+	"name": "@briantakita/nav",
+	"description": "@briantakita/nav",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+		"@briantakita/css": "^0.0.1",
+		"@ctx-core/a__target": "^2.0.19",
+		"@ctx-core/fontawesome": "^10.1.8",
+		"@ctx-core/nav": "^13.0.29",
+		"@ctx-core/sapper": "^6.1.43"
+	},
+	"devDependencies": {
+		"svelte": "^3.6.10"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

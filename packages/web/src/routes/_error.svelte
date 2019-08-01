@@ -18,7 +18,7 @@
 
 
 <style type="text/scss" @lang="sass">
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	h1, p {
 		margin: 0 auto;
 	}

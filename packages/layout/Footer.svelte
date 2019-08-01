@@ -1,6 +1,6 @@
 <script>
 	import { __prepend__footer } from './store'
-  import Links__SocialMedia from '../_nav/Links__SocialMedia.svelte'
+  import Links__SocialMedia from '@briantakita/nav/Links__SocialMedia.svelte'
 </script>
 
 <footer>
@@ -19,7 +19,7 @@
 </footer>
 
 <style type="text/scss">
-  @import '~@briantakita/web/src/css/variables';
+  @import '~@briantakita/css/variables';
 	:global(footer) {
 		:global(svg) {
 			fill: $color__text;

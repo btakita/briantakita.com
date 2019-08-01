@@ -16,10 +16,10 @@
 	import { _html__webfont__fout, _html__gtag } from '@ctx-core/google/html'
 	import { __VERSION } from '@ctx-core/env/store'
 	import { __session__sapper, __preloading__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
-	import { __title, __class__layout, __prepend__footer } from './_layout/store'
-	import Header from './_layout/Header.svelte'
-	import Footer from './_layout/Footer.svelte'
-	import { hljs } from './_highlight.js/lib'
+	import { __title, __class__layout, __prepend__footer } from '@briantakita/layout/store'
+	import Header from '@briantakita/layout/Header.svelte'
+	import Footer from '@briantakita/layout/Footer.svelte'
+	import { hljs } from '@briantakita/highlight.js'
 	import { refresh__initHighlighting } from '@ctx-core/highlight.js'
 	const { page, preloading, session } = stores()
 	export let segment
@@ -82,7 +82,7 @@
 {/if}
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	* {
 		@import '~highlight.js/styles/dracula';
 	}

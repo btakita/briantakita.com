@@ -1,4 +1,4 @@
-import { a1__archive_id, archive_id__latest } from './archive/_lib'
+import { a1__archive_id, archive_id__latest } from '@briantakita/archive'
 export async function get(req, res) {
 	const headers = {
 		'Content-Type': 'application/json',

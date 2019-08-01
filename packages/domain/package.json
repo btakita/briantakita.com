@@ -1,0 +1,22 @@
+{
+	"name": "@briantakita/domain",
+	"description": "@briantakita/domain",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+	},
+	"devDependencies": {
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

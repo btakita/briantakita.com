@@ -1,6 +1,6 @@
-import { domain } from './_domain/lib'
+import { domain } from '@briantakita/domain'
 import { escape__html } from '@ctx-core/html'
-import { _a1__post } from './posts/_lib'
+import { _a1__post } from '@briantakita/posts'
 export async function get(req, res) {
 	const a1__post = await _a1__post()
 	const xml = `

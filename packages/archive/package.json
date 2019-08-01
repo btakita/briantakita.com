@@ -1,0 +1,22 @@
+{
+	"name": "@briantakita/archive",
+	"description": "@briantakita/archive",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+		"@ctx-core/array": "^15.1.1",
+		"glob": "^7.1.4"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

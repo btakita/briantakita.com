@@ -10,7 +10,7 @@
 </script>
 
 <script>
-	import { __prepend__footer } from './_layout/store'
+	import { __prepend__footer } from '@briantakita/layout/store'
 	import Archive from '@briantakita/web/src/routes/archive/latest.md'
 	import Previous from '@briantakita/web/src/routes/archive/previous.md'
 	export let segment = ''

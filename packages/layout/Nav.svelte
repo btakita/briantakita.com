@@ -3,7 +3,7 @@
 	import Handle__Nav from '@ctx-core/nav/Handle__Nav.svelte'
 	import Content__Nav from '@ctx-core/nav/Content__Nav.svelte'
 	import Item__Nav from '@ctx-core/nav/Item__Nav.svelte'
-	import Links__SocialMedia from '../_nav/Links__SocialMedia.svelte'
+	import Links__SocialMedia from '@briantakita/nav/Links__SocialMedia.svelte'
 </script>
 
 <Handle__Nav class="Handle__Nav__briantakita"></Handle__Nav>
@@ -20,7 +20,7 @@
 </Content__Nav>
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Handle__Nav();
 	@include Content__Nav();

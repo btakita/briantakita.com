@@ -1,0 +1,24 @@
+{
+	"name": "@briantakita/posts",
+	"description": "@briantakita/posts",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+		"@ctx-core/date": "^6.0.0"
+	},
+	"devDependencies": {
+		"svelte": "^3.6.10"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

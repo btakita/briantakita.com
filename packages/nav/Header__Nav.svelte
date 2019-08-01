@@ -10,7 +10,7 @@
 </Header__Nav>
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	.Header__Nav {
 		display: none;
 		padding: 1em 0 0;

@@ -64,7 +64,7 @@
 </section>
 
 <style type="text/scss">
-  @import '~@briantakita/web/src/css/variables';
+  @import '~@briantakita/css/variables';
 	.Links__SocialMedia {
 		padding: 1.6em 0 0;
 		font-size: 0.9em;

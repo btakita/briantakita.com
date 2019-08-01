@@ -1,5 +1,5 @@
 <script>
-	import Nav from '../_nav/Nav.svelte'
+	import Nav from '@briantakita/nav/Nav.svelte'
 	import { __subheader } from './store'
 </script>
 
@@ -16,7 +16,7 @@
 </h2>
 
 <style type="text/scss">
-  @import '~@briantakita/web/src/css/variables';
+  @import '~@briantakita/css/variables';
 	.header {
 		margin: 0 0 1em;
 		background: $color__header;

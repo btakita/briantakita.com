@@ -20,7 +20,7 @@
 </Content__Nav>
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Content__Nav($width__wide: $width__wide);
 	@include Content__Nav__slide-from-right($width__wide: $width__wide);

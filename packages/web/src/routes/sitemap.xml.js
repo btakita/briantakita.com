@@ -1,5 +1,5 @@
-import { domain } from './_domain/lib'
-import { _a1__post } from './posts/_lib'
+import { domain } from '@briantakita/domain'
+import { _a1__post } from '@briantakita/posts'
 export async function get(req, res) {
 	const a1__post = await _a1__post()
 	const xml = `

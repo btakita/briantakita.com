@@ -7,8 +7,8 @@
 </script>
 
 <script>
-  import { __class__layout, __prepend__footer } from '../_layout/store'
-  import PostIntro from '../posts/_PostIntro.svelte'
+  import { __class__layout, __prepend__footer } from '@briantakita/layout/store'
+  import PostIntro from '@briantakita/posts/PostIntro.svelte'
 	export let segment = ''
   export let posts
   __class__layout.set('articles')

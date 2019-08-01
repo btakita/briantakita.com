@@ -8,7 +8,7 @@
 </Item__Nav>
 
 <style type="text/scss" global>
-	@import '~@briantakita/web/src/css/variables';
+	@import '~@briantakita/css/variables';
 	@import '~@ctx-core/nav/lib';
 	@include Item__Nav__selected-underline($background: $color__text);
 	@media(max-width: #{$width__wide}) {

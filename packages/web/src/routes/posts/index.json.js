@@ -1,4 +1,4 @@
-import { _a1__post } from './_lib'
+import { _a1__post } from '@briantakita/posts'
 export async function get(req, res) {
 	let json
 	if (process.env.NODE_ENV !== 'production') {
