@@ -1,7 +1,10 @@
 <script>
 	import { _style } from '@ctx-core/html'
+	import { __class__layout } from './store'
+	import { __VERSION } from '@ctx-core/env/store'
 	import Header from './Header.svelte'
 	import Footer from './Footer.svelte'
+	export let version
 	let dom__container__Header
 	//region height__container__Header
 	let height__container__Header
@@ -24,7 +27,7 @@
 </script>
 
 <div
-	{version}
+	version="{$__VERSION}"
 	class="_layout {$__class__layout||''}"
 	style="{style__layout}"
 >

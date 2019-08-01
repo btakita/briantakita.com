@@ -12,25 +12,28 @@
 	import Disqus from '@ctx-core/disqus/Disqus.svelte'
 	import { __subheader } from '@briantakita/layout/store'
 	import { __frontmatter } from '@ctx-core/markdown/store'
+
 	export let path
 	export let segment
 	__class__layout.set('post-detail')
-	__prepend__footer.set(`<div class="nav"><a href="/"> « Full blog</a></div>`)
+	__prepend__footer.set(`<import Main from '@briantakita/layout/Main.svelte'div class="nav"><a href="/"> « Full blog</a></div>`)
 	$: date = $__frontmatter && new Date($__frontmatter.date)
 	$: txt__date = ($__frontmatter && $__frontmatter.date) || ''
 	$: title = ($__frontmatter && $__frontmatter.title) || ''
 </script>
 
-<section class="post">
-	<div class="content">
-		<header>
-			<p class="date"><span><Date__Local date="{txt__date}"></Date__Local></span></p>
-			<h2><a href="{path}">{title}</a></h2>
-		</header>
-		<slot></slot>
-		<Disqus account="briantakita" identifier="briantakita-{basename(path)}"></Disqus>
-  </div>
-</section>
+<Main>
+	<section class="post">
+		<div class="content">
+			<header>
+				<p class="date"><span><Date__Local date="{txt__date}"></Date__Local></span></p>
+				<h2><a href="{path}">{title}</a></h2>
+			</header>
+			<slot></slot>
+			<Disqus account="briantakita" identifier="briantakita-{basename(path)}"></Disqus>
+		</div>
+	</section>
+</Main>
 
 <style type="text/scss" global>
 	body.post-detail > header {

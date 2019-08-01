@@ -8,8 +8,8 @@
     <div class="logo">
       <h1><a href="/">Brian Takita</a></h1>
     </div>
+		<Nav></Nav>
   </div>
-	<Nav></Nav>
 </header>
 <h2 class="subheader content-wrap">
 	{@html $__subheader || ''}
