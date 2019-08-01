@@ -1,0 +1,24 @@
+{
+	"name": "@briantakita/reactive-tag-graph-presentation",
+	"description": "@briantakita/reactive-tag-graph-presentation",
+	"version": "0.0.1",
+	"private": true,
+	"main": "./lib.js",
+	"module": "./lib.js",
+	"dependencies": {
+		"@briantakita/css": "^0.0.1"
+	},
+	"devDependencies": {
+		"svelte": "^3.6.10"
+	},
+	"workspaces": {
+		"packages": [
+			"packages/*",
+			"packages/ctx-core/packages/*"
+		],
+		"nohoist": [
+			"**/ctx-core/**",
+			"**/web/**"
+		]
+	}
+}

@@ -20,6 +20,7 @@
 		"@briantakita/highlight.js": "^0.0.1",
 		"@briantakita/layout": "^0.0.1",
 		"@briantakita/posts": "^0.0.1",
+		"@briantakita/reactive-tag-graph-presentation": "^0.0.1",
 		"express": "^4.17.1",
 		"glob": "^7.1.4",
 		"highlight.js": "^9.15.9",
