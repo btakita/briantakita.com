@@ -25,7 +25,7 @@ If you have tmux, run:
 Otherwise:
 
 ```
-cd packages/web
+cd packages/_web
 yarn run dev
 ```
 

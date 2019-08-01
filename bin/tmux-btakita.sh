@@ -11,7 +11,7 @@ tmux select-pane -t 0
 cd $BRIANTAKITA_DIR
 tmux new-window
 tmux rename-window processes
-cd $BRIANTAKITA_DIR/packages/web
+cd $BRIANTAKITA_DIR/packages/_web
 tmux send-keys 'watch-ts-toposort.sh' 'C-m'
 tmux split-window -h
 tmux send-keys 'yarn run dev' 'C-m'
