@@ -11,8 +11,7 @@
 <script>
 	import { stores } from '@sapper/app'
 	import { _style } from '@ctx-core/html'
-	import { _has__dom, _no__dom, _BoundingClientRect } from '@ctx-core/dom'
-	import { andand, tick } from '@ctx-core/function'
+	import { _no__dom, _BoundingClientRect } from '@ctx-core/dom'
 	import { _html__webfont__fout, _html__gtag } from '@ctx-core/google/html'
 	import { __VERSION } from '@ctx-core/env/store'
 	import { __session__sapper, __preloading__sapper, __page__sapper, __path__sapper } from '@ctx-core/sapper/store'
