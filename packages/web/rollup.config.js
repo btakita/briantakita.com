@@ -17,7 +17,7 @@ const { _preprocess } = require('@ctx-core/svelte/preprocess')
 const { _preprocess__sass } = require('@ctx-core/sass/svelte')
 const { _preprocess__markdown } = require('@ctx-core/markdown/svelte')
 const { _preprocess__svg } = require('@ctx-core/svg/svelte')
-const extensions = ['.mjs', '.js', '.jsx', '.json']
+const extensions = ['.mjs', '.js', '.jsx', '.json', '.svg']
 const __replace = {
 	'process.env.NODE_ENV': JSON.stringify(mode),
 	'process.env.ROOT__PATH': JSON.stringify('/'),

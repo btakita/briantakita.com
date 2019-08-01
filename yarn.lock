@@ -1139,7 +1139,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.14.8.tgz#fe444203ecef1162348cd6deb76c62477b2cc6e9"
   integrity sha512-I4+DbJEhLEg4/vIy/2gkWDvXBOOtPKV9EnLhYjMoqxcRW+TTZtUftkHktz/a8suoD5mUL7m6ReLrkPvSsCQQmw==
 
-"@types/node@^12.6.2":
+"@types/node@^12.6.3":
   version "12.6.8"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.6.8.tgz#e469b4bf9d1c9832aee4907ba8a051494357c12c"
   integrity sha512-aX+gFgA5GHcDi89KG5keey2zf0WfZk/HAQotEamsK2kbey+8yGKcson0hbK8E+v0NArlCJQCqMP161YhV6ZXLg==
@@ -1982,6 +1982,31 @@ before-after-hook@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.1.0.tgz#b6c03487f44e24200dd30ca5e6a1979c5d2fb635"
   integrity sha512-IWIbu7pMqyw3EAJHzzHbWa85b6oud/yfKYg5rqB5hNE8CeMi3nX+2C2sj0HswfblST86hpVEOAb9x34NZd6P7A==
+
+bespoke-classes@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/bespoke-classes/-/bespoke-classes-1.0.0.tgz#d61c40ae48dd0825f9704d010d7ea5bb3ad11218"
+  integrity sha1-1hxArkjdCCX5cE0BDX6luzrREhg=
+
+bespoke-hash@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bespoke-hash/-/bespoke-hash-1.1.0.tgz#7cff6f4e07352828a9fd30937239e9d713c63a0f"
+  integrity sha1-fP9vTgc1KCip/TCTcjnp1xPGOg8=
+
+bespoke-keys@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bespoke-keys/-/bespoke-keys-1.1.0.tgz#64c0418e532ae1c5c5966a9ea0ac60e8f28ecb22"
+  integrity sha1-ZMBBjlMq4cXFlmqeoKxg6PKOyyI=
+
+bespoke-touch@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/bespoke-touch/-/bespoke-touch-1.0.0.tgz#bf21ac774c6513e5e125e8dafc00f06d2f93e9ff"
+  integrity sha1-vyGsd0xlE+XhJeja/ADwbS+T6f8=
+
+bespoke@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/bespoke/-/bespoke-1.1.0.tgz#7b0fb3cfff580220a0da4020138365a55f063b3c"
+  integrity sha1-ew+zz/9YAiCg2kAgE4NlpV8GOzw=
 
 binary-extensions@^1.0.0:
   version "1.13.1"
@@ -8522,6 +8547,13 @@ resolve@^1.1.6, resolve@^1.10.0, resolve@^1.10.1, resolve@^1.11.0, resolve@^1.5.
   dependencies:
     path-parse "^1.0.6"
 
+resolve@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.12.0.tgz#3fc644a35c84a48554609ff26ec52b66fa577df6"
+  integrity sha512-B/dOmuoAik5bKcD6s6nXDCjzUKnaDvdkRyAk6rsmsKLipWj4797iothd7jmmUhWTfinVMU+wc56rYKsit2Qy4w==
+  dependencies:
+    path-parse "^1.0.6"
+
 resolve@~1.7.1:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
@@ -8803,13 +8835,13 @@ rollup-watch@^4.3.1:
     require-relative "0.8.7"
     rollup-pluginutils "^2.0.1"
 
-rollup@^1.17.0:
-  version "1.17.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.17.0.tgz#47ee8b04514544fc93b39bae06271244c8db7dfa"
-  integrity sha512-k/j1m0NIsI4SYgCJR4MWPstGJOWfJyd6gycKoMhyoKPVXxm+L49XtbUwZyFsrSU2YXsOkM4u1ll9CS/ZgJBUpw==
+rollup@^1.18.0:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.18.0.tgz#98ea36472523ed712e20c0e996fd051882f787e6"
+  integrity sha512-MBAWr6ectF948gW/bs/yfi0jW7DzwI8n0tEYG/ZMQutmK+blF/Oazyhg3oPqtScCGV8bzCtL9KzlzPtTriEOJA==
   dependencies:
     "@types/estree" "0.0.39"
-    "@types/node" "^12.6.2"
+    "@types/node" "^12.6.3"
     acorn "^6.2.0"
 
 run-async@^2.2.0:

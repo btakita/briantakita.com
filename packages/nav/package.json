@@ -8,9 +8,9 @@
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
 		"@ctx-core/a__target": "^2.0.19",
-		"@ctx-core/fontawesome": "^10.1.8",
-		"@ctx-core/nav": "^13.0.29",
-		"@ctx-core/sapper": "^6.1.43"
+		"@ctx-core/fontawesome": "^10.1.10",
+		"@ctx-core/nav": "^13.0.31",
+		"@ctx-core/sapper": "^6.1.44"
 	},
 	"devDependencies": {
 		"svelte": "^3.6.10"
