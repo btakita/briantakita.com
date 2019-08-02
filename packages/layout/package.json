@@ -8,7 +8,7 @@
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
 		"@briantakita/nav": "^0.0.1",
-		"@ctx-core/nav": "^13.0.31",
+		"@ctx-core/nav": "^13.0.32",
 		"@ctx-core/sapper": "^6.1.44"
 	},
 	"devDependencies": {
