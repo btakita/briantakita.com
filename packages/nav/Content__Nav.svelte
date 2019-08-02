@@ -12,6 +12,7 @@
 	<Item__Nav href="/portfolio" selected="{$__path__sapper === '/portfolio'}">Portfolio</Item__Nav>
 	<Item__Nav href="/interests" selected="{$__path__sapper === '/interests'}">Interests</Item__Nav>
 	<Item__Nav href="/blog" selected="{$__path__sapper === '/blog'}">Blog</Item__Nav>
+	<Item__Nav href="/presentations" selected="{$__path__sapper === '/presentations'}">Presentations</Item__Nav>
 	<Item__Nav class="container__Links__SocialMedia">
 		<div slot="in">
 			<Links__SocialMedia compact="{true}"></Links__SocialMedia>

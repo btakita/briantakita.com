@@ -8,11 +8,11 @@
 <script>
 	import { basename } from 'path'
 	import { __class__layout, __prepend__footer } from '@briantakita/layout/store'
+	import Main from '@briantakita/layout/Main.svelte'
 	import Date__Local from '@ctx-core/date/Date__Local.svelte'
 	import Disqus from '@ctx-core/disqus/Disqus.svelte'
 	import { __subheader } from '@briantakita/layout/store'
 	import { __frontmatter } from '@ctx-core/markdown/store'
-
 	export let path
 	export let segment
 	__class__layout.set('post-detail')
