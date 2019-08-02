@@ -1,12 +1,9 @@
-d---
+---
 title: Tag Graph Naming Convention
 author: Brian Takita
 date: 4/15/19 16:20
 description: Naming Convention that utilizes underscores to articulate relationships to tags.
 ---
-
-```js exec route
-```
 
 ## Scope
 
