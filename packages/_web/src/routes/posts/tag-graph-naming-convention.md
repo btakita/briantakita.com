@@ -1,4 +1,4 @@
----
+d---
 title: Tag Graph Naming Convention
 author: Brian Takita
 date: 4/15/19 16:20
@@ -7,15 +7,6 @@ description: Naming Convention that utilizes underscores to articulate relations
 
 ```js exec route
 ```
-
-Note:
-I am primarily a practitioner & have not amassed
-	a large reservoir of bibliographic references.
-Apologies for ideas have been previously published without being reference.
-I do not include them due to my ignorance or lack of a bibliographic system.
-I gratefully accept any bibliographic references to ideas that I may present.
-
----
 
 ## Scope
 

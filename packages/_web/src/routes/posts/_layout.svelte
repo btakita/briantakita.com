@@ -16,7 +16,7 @@
 	export let path
 	export let segment
 	__class__layout.set('post-detail')
-	__prepend__footer.set(`<import Main from '@briantakita/layout/Main.svelte'div class="nav"><a href="/"> « Full blog</a></div>`)
+	__prepend__footer.set(`<div class="nav"><a href="/"> « Full blog</a></div>`)
 	$: date = $__frontmatter && new Date($__frontmatter.date)
 	$: txt__date = ($__frontmatter && $__frontmatter.date) || ''
 	$: title = ($__frontmatter && $__frontmatter.title) || ''
