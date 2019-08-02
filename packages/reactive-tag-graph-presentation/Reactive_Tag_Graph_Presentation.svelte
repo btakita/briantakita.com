@@ -70,13 +70,10 @@
 
 <style type="text/scss" global>
 	@import "~@briantakita/css/variables";
-	body {
-		font-family: helvetica, arial, sans-serif;
-		font-size: 16px;
-		line-height: 28px;
-	}
 	.bespoke-parent {
 		position: absolute;
+		font-size: 16px;
+		line-height: 28px;
 		top: 0;
 		bottom: 0;
 		left: 0;
