@@ -8,11 +8,11 @@
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
 		"@briantakita/nav": "^0.0.1",
-		"@ctx-core/nav": "^13.0.33",
-		"@ctx-core/sapper": "^6.1.44"
+		"@ctx-core/nav": "^13.0.91",
+		"@ctx-core/sapper": "^6.1.93"
 	},
 	"devDependencies": {
-		"svelte": "^3.6.10"
+		"svelte": "^3.12.1"
 	},
 	"workspaces": {
 		"packages": [

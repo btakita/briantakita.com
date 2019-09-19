@@ -6,10 +6,10 @@
 	"main": "./lib.js",
 	"module": "./lib.js",
 	"dependencies": {
-		"@ctx-core/date": "^6.0.0"
+		"@ctx-core/date": "^6.1.2"
 	},
 	"devDependencies": {
-		"svelte": "^3.6.10"
+		"svelte": "^3.12.1"
 	},
 	"workspaces": {
 		"packages": [

@@ -9,7 +9,7 @@
 		"@briantakita/css": "^0.0.1"
 	},
 	"devDependencies": {
-		"svelte": "^3.6.10"
+		"svelte": "^3.12.1"
 	},
 	"workspaces": {
 		"packages": [
