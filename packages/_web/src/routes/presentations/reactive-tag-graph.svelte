@@ -1,6 +1,6 @@
 <script>
-	import Nav__Presentation from './_Nav__Presentation.svelte'
-	import Reactive_Tag_Graph_Presentation from '@briantakita/reactive-tag-graph-presentation/Reactive_Tag_Graph_Presentation.svelte'
+import Nav__Presentation from './_Nav__Presentation.svelte'
+import Reactive_Tag_Graph_Presentation from '@briantakita/reactive-tag-graph-presentation/Reactive_Tag_Graph_Presentation.svelte'
 </script>
 
 <Nav__Presentation>

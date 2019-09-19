@@ -1,18 +1,18 @@
 <script>
-	import { onMount } from 'svelte'
-	import bespoke from 'bespoke'
-	import bespoke_classes from 'bespoke-classes'
-	import bespoke_hash from 'bespoke-hash'
-	import bespoke_keys from 'bespoke-keys'
-	import bespoke_touch from 'bespoke-touch'
-	import Svg__graph__tag__reactive from './graph__tag__reactive.dot.svg'
-	let node__presentation
-	onMount(() => bespoke.from(node__presentation, [
-		bespoke_classes(),
-		bespoke_hash(),
-		bespoke_keys(),
-		bespoke_touch(),
-	]))
+import { onMount } from 'svelte'
+import bespoke from 'bespoke'
+import bespoke_classes from 'bespoke-classes'
+import bespoke_hash from 'bespoke-hash'
+import bespoke_keys from 'bespoke-keys'
+import bespoke_touch from 'bespoke-touch'
+import Svg__graph__tag__reactive from './graph__tag__reactive.dot.svg'
+let node__presentation
+onMount(() => bespoke.from(node__presentation, [
+	bespoke_classes(),
+	bespoke_hash(),
+	bespoke_keys(),
+	bespoke_touch(),
+]))
 </script>
 
 <article
@@ -70,79 +70,79 @@
 
 <style type="text/scss" global>
 	@import "~@briantakita/css/variables";
-	.bespoke-parent {
-		position: absolute;
-		font-size: 16px;
-		line-height: 28px;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		> section {
-			display: none;
-			$height--h1: 25px;
-			&.bespoke-slide {
-				position: absolute;
-				align-items: center;
-				justify-content: center;
-				display: flex;
-				flex-direction: column;
-				left: 50%;
-				height: calc(100% - 2rem - 4rem);
-				width: 100%;
-				margin: 2rem 0 4rem -50%;
-				padding: $height--h1 0 0;
-				-webkit-transition: all .3s ease;
-				-moz-transition: all .3s ease;
-				-ms-transition: all .3s ease;
-				-o-transition: all .3s ease;
-				transition: all .3s ease;
-				@media only screen and (min-width: $desktop-min) {
-					width: 50%;
-					margin-left: -25%;
-				}
-				&.bespoke-inactive {
-					opacity: 0;
-				}
-				&.bespoke-active {
-					opacity: 1;
-				}
-				&.slide-reactive-tag-graphs {
-					svg {
-						margin-top: 1rem;
-						filter: invert(1);
-						@media only screen and (min-width: $desktop-min) {
-							zoom: 2;
-						}
+.bespoke-parent {
+	position: absolute;
+	font-size: 16px;
+	line-height: 28px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	> section {
+		display: none;
+		$height--h1: 25px;
+		&.bespoke-slide {
+			position: absolute;
+			align-items: center;
+			justify-content: center;
+			display: flex;
+			flex-direction: column;
+			left: 50%;
+			height: calc(100% - 2rem - 4rem);
+			width: 100%;
+			margin: 2rem 0 4rem -50%;
+			padding: $height--h1 0 0;
+			-webkit-transition: all .3s ease;
+			-moz-transition: all .3s ease;
+			-ms-transition: all .3s ease;
+			-o-transition: all .3s ease;
+			transition: all .3s ease;
+			@media only screen and (min-width: $desktop-min) {
+				width: 50%;
+				margin-left: -25%;
+			}
+			&.bespoke-inactive {
+				opacity: 0;
+			}
+			&.bespoke-active {
+				opacity: 1;
+			}
+			&.slide-reactive-tag-graphs {
+				svg {
+					margin-top: 1rem;
+					filter: invert(1);
+					@media only screen and (min-width: $desktop-min) {
+						zoom: 2;
 					}
 				}
-				* {
-					box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					margin: 0;
-					padding: 0;
-					color: $color__text;
-					font-size: 24px;
-					line-height: 1.5em;
-				}
-				h1 {
-					height: $height--h1;
-					width: 640px;
-					position: absolute;
-					top: 0;
-					left: 50%;
-					margin-left: -322px;
-					font-size: 32px;
-					letter-spacing: -1px;
-				}
-				h2 {
-					margin-bottom: 2em;
-				}
-				hr {
-					width: 50%;
-					margin: 0.2rem 0;
-				}
+			}
+			* {
+				box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+				color: $color__text;
+				font-size: 24px;
+				line-height: 1.5em;
+			}
+			h1 {
+				height: $height--h1;
+				width: 640px;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -322px;
+				font-size: 32px;
+				letter-spacing: -1px;
+			}
+			h2 {
+				margin-bottom: 2em;
+			}
+			hr {
+				width: 50%;
+				margin: 0.2rem 0;
 			}
 		}
 	}
+}
 </style>

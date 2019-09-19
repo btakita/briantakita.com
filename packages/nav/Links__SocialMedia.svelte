@@ -1,14 +1,14 @@
 <script>
-  import A from '@ctx-core/a__target/A__Target.svelte'
-  import FA_rss_solid from '@ctx-core/fontawesome/ui/FA-rss-solid.svelte'
-  import FA_envelope_solid from '@ctx-core/fontawesome/ui/FA-envelope-solid.svelte'
-  import FA_linkedin_brand from '@ctx-core/fontawesome/ui/FA-linkedin-brand.svelte'
-  import FA_github_brand from '@ctx-core/fontawesome/ui/FA-github-brand.svelte'
-  import FA_facebook_brand from '@ctx-core/fontawesome/ui/FA-facebook-brand.svelte'
-  import FA_twitter_brand from '@ctx-core/fontawesome/ui/FA-twitter-brand.svelte'
-  import FA_wordpress_brand from '@ctx-core/fontawesome/ui/FA-wordpress-brand.svelte'
-  import FA_quora_brand from '@ctx-core/fontawesome/ui/FA-quora-brand.svelte'
-	export let compact = false
+import A from '@ctx-core/a__target/A__Target.svelte'
+import FA_rss_solid from '@ctx-core/fontawesome/ui/FA-rss-solid.svelte'
+import FA_envelope_solid from '@ctx-core/fontawesome/ui/FA-envelope-solid.svelte'
+import FA_linkedin_brand from '@ctx-core/fontawesome/ui/FA-linkedin-brand.svelte'
+import FA_github_brand from '@ctx-core/fontawesome/ui/FA-github-brand.svelte'
+import FA_facebook_brand from '@ctx-core/fontawesome/ui/FA-facebook-brand.svelte'
+import FA_twitter_brand from '@ctx-core/fontawesome/ui/FA-twitter-brand.svelte'
+import FA_wordpress_brand from '@ctx-core/fontawesome/ui/FA-wordpress-brand.svelte'
+import FA_quora_brand from '@ctx-core/fontawesome/ui/FA-quora-brand.svelte'
+export let compact = false
 </script>
 
 <section
@@ -64,42 +64,42 @@
 </section>
 
 <style type="text/scss">
-  @import '~@briantakita/css/variables';
-	.Links__SocialMedia {
-		padding: 1.6em 0 0;
-		font-size: 0.9em;
-		overflow: hidden;
-		&.compact {
-			padding: 0;
-			ul {
-				margin: 0;
-				height: 1.9rem;
-				position: relative;
-				li {
-					height: 100%;
-					position: relative;
-				}
-			}
-		}
+@import '~@briantakita/css/variables';
+.Links__SocialMedia {
+	padding: 1.6em 0 0;
+	font-size: 0.9em;
+	overflow: hidden;
+	&.compact {
+		padding: 0;
 		ul {
-			overflow: hidden;
-			list-style-type: none;
-			@media(max-width: #{$width__wide}) {
-				overflow: visible;
-        width: 100%;
-        padding: 0;
-			}
+			margin: 0;
+			height: 1.9rem;
+			position: relative;
 			li {
-				float: left;
-				width: 2rem;
-				height: 2rem;
-				margin: 0 0.8rem 0 0;
-				@media(max-width: #{$width__wide}) {
-					width: 1.4rem;
-					height: 1.4rem;
-					margin: 0 0.4rem 0 0;
-				}
+				height: 100%;
+				position: relative;
 			}
 		}
 	}
+	ul {
+		overflow: hidden;
+		list-style-type: none;
+		@media(max-width: #{$width__wide}) {
+			overflow: visible;
+			width: 100%;
+			padding: 0;
+		}
+		li {
+			float: left;
+			width: 2rem;
+			height: 2rem;
+			margin: 0 0.8rem 0 0;
+			@media(max-width: #{$width__wide}) {
+				width: 1.4rem;
+				height: 1.4rem;
+				margin: 0 0.4rem 0 0;
+			}
+		}
+	}
+}
 </style>

@@ -1,5 +1,5 @@
 <script>
-	import A from '@ctx-core/a__target/A__Target.svelte'
+import A from '@ctx-core/a__target/A__Target.svelte'
 </script>
 
 <h1>Current Interests</h1>
