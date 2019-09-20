@@ -9,7 +9,7 @@
 		"@briantakita/css": "^0.0.1",
 		"@ctx-core/a__target": "^2.0.33",
 		"@ctx-core/fontawesome": "^10.1.69",
-		"@ctx-core/nav": "^13.0.91",
+		"@ctx-core/nav": "^13.0.92",
 		"@ctx-core/sapper": "^6.1.93"
 	},
 	"devDependencies": {

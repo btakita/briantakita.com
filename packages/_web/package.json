@@ -48,7 +48,7 @@
 		"@ctx-core/highlight.js": "^1.0.115",
 		"@ctx-core/html": "^6.0.121",
 		"@ctx-core/markdown": "^7.0.115",
-		"@ctx-core/nav": "^13.0.91",
+		"@ctx-core/nav": "^13.0.92",
 		"@ctx-core/svelte": "^5.0.116",
 		"@ctx-core/svg": "^6.2.68",
 		"compression": "^1.7.4",
