@@ -72,8 +72,7 @@
 		"sapper": "^0.27.8",
 		"shelljs": "^0.8.3",
 		"svelte": "^3.12.1",
-		"typogr": "^0.6.8",
-		"yarn": "^1.17.3"
+		"typogr": "^0.6.8"
 	},
 	"workspaces": {
 		"packages": [
