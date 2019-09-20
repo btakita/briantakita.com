@@ -29,7 +29,6 @@
 	"devDependencies": {
 		"compression": "^1.7.4",
 		"marked": "^0.7.0",
-		"npm-check-updates": "^3.1.23",
 		"rollup": "^1.21.4",
 		"rollup-plugin-alias": "^2.0.0",
 		"rollup-plugin-buble": "^0.19.8",
