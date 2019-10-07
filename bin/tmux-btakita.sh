@@ -12,7 +12,7 @@ cd $BRIANTAKITA_DIR
 tmux new-window $SHELL
 tmux rename-window processes
 cd $BRIANTAKITA_DIR/packages/_web
-tmux send-keys 'watch-ts-toposort.sh' 'C-m'
+tmux send-keys 'tsc-build.sh -w' 'C-m'
 tmux split-window -h $SHELL
 tmux split-window -v $SHELL
 tmux send-keys 'yarn run dev' 'C-m'

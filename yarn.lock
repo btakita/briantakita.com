@@ -633,6 +633,404 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@ctx-core/array@^15.4.1":
+  version "15.4.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/array/-/array-15.4.1.tgz#eba1fbc5d52a146008b19346cbfc997c4fd5c28e"
+  integrity sha512-0TURyj7r5430iFzt2KYaX6ouRdxtSvstr1Jttw6mIL9LsakNNgUmbby2IF17t1nZDkAeyF9DTscgR7lnyyKn3A==
+  dependencies:
+    "@ctx-core/combinators" "^4.2.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/set" "^6.1.1"
+
+"@ctx-core/atob@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/atob/-/atob-4.2.1.tgz#3669abc1af081268616d955fd4e79634208ded8a"
+  integrity sha512-mlzn6NGbMgxIdBPre1H79BmhBHdOcwjoeV5nW0929XSn4CyFGl4QlFUaCgBbxBv91jKi9xrJy5XADHKFRabfNQ==
+  dependencies:
+    "@ctx-core/logger" "^3.1.1"
+    atob "^2.1.2"
+    atob-lite "^2.0.0"
+
+"@ctx-core/auth0-management@^1.1.180":
+  version "1.1.180"
+  resolved "https://registry.yarnpkg.com/@ctx-core/auth0-management/-/auth0-management-1.1.180.tgz#e42af3cb94fe7fb1cdc8c431edabe470426c3ed5"
+  integrity sha512-RJoQtaEvZ9V2QcGY/j6jRS5x7n+EabhuyYhjjk77y730vqiMYxSXa/FAuwJ1PMcTlaUQaMGwMupLMGk6R0oT7Q==
+  dependencies:
+    "@ctx-core/auth0" "^15.4.46"
+    "@ctx-core/fetch" "^5.1.1"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    auth0 "^2.20.0"
+    esm "^3.2.25"
+    querystringify "^2.1.1"
+
+"@ctx-core/auth0@^15.4.46":
+  version "15.4.46"
+  resolved "https://registry.yarnpkg.com/@ctx-core/auth0/-/auth0-15.4.46.tgz#93fd0805f90bdacaf6ba1a676be31d7223287514"
+  integrity sha512-YaBfMWueQyMpEnBGPvjzPMTxeSew+zfNg02HCqMphIbWPrazZNke+9udx63PNPjuBU1RGZ1Yt6T7IA0ccobcMw==
+  dependencies:
+    "@ctx-core/combinators" "^4.2.1"
+    "@ctx-core/fetch" "^5.1.1"
+    "@ctx-core/jwt" "^3.0.118"
+    "@ctx-core/local-storage" "^5.0.96"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/store" "^11.2.1"
+    auth0-js "^9.11.3"
+    deep-equal "^1.1.0"
+    jsonwebtoken "^8.5.1"
+    svelte "^3.12.1"
+
+"@ctx-core/cli-args@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/cli-args/-/cli-args-3.1.1.tgz#2a94c2e86ffd62291a302130b1fb2e79c5b2307a"
+  integrity sha512-NJ30MwmLp2kZKhGIlWctRiVvtD36kntSLTbY2X4oA1LPYu8/pHGGA2DLG6d4sfSkw1F/YdvkL0bO4ybzdOEUbQ==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/combinators@^4.2.1":
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/combinators/-/combinators-4.2.1.tgz#8bb525270fe9c693d2e5e9bd2add6f9df79fd631"
+  integrity sha512-A6aHPtdpSRNoZDjvfHWKWOHm4a87phVx41eNbRyyMF+Qy6hK36BscaEf7nBNFSR9oi2j5jKtLP27eDrl/13Juw==
+
+"@ctx-core/currency@^3.1.95":
+  version "3.1.95"
+  resolved "https://registry.yarnpkg.com/@ctx-core/currency/-/currency-3.1.95.tgz#e92bd8322b7556165af0460d1161962d0eb6a8ba"
+  integrity sha512-g00UlOHgBCfn6KkIGIxTcLJuJ6ITNoiXAkzVixBCsJE2K33U2T1KnSp7inxvhDOP0U31YlSh8T/TDVREezwt2Q==
+  dependencies:
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/number" "^3.0.4"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/data@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/data/-/data-1.1.1.tgz#83093db142a4b0bd3dec006222765aff26f4422a"
+  integrity sha512-ZseekYA9Zqq++dgXloZKyA2UwF7G9LU1WsQFIT009lsyNsNt9R80DYPRWlY0g0Fmw7RfPKzd49UnuR3NLBnTkA==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/combinators" "^4.2.1"
+    "@ctx-core/function" "^10.5.16"
+
+"@ctx-core/dialog@^9.1.36":
+  version "9.1.36"
+  resolved "https://registry.yarnpkg.com/@ctx-core/dialog/-/dialog-9.1.36.tgz#d1286a159d8959b55003ad23a8ec77b17ae1c797"
+  integrity sha512-pfo0ZlM3DZhesQPUxz4nzmt/1wwilzh/nePEq/rANTAl4XytavU6ELcLYH8E6swwN1Fy6GT+GRTiyOjMoXZodw==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/store" "^11.2.1"
+    svelte "^3.12.1"
+
+"@ctx-core/dom@^5.9.1":
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/dom/-/dom-5.9.1.tgz#ea29d214c5fc3b291730fcd8268294caf2f8ab66"
+  integrity sha512-liMrDzSEm9Gg6lvlsIRZV9rCKk9rSduVSqPL1wKwE69PQIngKk+7+DKE9Vin+Eru3eEjsRvHmrtIdjWIDnNWvg==
+  dependencies:
+    "@ctx-core/data" "^1.1.1"
+    "@ctx-core/html" "^6.0.127"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/store" "^11.2.1"
+
+"@ctx-core/env@^8.2.1":
+  version "8.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/env/-/env-8.2.1.tgz#b6082ef5bcfea64463c09267f835704d71a3ce5a"
+  integrity sha512-xaaASZInlD2iEjLA8jw4VqajKYQ5538kzGh63O7XXSTVtLRCWl60xsfNJssdNKxp7bB+V2BKkzEcaFoBgJ4xUA==
+  dependencies:
+    "@ctx-core/error" "^5.1.31"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/package" "^3.1.1"
+    dotenv "^8.1.0"
+    svelte "^3.12.1"
+
+"@ctx-core/error@^5.1.31":
+  version "5.1.31"
+  resolved "https://registry.yarnpkg.com/@ctx-core/error/-/error-5.1.31.tgz#8d363f6bdf35f1dac85f62a754e9c2ed6b078cf9"
+  integrity sha512-Vn/l9Msp9OqqxWJ0KKCYAvQW+RCYJr4P7pvLsXDIoSTMEIlpkfMfO7ARN2Rz3e34zmaXNSqqCzDcxqz0Xtz/sA==
+  dependencies:
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/etsy@^1.0.92":
+  version "1.0.92"
+  resolved "https://registry.yarnpkg.com/@ctx-core/etsy/-/etsy-1.0.92.tgz#6ce26e6e46bfadb9fbc47899da0e57261cf529cb"
+  integrity sha512-9OLnYz6utBuSE0IN9BktzmFXiyodMtVPNE8yi7kLavoHdMc3T1s0iM5mBEc1bBSZAAu+eMuViLHsyZR7JLI8bA==
+  dependencies:
+    "@ctx-core/currency" "^3.1.95"
+
+"@ctx-core/fetch@^5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/fetch/-/fetch-5.1.1.tgz#99c3f6bafed8a50535d70dfb7d31853c654ab0f2"
+  integrity sha512-Q7PHF4oBQeYG7Hm60tKXM9qlNAgJsbVptdBrFEXUnCGVCDcNdBQZTJTeSg+IyFH81N8T6SL+PgyLbz5K8YMLDQ==
+  dependencies:
+    "@ctx-core/dom" "^5.9.1"
+    "@ctx-core/env" "^8.2.1"
+    "@ctx-core/error" "^5.1.31"
+    "@ctx-core/fibonacci" "^3.0.2"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/package" "^3.1.1"
+    "@ctx-core/sleep" "^3.0.2"
+    "@ctx-core/version__app" "^6.1.1"
+    isomorphic-fetch "^2.2.1"
+    whatwg-fetch "^3.0.0"
+
+"@ctx-core/fontawesome@^10.1.76":
+  version "10.1.76"
+  resolved "https://registry.yarnpkg.com/@ctx-core/fontawesome/-/fontawesome-10.1.76.tgz#c8df3837bf3b5b9f9cb2749423449ce72259676d"
+  integrity sha512-uY9fqWNbGHkWOKn8BgsRLC2snphu1tHoxxYtY7mnNw3s0qRPjaWmOwgtCnrB7kMYKQjxp4dTjwuullj9TfBI3Q==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/svg" "^6.2.74"
+    commander "^3.0.1"
+    domutils "^2.0.0"
+    esm "^3.2.25"
+    globby "^10.0.1"
+    htmlparser2 "^4.0.0"
+    svelte "^3.12.1"
+
+"@ctx-core/function@^10.5.16":
+  version "10.5.16"
+  resolved "https://registry.yarnpkg.com/@ctx-core/function/-/function-10.5.16.tgz#3a8f9554c4f253526281b1c58068fee9712f719c"
+  integrity sha512-SFiEeysJY1XX4zk1HjvzbCdRWHHEX6qiN4LUZqRzdTtQGkqPpJXgie0faJyzEKvp0erbYWI0qR7BfVTItvnyGw==
+
+"@ctx-core/google@^5.0.78":
+  version "5.0.78"
+  resolved "https://registry.yarnpkg.com/@ctx-core/google/-/google-5.0.78.tgz#092a450e182154c5a1722a654171ec03e24b142e"
+  integrity sha512-FF2VYg+zRfsIo2p/3l9WfZJQqLyrA9ZrwnFW091hFChl8wEX/smK9NuwXpqUEvKlQxOGwVcMPd9bhqrH0N3+fA==
+  dependencies:
+    "@ctx-core/dom" "^5.9.1"
+    "@ctx-core/env" "^8.2.1"
+    "@ctx-core/error" "^5.1.31"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/graphql@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/graphql/-/graphql-4.1.1.tgz#7825a6f4f2dbf965231ca884fe6a15d3ffe364b5"
+  integrity sha512-+es5x8YHFK9iXoCfgZl/Wa5GnmNH8tQmET0seiW8pBXYa4QmXAwlBYrBbvSLdtnIZ850ZMR4vrqxM4uX9G7nbg==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/object" "^6.2.1"
+    graphql "^14.5.8"
+
+"@ctx-core/highlight.js@^1.0.121":
+  version "1.0.121"
+  resolved "https://registry.yarnpkg.com/@ctx-core/highlight.js/-/highlight.js-1.0.121.tgz#d134aed99ca66002734c71bac0aa05b05068169a"
+  integrity sha512-OexHECVwqNH4eaYwRxXLonyVm7uIUYD5+5aLoVimfWP0BgKKdUuZGMhs+bnXHAfdhUkO1sdj7B86B/BvNASttg==
+  dependencies:
+    "@ctx-core/dom" "^5.9.1"
+    "@ctx-core/function" "^10.5.16"
+
+"@ctx-core/html@^6.0.127":
+  version "6.0.127"
+  resolved "https://registry.yarnpkg.com/@ctx-core/html/-/html-6.0.127.tgz#9413ca284821d3a68b7df1ec3ca1fada9b09ed86"
+  integrity sha512-6PKIbGsGhZXbuqdGGJv/NwLMv+lJNcR8HcTuwrT9G89w9jByAu0otgN+e1boaWDTxxaPlTumzwnA8/zyNi0gJw==
+  dependencies:
+    "@ctx-core/env" "^8.2.1"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/version__app" "^6.1.1"
+
+"@ctx-core/iex@^0.5.93":
+  version "0.5.93"
+  resolved "https://registry.yarnpkg.com/@ctx-core/iex/-/iex-0.5.93.tgz#6fd093d1dc6143a3b615831a3af2b7bf7a87b2b6"
+  integrity sha512-LC5CtmfBo1H7v0nM1jkggZKooplJFh5iIlPz7BwKqS+0FTGgX64OZysfiOfJBh2mk0KLUoS+Yie1NQYuzf1rTw==
+  dependencies:
+    "@ctx-core/fetch" "^5.1.1"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/instagram@^1.0.142":
+  version "1.0.142"
+  resolved "https://registry.yarnpkg.com/@ctx-core/instagram/-/instagram-1.0.142.tgz#5b1c27813c61f69ead0639da2fd45e0d62ee0f30"
+  integrity sha512-IIXg5EXtc+R395OtOUC1rn2/iDaOdhlka2W2Wu1RRhUTYClAU6M7Yfo+OqL8rbKyTpx5le0qpDaizEUS73btKg==
+  dependencies:
+    "@ctx-core/fetch" "^5.1.1"
+
+"@ctx-core/jwt@^3.0.118":
+  version "3.0.118"
+  resolved "https://registry.yarnpkg.com/@ctx-core/jwt/-/jwt-3.0.118.tgz#47c03dbcb08ed0327dd846f49757afb4761bd2c4"
+  integrity sha512-v0YY7SNWumXNhegEKfgtI1nf5lX309RosB8Viv1wP+5TNfeHcjd6jpgm3ixKBirAb4OdwQ90oP6S2xgC+6eWBQ==
+  dependencies:
+    "@ctx-core/atob" "^4.2.1"
+    "@ctx-core/error" "^5.1.31"
+    "@ctx-core/logger" "^3.1.1"
+
+"@ctx-core/local-storage@^5.0.96":
+  version "5.0.96"
+  resolved "https://registry.yarnpkg.com/@ctx-core/local-storage/-/local-storage-5.0.96.tgz#cdfc6fe0477a1fc4162fb92847634f3e58672b84"
+  integrity sha512-CfXASDLZStQzwJWK6nne3/E0B9NfcUQDOZEDNUIm03sE/xtKlkPG1YzgRj49RwQLZPRBW0M9ZCtkGWHvmSMcng==
+  dependencies:
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+
+"@ctx-core/logger@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/logger/-/logger-3.1.1.tgz#edd61132134f4dea91bd5eeabb7b8d4310de1e41"
+  integrity sha512-Vq4y8HW0BKTopTMTPegpECxx9LRsWun/xVKxpWFmADdr19C6kSDT00C8HRKPk8qsxwyUCfFXvEfpNs3F1HaP+g==
+  dependencies:
+    chalk "^2.4.2"
+
+"@ctx-core/markdown@^7.0.121":
+  version "7.0.121"
+  resolved "https://registry.yarnpkg.com/@ctx-core/markdown/-/markdown-7.0.121.tgz#ef4a478e05404b6b3c9bf5174efe2e00383ba709"
+  integrity sha512-PV1SGSRayzCRbYt/+hh8AkuRv2BayS03c1wvC2ZUfPu9W0PU14/ud7fn+vJ/Dh9duEJ85w4FpxBLbRJR2xttYA==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/svelte" "^5.0.116"
+    marked "^0.7.0"
+    svelte "^3.12.1"
+
+"@ctx-core/math@^4.0.75":
+  version "4.0.75"
+  resolved "https://registry.yarnpkg.com/@ctx-core/math/-/math-4.0.75.tgz#86b21eda70f492f20c6842bc19dac937084c20fb"
+  integrity sha512-BJZqU4JM+7G0j8ViXgud52i45ogqdWOvtk5YSB7AWZCmmQQOPSwfclorRVpEd2dUin9mSrjihLdKvM6d0FKWfw==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+
+"@ctx-core/nav@^13.0.100":
+  version "13.0.100"
+  resolved "https://registry.yarnpkg.com/@ctx-core/nav/-/nav-13.0.100.tgz#abd52093e4fd569843563dc69e258b1fb2c1b6ed"
+  integrity sha512-+UMawcbM7PQisNMrnCff8EIz4KAqdb06TTrAL6j4wlwW1bS35oovNODVzSB+Ucja0E7bxKZ9tIRNCp/daykCAw==
+  dependencies:
+    svelte "^3.12.1"
+
+"@ctx-core/object@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/object/-/object-6.2.1.tgz#40bcf77045a35ee4d69cc46527d18dc521b1d215"
+  integrity sha512-DVJ9bM83bzm5JfVZCOqzvnovtnMw2A2MvIR4XVkcQmRFqrOedV0OnYA2gAXb/K0342QW1dIMhx1v7BRfyBWm8A==
+  dependencies:
+    "@ctx-core/function" "^10.5.16"
+
+"@ctx-core/package@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/package/-/package-3.1.1.tgz#e6e040c497d432d0328d5bab4d9ca15c9cc57bcc"
+  integrity sha512-d9ALfAE/N3cKRecPRshg1UpfuQagiGzBiBNC/4e3sUGQoYHvhnOTYx8Nbv+ZAsdL8IHJAn+d2PEoQ5R68wDLFQ==
+  dependencies:
+    "@ctx-core/cli-args" "^3.1.1"
+    esm "^3.2.25"
+
+"@ctx-core/ripple-effect@^7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@ctx-core/ripple-effect/-/ripple-effect-7.0.2.tgz#28825732b16eef45f2726c216525b31e6d5c6749"
+  integrity sha512-rop+E0dITa0E077+Fvh8ZWem3WX7rfXopBl/MUciR5oKRj9JE6sqmqJJdeLwsmcWDvIdeMnkiFW1V7sZVhoWBg==
+  dependencies:
+    "@ctx-core/html" "^6.0.127"
+    "@ctx-core/logger" "^3.1.1"
+
+"@ctx-core/rollup@^8.1.74":
+  version "8.1.74"
+  resolved "https://registry.yarnpkg.com/@ctx-core/rollup/-/rollup-8.1.74.tgz#5a2faffc47bb79f2d0ef46f506cec4b554b4397b"
+  integrity sha512-1e8zIZlIGlVn9O+nF9LVcFixl7XJl10a9Pq+mp0H6PFWdTWqBwJBqeCH9jQs/+dPyAAZpLrKpnhtlsbs49Sf7g==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/cli-args" "^3.1.1"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/pipe" "^1.1.0"
+    "@ctx-core/queue" "^1.1.5"
+    commander "^3.0.1"
+    esm "^3.2.25"
+    globby "^10.0.1"
+    minimist "^1.2.0"
+
+"@ctx-core/route@^6.0.175":
+  version "6.0.175"
+  resolved "https://registry.yarnpkg.com/@ctx-core/route/-/route-6.0.175.tgz#d70db4e088fb1d0823374e3cbcbb26a591863773"
+  integrity sha512-RGYAIrMWLRwf2mFsrsTrTLyE15+GtyuWL9MhpbzudQ+LsJad/04lY7YfJ5SJSiEEu0H8moHvMk+l94JxisdLOA==
+  dependencies:
+    "@ctx-core/store" "^11.2.1"
+
+"@ctx-core/sapper@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/sapper/-/sapper-6.2.1.tgz#ca1b04dde8d39ddb5a4934f32ee1dc20652068ec"
+  integrity sha512-o+jOSqq9PWZ/7JV23AntUgIcKZig9bvgCVG2XwVuTUglHhiTkbuvWogL5DhshM6d+l76S+0JTbDepx3RqoYwBg==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/store" "^11.2.1"
+    "@ctx-core/uuid" "^3.0.3"
+    resolve "^1.12.0"
+    svelte "^3.12.1"
+
+"@ctx-core/sass@^6.1.78":
+  version "6.1.78"
+  resolved "https://registry.yarnpkg.com/@ctx-core/sass/-/sass-6.1.78.tgz#96f4b06690a77daecc5ca6aa57518fdaf34ef588"
+  integrity sha512-fjr+8zpFDajguixret3JF5HoYPcbRNTvn0bHKmEL6ylmyio/k2/easpSZMT7dZrWT0vZetjBdCyOVLoDkVxVkw==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/string" "^4.2.0"
+    autoprefixer "^9.6.4"
+    node-sass "^4.12.0"
+    node-sass-package-importer "^5.3.2"
+    postcss "^7.0.18"
+
+"@ctx-core/set@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/set/-/set-6.1.1.tgz#2b5070cecc24e230f0c6e58fed32a3e11648ec24"
+  integrity sha512-l1Ff4xyBlaosvBYga/uYfzFkCb3kdNmhl7POZNBOU+J6bnRok+iq4cMO9rTUWfnuTbO1lQGa6ONhc3n7N4fBZw==
+  dependencies:
+    "@ctx-core/function" "^10.5.16"
+
+"@ctx-core/store@^11.2.1":
+  version "11.2.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/store/-/store-11.2.1.tgz#28602c658f4c62dac9388f2064acb300b159b57d"
+  integrity sha512-oTu08y9Fs48K8jtJzGGDMcEds8uQgA6d/XNpfgCDyoVFuK8f5jEKf04AIVXLXDPFtjCZ0KwohXpKArptoto32A==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/combinators" "^4.2.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/object" "^6.2.1"
+    svelte "^3.12.1"
+
+"@ctx-core/svg@^6.2.74":
+  version "6.2.74"
+  resolved "https://registry.yarnpkg.com/@ctx-core/svg/-/svg-6.2.74.tgz#f811cc5bf2a141b97e9be3cb6a4d5364790355fb"
+  integrity sha512-OG0LFd44XGmyOrZj3bV68XmvNIdyyq2U4OWRjMJKnNDyUrfIcb9rgXp+5YV0LliX/lCyAqs/t4DIRO0Sl8ymbg==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/object" "^6.2.1"
+    "@ctx-core/store" "^11.2.1"
+    "@ctx-core/svelte" "^5.0.116"
+    domutils "^2.0.0"
+    htmlparser2 "^4.0.0"
+    resolve "^1.12.0"
+    svelte "^3.12.1"
+
+"@ctx-core/table@^6.0.179":
+  version "6.0.179"
+  resolved "https://registry.yarnpkg.com/@ctx-core/table/-/table-6.0.179.tgz#adcbd38b403f2367733feef6b72c01b1bd1bf913"
+  integrity sha512-F5698LMeqV8UIJjGRVz7MzDYTU6b3cIpB0yy9V65l+G1VvG1Gx+DLfYZ1ckBCSJgiOcT5aRmXDqbA8R9po09xQ==
+  dependencies:
+    "@ctx-core/array" "^15.4.1"
+    "@ctx-core/combinators" "^4.2.1"
+    "@ctx-core/dom" "^5.9.1"
+    "@ctx-core/function" "^10.5.16"
+    "@ctx-core/logger" "^3.1.1"
+    "@ctx-core/store" "^11.2.1"
+    svelte "^3.12.1"
+
+"@ctx-core/uri@^5.1.13":
+  version "5.1.13"
+  resolved "https://registry.yarnpkg.com/@ctx-core/uri/-/uri-5.1.13.tgz#15cfff1d9f384847b529f904887ac0c5118a1a14"
+  integrity sha512-SS5vlDY+F4f7z/zONV89XkApQf7n1SYrS25W8I8XNZYrpDRy5vpB/cowIaVExHczljf2r9Yd4FQRZ+Cs+G7j/g==
+
+"@ctx-core/version__app@^6.1.1":
+  version "6.1.1"
+  resolved "https://registry.yarnpkg.com/@ctx-core/version__app/-/version__app-6.1.1.tgz#3fbd5d6bb65ce2aff30bb69f8f3432cf1fb110fe"
+  integrity sha512-XVPnUtCn2a1dJqv//UsOGRhFf9voR8flDbGPBRCBj3761J/Smw9dsLRQQaROqjjkoxY5ycNvOKbLzFMMvYHK1w==
+  dependencies:
+    "@ctx-core/atob" "^4.2.1"
+    "@ctx-core/env" "^8.2.1"
+    "@ctx-core/logger" "^3.1.1"
+    svelte "^3.12.1"
+
 "@evocateur/libnpmaccess@^3.1.2":
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/@evocateur/libnpmaccess/-/libnpmaccess-3.1.2.tgz#ecf7f6ce6b004e9f942b098d92200be4a4b1c845"

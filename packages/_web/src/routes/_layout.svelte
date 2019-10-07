@@ -1,7 +1,6 @@
 <script context="module">
 export async function preload({ query, params }) {
-	const response = await this.fetch('/version')
-	const version = (await response.text()).trim()
+	const version = process.env.VERSION || ''
 	return {
 		version,
 	}
@@ -9,6 +8,7 @@ export async function preload({ query, params }) {
 </script>
 
 <script>
+import { CACHE_VERSION } from '@ctx-core/version/env'
 import { stores } from '@sapper/app'
 import { _no__dom } from '@ctx-core/dom'
 import { _html__webfont__fout, _html__gtag } from '@ctx-core/google/html'
