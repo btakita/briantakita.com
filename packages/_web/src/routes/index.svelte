@@ -22,6 +22,8 @@ __prepend__footer.set(`<div class="nav"><a href="/archive"> « Archive</a></div>
 
 <Main>
 	<Archive></Archive>
+	<hr>
 	<Previous></Previous>
+	<hr>
 	<Previous__2></Previous__2>
 </Main>
