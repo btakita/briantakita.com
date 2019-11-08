@@ -104,3 +104,4 @@ Commented out is the Route53 & DnsValidatedCertificate configurations.
 
 * https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html
 * https://stackoverflow.com/questions/26206116/aws-cli-disable-distribution#26209272
+* https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-edge-delete-replicas.html
