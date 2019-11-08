@@ -21,7 +21,6 @@ export let compact = false
         <FA_rss_solid></FA_rss_solid>
       </A>
     </li>
-		<!--				<li class="about-me"><a href="http://about.me/brian_takita">about.me</a></li>-->
     <li>
       <a href="mailto:brian.takita@gmail.com" title="Github" target="_blank">
         <FA_envelope_solid></FA_envelope_solid>
@@ -37,13 +36,12 @@ export let compact = false
         <FA_linkedin_brand></FA_linkedin_brand>
       </A>
     </li>
-    {#if !compact}
-      <li>
+		{#if !compact}
+			<li>
         <A href="https://www.facebook.com/brian.takita" title="Facebook">
           <FA_facebook_brand></FA_facebook_brand>
         </A>
       </li>
-		<!--				<li><a href="http://briantakita.brandyourself.com/">BrandYourself</a></li>-->
       <li>
         <A href="https://twitter.com/briantakita" title="Twitter">
           <FA_twitter_brand></FA_twitter_brand>
@@ -59,7 +57,7 @@ export let compact = false
           <FA_quora_brand></FA_quora_brand>
         </A>
       </li>
-    {/if}
+		{/if}
   </ul>
 </section>
 
@@ -82,11 +80,11 @@ export let compact = false
 		}
 	}
 	ul {
+		width: auto;
 		overflow: hidden;
 		list-style-type: none;
 		@media(max-width: #{$width__wide}) {
 			overflow: visible;
-			width: 100%;
 			padding: 0;
 		}
 		li {
