@@ -1,5 +1,5 @@
 ---
-title: Static Websites Using AWS CDK
+title: Static Websites Using AWS CDK, Cloudfront, & S3
 author: Brian Takita
 date: 10/8/19 12:00
 description: Create a https static website using AWS CDK, Cloudfront, & S3
