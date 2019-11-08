@@ -1,5 +1,5 @@
 ---
 ---
 
-```js exec route
+```js exec frontmatter
 ```

@@ -4,7 +4,7 @@ author: Brian Takita
 date: 9/8/13 14:13
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 From my <a href="http://briantakita.wordpress.com/2013/09/08/doing-good-in-the-addiction-economy/" target="_blank">wordpress blog</a>

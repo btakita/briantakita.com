@@ -4,7 +4,7 @@ author: Brian Takita
 date: 9/14/13 17:31
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 Automated testing encourages your software to behave a certain way going forward into the future.

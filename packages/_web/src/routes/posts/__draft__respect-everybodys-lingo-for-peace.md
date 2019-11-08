@@ -5,7 +5,7 @@ date: 12/19/14 13:30
 description: test
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 Every <a href="https://github.com/btakita/philosophy/blob/master/src/entity.md" target="_blank">entity</a> has their own lingo, which is the expression of the <a href="https://github.com/btakita/philosophy/blob/master/src/perspective.md" target="_blank">perspective</a>. When you disrespect.

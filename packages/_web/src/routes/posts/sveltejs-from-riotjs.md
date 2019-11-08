@@ -4,7 +4,7 @@ author: Brian Takita
 date: 07/03/17 20:30
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 Creating Web Components/Web Apps has never been more pleasurable.

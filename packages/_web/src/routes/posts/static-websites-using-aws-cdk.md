@@ -5,6 +5,7 @@ date: 10/8/19 12:00
 description: Create a https static website using AWS CDK, Cloudfront, & S3
 ---
 
+
 ### Note
 
 Here is a the [gist](https://gist.github.com/btakita/2572df4fae440dc065eb888f53316bdd)

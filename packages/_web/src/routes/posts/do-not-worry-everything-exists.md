@@ -6,7 +6,7 @@ description: Does God exist? Surely, Santa Claus & Unicorns do not exist. Yet we
 image: http://www.briantakita.com/images/1200px-Creation_of_Adam.jpg
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 <a href="/posts/do-not-worry-everything-exists/">

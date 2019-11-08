@@ -47,7 +47,7 @@
 		"@ctx-core/google": "^5.0.91",
 		"@ctx-core/highlight.js": "^1.0.134",
 		"@ctx-core/html": "^6.0.139",
-		"@ctx-core/markdown": "^7.0.128",
+		"@ctx-core/markdown": "^8.0.0",
 		"@ctx-core/nav": "^13.2.7",
 		"@ctx-core/svelte": "^5.1.0",
 		"@ctx-core/svg": "^6.4.2",

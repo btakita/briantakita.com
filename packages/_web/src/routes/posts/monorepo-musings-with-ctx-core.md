@@ -5,7 +5,7 @@ date: 2/25/16 11:00
 description: Monorepos Create a Holistic Way to Develop Domains & Platforms
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 It's been about 2 years since my previous post here.

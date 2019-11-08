@@ -4,7 +4,7 @@ author: Brian Takita
 date: 9/7/13 21:39
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 <a href="/posts/no-privacy-control-your-internet-face/">

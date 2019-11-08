@@ -1,7 +1,7 @@
 ---
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 George Webb has a detailed narrative on the Beltway game...Explains how defense contracts work, how congress members vote, the Russians, HRC being "bad for business",  Guccifer, Wikileaks, etc.

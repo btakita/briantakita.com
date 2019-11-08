@@ -4,7 +4,7 @@ author: Brian Takita
 date: 06/11/17 07:00
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 What happens when we become a muse to our tools?

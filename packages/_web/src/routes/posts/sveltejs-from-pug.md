@@ -4,7 +4,7 @@ author: Brian Takita
 date: 07/22/17 05:00
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 Now it's time to implement server side rendering (SSR) using SvelteJS.

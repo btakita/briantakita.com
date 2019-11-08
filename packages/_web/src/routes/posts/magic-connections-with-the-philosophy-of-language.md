@@ -6,7 +6,7 @@ description: Magic exists! Well, if you have listened to me lately, you will hea
 image: http://www.briantakita.com/images/unicorn.jpg
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 <p style="text-align: center; display: block;">

@@ -20,6 +20,11 @@ __prepend__footer.set(`<div class="nav"><a href="/"> « Full blog</a></div>`)
 $: date = $__frontmatter && new Date($__frontmatter.date)
 $: txt__date = ($__frontmatter && $__frontmatter.date) || ''
 $: title = ($__frontmatter && $__frontmatter.title) || ''
+$: console.debug('_layout.svelte|debug|1', {
+	$__frontmatter,
+	date,
+	txt__date,
+})
 </script>
 
 <Main>

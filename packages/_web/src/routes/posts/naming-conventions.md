@@ -2,10 +2,9 @@
 title: Naming Conventions
 author: Brian Takita
 date: 2/27/18 16:30
-description: Naming Conventions to encode the meaning & context of abstractions
 ---
 
-```js exec route
+```js exec frontmatter
 ```
 
 Note: The naming convention described in this article
