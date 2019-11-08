@@ -14,6 +14,7 @@ import { __prepend__footer } from '@briantakita/layout/store'
 import Main from '@briantakita/layout/Main.svelte'
 import Archive from '@briantakita/web/src/routes/archive/latest.md'
 import Previous from '@briantakita/web/src/routes/archive/previous.md'
+import Previous__2 from '@briantakita/web/src/routes/archive/previous--2.md'
 export let segment = ''
 export let a1__archive_id
 __prepend__footer.set(`<div class="nav"><a href="/archive"> « Archive</a></div>`)
@@ -22,4 +23,5 @@ __prepend__footer.set(`<div class="nav"><a href="/archive"> « Archive</a></div>
 <Main>
 	<Archive></Archive>
 	<Previous></Previous>
+	<Previous__2></Previous__2>
 </Main>
