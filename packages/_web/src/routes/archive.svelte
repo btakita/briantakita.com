@@ -10,12 +10,15 @@ export async function preload({ params, query }) {
 </script>
 
 <script>
+import Main from '@briantakita/layout/Main.svelte'
 export let segment
 export let a1__archive_id
 </script>
 
-<h2>Archive</h2>
+<Main>
+	<h2>Archive</h2>
 
-{#each a1__archive_id as archive_id}
-	<div><a href="/archive/{archive_id}">{archive_id}</a></div>
-{/each}
+	{#each a1__archive_id as archive_id}
+		<div><a href="/archive/{archive_id}">{archive_id}</a></div>
+	{/each}
+</Main>
