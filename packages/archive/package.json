@@ -6,8 +6,8 @@
 	"main": "./lib.js",
 	"module": "./lib.js",
 	"dependencies": {
-		"@ctx-core/array": "^15.4.1",
-		"glob": "^7.1.4"
+		"@ctx-core/array": "^15.4.8",
+		"glob": "^7.1.6"
 	},
 	"workspaces": {
 		"packages": [
