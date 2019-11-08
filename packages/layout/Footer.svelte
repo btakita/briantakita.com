@@ -28,7 +28,6 @@ import Links__SocialMedia from '@briantakita/nav/Links__SocialMedia.svelte'
 footer {
 	margin: 3em 0;
 	> .copy {
-		border-top: 1px dashed #d2d2d2;
 		margin-top: 1em;
 		padding: 2.2em 3em;
 		font-size: 0.7em;

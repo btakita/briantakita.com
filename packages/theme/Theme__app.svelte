@@ -68,8 +68,8 @@ blockquote {
 }
 hr {
 	border: 0;
-	border-top: 1px dashed #d2d2d2;
-	height: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 	margin: 1.6em 0;
 }
 iframe {
@@ -86,7 +86,6 @@ a {
 }
 .content {
 	header {
-		border-top: 1px dashed #d2d2d2;
 		margin: 0.7rem 0 0;
 		h2 {
 			font-style: italic;
@@ -99,6 +98,10 @@ a {
 			}
 		}
 		.date {
+			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			display: block;
+			overflow: visible;
+			height: 1px;
 			text-align: center;
 			font-size: 0.8em;
 			margin-top: -0.7em;
@@ -109,6 +112,7 @@ a {
 			font-weight: 400;
 			span {
 				background-color: $color__highlight__text;
+				margin-top: -.5em;
 				padding: 0 0.7em;
 			}
 		}
