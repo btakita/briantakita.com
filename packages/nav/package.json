@@ -8,8 +8,8 @@
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
 		"@ctx-core/a__target": "^2.0.33",
-		"@ctx-core/fontawesome": "^10.1.86",
-		"@ctx-core/nav": "^13.2.7",
+		"@ctx-core/fontawesome": "^10.1.87",
+		"@ctx-core/nav": "^13.2.8",
 		"@ctx-core/sapper": "^6.2.11"
 	},
 	"devDependencies": {
