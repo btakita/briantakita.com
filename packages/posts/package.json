@@ -5,11 +5,13 @@
 	"private": true,
 	"main": "./lib.js",
 	"module": "./lib.js",
+	"types": "lib.d.ts",
 	"dependencies": {
-		"@ctx-core/date": "^6.1.2"
+		"@ctx-core/date": "^6.2.34"
 	},
 	"devDependencies": {
-		"svelte": "^3.12.1"
+		"svelte": "^3.22.3",
+		"typescript": "^3.9.3"
 	},
 	"workspaces": {
 		"packages": [

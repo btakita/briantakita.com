@@ -18,9 +18,9 @@ tmux split-window -v $SHELL
 tmux send-keys 'yarn run dev' 'C-m'
 tmux select-pane -t 0
 
-cd $BRIANTAKITA_DIR/packages/ctx-core
+cd $BRIANTAKITA_DIR/packages/@ctx-core
 tmux new-window $SHELL
-tmux rename-window ctx-core
+tmux rename-window @ctx-core
 tmux split-window -v $SHELL
 tmux send-keys 'tig' 'C-m'
 tmux select-pane -t 0

@@ -1,7 +1,7 @@
 {
 	"packages": [
 		"packages/*",
-		"packages/ctx-core/packages/*"
+		"packages/@ctx-core/packages/*"
 	],
 	"npmClient": "yarn",
 	"useWorkspaces": true,

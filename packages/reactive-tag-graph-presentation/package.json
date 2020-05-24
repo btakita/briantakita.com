@@ -14,7 +14,7 @@
 		"bespoke-touch": "^1.0.0"
 	},
 	"devDependencies": {
-		"svelte": "^3.12.1"
+		"svelte": "^3.22.3"
 	},
 	"workspaces": {
 		"packages": [

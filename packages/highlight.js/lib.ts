@@ -1,4 +1,4 @@
-import hljs from 'highlight.js/lib/highlight'
+import hljs from 'highlight.js/lib/core'
 import js__highlight from 'highlight.js/lib/languages/javascript'
 import ts__highlight from 'highlight.js/lib/languages/typescript'
 import json__highlight from 'highlight.js/lib/languages/json'

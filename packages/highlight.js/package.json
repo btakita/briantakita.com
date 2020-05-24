@@ -5,8 +5,12 @@
 	"private": true,
 	"main": "./lib.js",
 	"module": "./lib.js",
+	"types": "lib.d.ts",
 	"dependencies": {
-		"highlight.js": "^9.16.2"
+		"highlight.js": "^10.0.3"
+	},
+	"devDependencies": {
+		"typescript": "^3.9.3"
 	},
 	"workspaces": {
 		"packages": [

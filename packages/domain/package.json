@@ -5,9 +5,11 @@
 	"private": true,
 	"main": "./lib.js",
 	"module": "./lib.js",
+	"types": "lib.d.ts",
 	"dependencies": {
 	},
 	"devDependencies": {
+		"typescript": "^3.9.3"
 	},
 	"workspaces": {
 		"packages": [
