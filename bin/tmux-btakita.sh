@@ -11,7 +11,7 @@ tmux select-pane -t 0
 cd $BRIANTAKITA_DIR
 tmux new-window $SHELL
 tmux rename-window processes
-cd $BRIANTAKITA_DIR/packages/_web
+cd $BRIANTAKITA_DIR/packages/-web
 tmux send-keys 'tsc-build.sh -w' 'C-m'
 tmux split-window -h $SHELL
 tmux split-window -v $SHELL
