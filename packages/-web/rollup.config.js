@@ -1,10 +1,10 @@
 require = require('esm')(module)
-import resolve from 'rollup-plugin-node-resolve'
-import replace from 'rollup-plugin-replace'
+import resolve from '@rollup/plugin-node-resolve'
+import replace from '@rollup/plugin-replace'
 import builtins__plugin from 'rollup-plugin-node-builtins'
 import globals__plugin from 'rollup-plugin-node-globals'
-import json__plugin from 'rollup-plugin-json'
-import commonjs from 'rollup-plugin-commonjs'
+import json__plugin from '@rollup/plugin-json'
+import commonjs from '@rollup/plugin-commonjs'
 import svelte from 'rollup-plugin-svelte'
 import { terser } from 'rollup-plugin-terser'
 const { clone } = require('@ctx-core/object')
