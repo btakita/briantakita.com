@@ -1,5 +1,5 @@
 #!/bin/bash
-pushd packages/-web
+pushd packages/_web
 symlink-latest-archive.sh
 npm run deploy
 popd
