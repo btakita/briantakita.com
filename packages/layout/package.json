@@ -6,12 +6,12 @@
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
 		"@briantakita/nav": "^0.0.1",
-		"@ctx-core/nav": "^13.4.37",
-		"@ctx-core/sapper": "^6.3.32"
+		"@ctx-core/nav": "^13.4.44",
+		"@ctx-core/sapper": "^6.3.39"
 	},
 	"devDependencies": {
-		"svelte": "^3.22.3",
-		"typescript": "^3.9.3"
+		"svelte": "^3.23.2",
+		"typescript": "^3.9.5"
 	},
 	"workspaces": {
 		"packages": [

@@ -6,10 +6,9 @@
 	"main": "./lib.js",
 	"module": "./lib.js",
 	"types": "lib.d.ts",
-	"dependencies": {
-	},
+	"dependencies": {},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"workspaces": {
 		"packages": [

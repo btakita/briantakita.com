@@ -7,11 +7,11 @@
 	"module": "./lib.js",
 	"types": "./lib.d.ts",
 	"dependencies": {
-		"@ctx-core/array": "^15.5.17",
+		"@ctx-core/array": "^15.5.22",
 		"glob": "^7.1.6"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"workspaces": {
 		"packages": [

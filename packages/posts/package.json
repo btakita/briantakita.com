@@ -7,11 +7,11 @@
 	"module": "./lib.js",
 	"types": "lib.d.ts",
 	"dependencies": {
-		"@ctx-core/date": "^6.2.34"
+		"@ctx-core/date": "^6.2.40"
 	},
 	"devDependencies": {
-		"svelte": "^3.22.3",
-		"typescript": "^3.9.3"
+		"svelte": "^3.23.2",
+		"typescript": "^3.9.5"
 	},
 	"workspaces": {
 		"packages": [

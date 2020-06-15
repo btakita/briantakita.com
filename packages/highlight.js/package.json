@@ -7,10 +7,10 @@
 	"module": "./lib.js",
 	"types": "lib.d.ts",
 	"dependencies": {
-		"highlight.js": "^10.0.3"
+		"highlight.js": "^10.1.0"
 	},
 	"devDependencies": {
-		"typescript": "^3.9.3"
+		"typescript": "^3.9.5"
 	},
 	"workspaces": {
 		"packages": [

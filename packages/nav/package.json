@@ -7,13 +7,13 @@
 	"module": "./lib.js",
 	"dependencies": {
 		"@briantakita/css": "^0.0.1",
-		"@ctx-core/a__target": "^2.1.23",
-		"@ctx-core/fontawesome": "^10.2.76",
-		"@ctx-core/nav": "^13.4.37",
-		"@ctx-core/sapper": "^6.3.32"
+		"@ctx-core/a__target": "^2.1.29",
+		"@ctx-core/fontawesome": "^10.2.83",
+		"@ctx-core/nav": "^13.4.44",
+		"@ctx-core/sapper": "^6.3.39"
 	},
 	"devDependencies": {
-		"svelte": "^3.22.3"
+		"svelte": "^3.23.2"
 	},
 	"workspaces": {
 		"packages": [
