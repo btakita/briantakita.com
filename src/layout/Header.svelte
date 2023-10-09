@@ -6,7 +6,7 @@
 <header class="header">
   <div class="content-wrap">
     <div class="logo">
-      <h1><a href="/">Brian Takita</a></h1>
+      <h1><a href="/app/briantakita.com/static">Brian Takita</a></h1>
     </div>
   </div>
 	<Nav></Nav>

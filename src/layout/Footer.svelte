@@ -10,7 +10,7 @@
     <section class="sitemap"><a href="/sitemap.xml">&nbsp;</a></section>
   </div>
   <div class="nav__footer content-wrap">
-    <a href="/">Home</a>
+    <a href="/app/briantakita.com/static">Home</a>
     | <a href="/portfolio">Portfolio</a>
     | <a href="/interests">Interests</a>
     | <a href="/blog">Blog</a>

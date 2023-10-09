@@ -68,7 +68,7 @@
 	Personal website that includes:
 </p>
 <ul>
-	<li><A href="/">microblog</A> with archives</li>
+	<li><A href="/app/briantakita.com/static">microblog</A> with archives</li>
 	<li><A href="/blog">blog</A> with archives</li>
 </ul>
 <p>

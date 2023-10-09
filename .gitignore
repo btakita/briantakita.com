@@ -1,12 +1,8 @@
 .DS_Store
 node_modules
 __sapper__
-__test__
-yarn.lock
-yarn-error.log
+__tests__
 cypress/screenshots
-templates/.*
-export
 
 .env
 .idea/
